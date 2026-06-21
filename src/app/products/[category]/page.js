@@ -9,16 +9,18 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const category = categories.find((c) => c.slug === params.category);
+export async function generateMetadata({ params }) {
+  const { category: categorySlug } = await params;
+  const category = categories.find((c) => c.slug === categorySlug);
   return {
     title: `${category ? category.name : 'Products'} | SCPC Precast`,
     description: category ? category.description : 'Precast concrete products.',
   };
 }
 
-export default function CategoryPage({ params }) {
-  const category = categories.find((c) => c.slug === params.category);
+export default async function CategoryPage({ params }) {
+  const { category: categorySlug } = await params;
+  const category = categories.find((c) => c.slug === categorySlug);
   
   if (!category) {
     return (
