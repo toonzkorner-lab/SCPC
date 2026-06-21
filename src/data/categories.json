@@ -1,21 +1,21 @@
 [
   {
-    "id": "wall-caps",
-    "name": "Wall Caps",
-    "description": "High-quality precast concrete wall caps in various series.",
-    "slug": "wall-caps"
-  },
-  {
     "id": "columns",
     "name": "Columns",
     "description": "Elegant precast concrete columns including spiral, stackable, and tuscan split designs.",
     "slug": "columns"
   },
   {
-    "id": "benches",
-    "name": "Benches",
-    "description": "Durable elegance for urban and natural spaces.",
-    "slug": "benches"
+    "id": "fireplaces",
+    "name": "Fireplace Surrounds",
+    "description": "Hearths and mantels that make a statement.",
+    "slug": "fireplaces"
+  },
+  {
+    "id": "caps",
+    "name": "Caps",
+    "description": "High-quality precast concrete caps in various series.",
+    "slug": "caps"
   },
   {
     "id": "bollards",
@@ -24,15 +24,15 @@
     "slug": "bollards"
   },
   {
-    "id": "pools",
-    "name": "Pool Coping & Scuppers",
-    "description": "Beautiful finishes for pool edges and water features.",
-    "slug": "pools"
+    "id": "landscaping",
+    "name": "Landscaping Products",
+    "description": "Durable elegance for urban and natural spaces, including benches, planters, pool coping, scuppers, and decorative elements.",
+    "slug": "landscaping"
   },
   {
-    "id": "fireplaces",
-    "name": "Fireplace Surrounds",
-    "description": "Hearths and mantels that make a statement.",
-    "slug": "fireplaces"
+    "id": "moldings",
+    "name": "Moldings",
+    "description": "Architectural precast concrete moldings and trim.",
+    "slug": "moldings"
   }
 ]

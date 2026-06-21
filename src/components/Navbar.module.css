@@ -1,0 +1,96 @@
+.navbar {
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.logo strong {
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLinks a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.navLinks a:hover {
+  color: var(--accent);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--surface);
+  min-width: 200px;
+  box-shadow: var(--shadow-hover);
+  z-index: 1000;
+  border-radius: var(--radius);
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 0;
+}
+
+.dropdownContent a {
+  color: var(--text-dark);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.dropdownContent a:hover {
+  background-color: var(--border);
+  color: var(--primary) !important;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* Add mobile menu later if needed */
+  }
+}
