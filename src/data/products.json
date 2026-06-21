@@ -1,0 +1,16 @@
+[
+  { "id": "wall-cap-01", "categoryId": "wall-caps", "name": "01 Series Wall Cap", "description": "Classic profile for standard wall widths." },
+  { "id": "wall-cap-02", "categoryId": "wall-caps", "name": "02 Series Wall Cap", "description": "Sleek and modern profile." },
+  { "id": "wall-cap-03", "categoryId": "wall-caps", "name": "03 Series Wall Cap", "description": "Heavy-duty wall cap for larger structures." },
+  { "id": "wall-cap-04", "categoryId": "wall-caps", "name": "04 Series Wall Cap", "description": "Architectural series with ornate detailing." },
+  { "id": "column-spiral", "categoryId": "columns", "name": "Spiral Column", "description": "A beautiful spiral design." },
+  { "id": "column-stackable", "categoryId": "columns", "name": "Stackable Column", "description": "Modular stackable column system." },
+  { "id": "column-tuscan", "categoryId": "columns", "name": "Tuscan Split Column", "description": "Classic Tuscan architectural style." },
+  { "id": "bench-standard", "categoryId": "benches", "name": "Standard Park Bench", "description": "Heavy-duty precast bench." },
+  { "id": "bench-curved", "categoryId": "benches", "name": "Curved Garden Bench", "description": "Elegant curved design for landscapes." },
+  { "id": "bollard-dome", "categoryId": "bollards", "name": "Dome Top Bollard", "description": "Standard security bollard." },
+  { "id": "bollard-flat", "categoryId": "bollards", "name": "Flat Top Bollard", "description": "Modern minimalist bollard." },
+  { "id": "pool-coping", "categoryId": "pools", "name": "Safety Pool Coping", "description": "Smooth, slip-resistant pool edge." },
+  { "id": "pool-scupper", "categoryId": "pools", "name": "Water Scupper", "description": "Elegant water feature pour spout." },
+  { "id": "fireplace-classic", "categoryId": "fireplaces", "name": "Classic Surround", "description": "Traditional precast fireplace surround." }
+]
