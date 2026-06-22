@@ -11,9 +11,9 @@ export default function Navbar() {
   return (
     <header className={styles.navbar}>
       <div className={`container ${styles.container}`}>
-        <Link href="/" className={styles.logo}>
+        <a href="/" className={styles.logo}>
           <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
-        </Link>
+        </a>
         <nav className={styles.navLinks}>
           <Link href="/">Home</Link>
           <div className={styles.dropdown}>

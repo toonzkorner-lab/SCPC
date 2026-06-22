@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.col}>
-          <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '50px', width: 'auto', marginBottom: '1rem' }} />
+          <a href="/">
+            <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '50px', width: 'auto', marginBottom: '1rem' }} />
+          </a>
           <p>Providing high-quality precast concrete products since 1999. Durable elegance for urban and natural spaces.</p>
         </div>
         <div className={styles.col}>
