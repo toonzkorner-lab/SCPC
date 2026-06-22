@@ -2,7 +2,12 @@ import Link from 'next/link';
 import styles from './Navbar.module.css';
 import categories from '../data/categories.json';
 
+import products from '../data/products.json';
+
 export default function Navbar() {
+  const galleryCats = new Set(products.filter(p => p.type === 'gallery').map(p => p.categoryId));
+  const blueprintCats = new Set(products.filter(p => p.type === 'blueprint').map(p => p.categoryId));
+
   return (
     <header className={styles.navbar}>
       <div className={`container ${styles.container}`}>
@@ -14,7 +19,7 @@ export default function Navbar() {
           <div className={styles.dropdown}>
             <Link href="/gallery" className={styles.dropbtn}>Gallery ▾</Link>
             <div className={styles.dropdownContent}>
-              {categories.map((cat) => (
+              {categories.filter(c => galleryCats.has(c.id)).map((cat) => (
                 <Link key={`gallery-${cat.id}`} href={`/gallery/${cat.slug}`}>
                   {cat.name}
                 </Link>
@@ -24,7 +29,7 @@ export default function Navbar() {
           <div className={styles.dropdown}>
             <Link href="/products" className={styles.dropbtn}>Products ▾</Link>
             <div className={styles.dropdownContent}>
-              {categories.map((cat) => (
+              {categories.filter(c => blueprintCats.has(c.id)).map((cat) => (
                 <Link key={`products-${cat.id}`} href={`/products/${cat.slug}`}>
                   {cat.name}
                 </Link>

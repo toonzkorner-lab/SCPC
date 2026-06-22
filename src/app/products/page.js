@@ -1,4 +1,5 @@
 import categories from '../../data/categories.json';
+import products from '../../data/products.json';
 import ProductCard from '../../components/ProductCard';
 
 export const metadata = {
@@ -7,6 +8,8 @@ export const metadata = {
 };
 
 export default function ProductsPage() {
+  const blueprintCats = new Set(products.filter(p => p.type === 'blueprint').map(p => p.categoryId));
+
   return (
     <div className="section">
       <div className="container">
@@ -22,7 +25,7 @@ export default function ProductsPage() {
         </div>
         
         <div className="grid-auto-fit">
-          {categories.map((cat) => (
+          {categories.filter(c => blueprintCats.has(c.id)).map((cat) => (
             <ProductCard 
               key={cat.id}
               title={cat.name}

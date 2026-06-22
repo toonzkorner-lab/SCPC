@@ -11,33 +11,33 @@
     "id": "bollards-2",
     "categoryId": "bollards",
     "name": "Bd 01 16",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
     "image": "BD-01-16-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "bollards-3",
     "categoryId": "bollards",
     "name": "Bd 01 16 Security 1",
-    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
     "image": "BD-01-16-security-1-300x240.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "bollards-4",
     "categoryId": "bollards",
     "name": "Bd 02 12X60",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
     "image": "BD-02-12x60-product-picture-v2.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "bollards-5",
     "categoryId": "bollards",
     "name": "Bd 03 17",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
     "image": "BD-03-17-product-pic-v2.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "bollards-6",
@@ -51,15 +51,15 @@
     "id": "bollards-7",
     "categoryId": "bollards",
     "name": "Bd 05 18X47",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
     "image": "BD-05-18x47-product-pic.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "bollards-8",
     "categoryId": "bollards",
     "name": "Bollards 1",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
     "image": "Bollards-main-pic-1.jpg",
     "type": "gallery"
   },
@@ -67,7 +67,7 @@
     "id": "bollards-9",
     "categoryId": "bollards",
     "name": "Bollards 2",
-    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
+    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
     "image": "Bollards-main-pic-2.jpg",
     "type": "gallery"
   },
@@ -75,7 +75,7 @@
     "id": "bollards-10",
     "categoryId": "bollards",
     "name": "Light Bollard",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
     "image": "Light-Bollard-238x300.jpeg",
     "type": "gallery"
   },
@@ -83,7 +83,7 @@
     "id": "bollards-11",
     "categoryId": "bollards",
     "name": "Ps Column 1",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
     "image": "PS-column-1-.jpg",
     "type": "gallery"
   },
@@ -99,7 +99,7 @@
     "id": "bollards-13",
     "categoryId": "bollards",
     "name": "Planter Bollard",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
     "image": "Planter-bollard--225x300.jpg",
     "type": "gallery"
   },
@@ -107,7 +107,7 @@
     "id": "bollards-14",
     "categoryId": "bollards",
     "name": "Safety Bollard 1 1",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
     "image": "Safety-bollard-1-1-300x300.jpg",
     "type": "gallery"
   },
@@ -115,7 +115,7 @@
     "id": "bollards-15",
     "categoryId": "bollards",
     "name": "Bollard 1",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
+    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
     "image": "bollard-pic-1.jpg",
     "type": "gallery"
   },
@@ -123,47 +123,47 @@
     "id": "columns-1",
     "categoryId": "columns",
     "name": "Balustrade Alternative Cap 6",
-    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "description": "Dimensional schematic and profile drawing for columns product.",
     "image": "Balustrade-Alternative-Cap-pic-6.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "columns-2",
     "categoryId": "columns",
     "name": "Balustrade General Set Up",
-    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
+    "description": "Dimensional schematic and profile drawing for columns product.",
     "image": "Balustrade-General-Set-Up-1024x786.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "columns-3",
     "categoryId": "columns",
     "name": "Balustrade Pier Column 5",
-    "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
+    "description": "Dimensional schematic and profile drawing for columns product.",
     "image": "Balustrade-Pier-Column-pic-5.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "columns-4",
     "categoryId": "columns",
     "name": "Balustrade Base 4",
-    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "description": "Dimensional schematic and profile drawing for columns product.",
     "image": "Balustrade-base-pic-4.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "columns-5",
     "categoryId": "columns",
     "name": "Balustrade Wall Cap 3",
-    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
+    "description": "Dimensional schematic and profile drawing for columns product.",
     "image": "Balustrade-wall-cap-pic-3.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "columns-6",
     "categoryId": "columns",
     "name": "Balustrades 2",
-    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
+    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
     "image": "Balustrades-pic-2.jpg",
     "type": "gallery"
   },
@@ -171,7 +171,7 @@
     "id": "columns-7",
     "categoryId": "columns",
     "name": "Column 1",
-    "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
+    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
     "image": "Column-1-300x196.jpeg",
     "type": "gallery"
   },
@@ -179,7 +179,7 @@
     "id": "columns-8",
     "categoryId": "columns",
     "name": "Column 12",
-    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
     "image": "Column-12-300x205.jpeg",
     "type": "gallery"
   },
@@ -187,7 +187,7 @@
     "id": "columns-9",
     "categoryId": "columns",
     "name": "Column 3",
-    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
+    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
     "image": "Column-3-300x196.jpeg",
     "type": "gallery"
   },
@@ -195,7 +195,7 @@
     "id": "fireplaces-1",
     "categoryId": "fireplaces",
     "name": "Bowl Firepit 2",
-    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
+    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
     "image": "Bowl-firepit-2-300x225.jpg",
     "type": "gallery"
   },
@@ -203,7 +203,7 @@
     "id": "fireplaces-2",
     "categoryId": "fireplaces",
     "name": "Clark Gfrc Fireplace 004",
-    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
+    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
     "image": "Clark-GFRC-fireplace-004-300x225.jpg",
     "type": "gallery"
   },
@@ -211,7 +211,7 @@
     "id": "fireplaces-3",
     "categoryId": "fireplaces",
     "name": "Darby Fire Pit 2",
-    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
+    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
     "image": "Darby-fire-pit-2-224x300.jpeg",
     "type": "gallery"
   },
@@ -219,7 +219,7 @@
     "id": "fireplaces-4",
     "categoryId": "fireplaces",
     "name": "Fp 15 1",
-    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
+    "description": "Transform your living space with this exquisite precast concrete fireplace surround, combining modern durability with classic hearth warmth.",
     "image": "FP-15-1-pic-225x300.jpg",
     "type": "gallery"
   },
@@ -227,7 +227,7 @@
     "id": "fireplaces-5",
     "categoryId": "fireplaces",
     "name": "Fp 2",
-    "description": "Transform your living space with this exquisite precast concrete fireplace surround, combining modern durability with classic hearth warmth.",
+    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
     "image": "FP-2-pic-225x300.jpg",
     "type": "gallery"
   },
@@ -235,7 +235,7 @@
     "id": "fireplaces-6",
     "categoryId": "fireplaces",
     "name": "Fire Pit New Cropped",
-    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
+    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
     "image": "Fire-pit-new-cropped-300x148.jpg",
     "type": "gallery"
   },
@@ -299,7 +299,7 @@
     "id": "caps-7",
     "categoryId": "caps",
     "name": "Pier Cap New Wall 1",
-    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
+    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
     "image": "Pier-Cap-new-wall-1-800x450.jpg",
     "type": "gallery"
   },
@@ -307,7 +307,7 @@
     "id": "caps-8",
     "categoryId": "caps",
     "name": "Pier Cap New Wall 3",
-    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
+    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
     "image": "Pier-Cap-new-wall-3-1024x768.jpg",
     "type": "gallery"
   },
@@ -315,7 +315,7 @@
     "id": "caps-9",
     "categoryId": "caps",
     "name": "Pier Cap 16 26",
-    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
+    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
     "image": "Pier-cap-16-26-v2.jpg",
     "type": "gallery"
   },
@@ -331,7 +331,7 @@
     "id": "caps-11",
     "categoryId": "caps",
     "name": "Pier Cap",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
     "image": "Pier-cap-300x211.jpeg",
     "type": "gallery"
   },
@@ -339,7 +339,7 @@
     "id": "caps-12",
     "categoryId": "caps",
     "name": "Wc 26 9.625",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
     "image": "WC-26-9.625-picture.jpg",
     "type": "gallery"
   },
@@ -403,7 +403,7 @@
     "id": "caps-20",
     "categoryId": "caps",
     "name": "Wall Cap 2",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
     "image": "Wall-cap-2-300x202.jpeg",
     "type": "gallery"
   },
@@ -411,7 +411,7 @@
     "id": "caps-21",
     "categoryId": "caps",
     "name": "Wall Cap Plinth",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
     "image": "Wall-cap-plinth--225x300.jpg",
     "type": "gallery"
   },
@@ -419,7 +419,7 @@
     "id": "caps-22",
     "categoryId": "caps",
     "name": "Wall Cap",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
     "image": "Wall-cap.jpeg",
     "type": "gallery"
   },
@@ -427,121 +427,121 @@
     "id": "moldings-1",
     "categoryId": "moldings",
     "name": "Bm 14 1.5X20",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-14-1.5x20-pic.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-2",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 15.5",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-26-1.5-by-15.5.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-3",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 20",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-26-1.5-by-20.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-4",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 7",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-26-1.5-by-7.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-5",
     "categoryId": "moldings",
     "name": "Bm 26 2.5 By 4 And 7",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-26-2.5-by-4-and-7.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-6",
     "categoryId": "moldings",
     "name": "Bm 26 20",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-26-20-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-7",
     "categoryId": "moldings",
     "name": "Bm 33 30",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-33-30-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-8",
     "categoryId": "moldings",
     "name": "Bm 34 2X40",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-34-2x40-product-pic.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-9",
     "categoryId": "moldings",
     "name": "Bm 34 4X36",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-34-4x36-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-10",
     "categoryId": "moldings",
     "name": "Bm 36 28",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-36-28-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-11",
     "categoryId": "moldings",
     "name": "Bm 36 32",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-36-32-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-12",
     "categoryId": "moldings",
     "name": "Bm 37",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-37-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-13",
     "categoryId": "moldings",
     "name": "Bm 43",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-43-product-picture-v2.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-14",
     "categoryId": "moldings",
     "name": "Bm 45",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "BM-45-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-15",
     "categoryId": "moldings",
     "name": "Chair Rail",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
     "image": "Chair-Rail-product-picture.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "moldings-16",
@@ -627,7 +627,7 @@
     "id": "moldings-26",
     "categoryId": "moldings",
     "name": "Bowls 1",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
     "image": "bowls-pic-1-Main.jpg",
     "type": "gallery"
   },
@@ -635,7 +635,7 @@
     "id": "moldings-27",
     "categoryId": "moldings",
     "name": "Bowls 2",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
     "image": "bowls-pic-2-Main.jpg",
     "type": "gallery"
   },
@@ -2531,15 +2531,15 @@
     "id": "landscaping-3",
     "categoryId": "landscaping",
     "name": "60 Bowl Rebar 1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "Dimensional schematic and profile drawing for landscaping product.",
     "image": "60-bowl-rebar-1-300x225.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "landscaping-4",
     "categoryId": "landscaping",
     "name": "96 Inch Pot",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "96-inch-pot-200x300.jpeg",
     "type": "gallery"
   },
@@ -2547,7 +2547,7 @@
     "id": "landscaping-5",
     "categoryId": "landscaping",
     "name": "Bench Big",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "Bench-big-pic.jpg",
     "type": "gallery"
   },
@@ -2555,7 +2555,7 @@
     "id": "landscaping-6",
     "categoryId": "landscaping",
     "name": "Bench",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
     "image": "Bench.jpeg",
     "type": "gallery"
   },
@@ -2563,7 +2563,7 @@
     "id": "landscaping-7",
     "categoryId": "landscaping",
     "name": "Blue Flower Pot C1",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Blue-flower-pot-c1-225x300.jpg",
     "type": "gallery"
   },
@@ -2571,7 +2571,7 @@
     "id": "landscaping-8",
     "categoryId": "landscaping",
     "name": "Bore Monument",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "Bore-Monument--300x225.jpg",
     "type": "gallery"
   },
@@ -2579,7 +2579,7 @@
     "id": "landscaping-9",
     "categoryId": "landscaping",
     "name": "Custom Pavers 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Custom-Pavers-1-190x300.jpeg",
     "type": "gallery"
   },
@@ -2587,7 +2587,7 @@
     "id": "landscaping-10",
     "categoryId": "landscaping",
     "name": "Custom Pavers",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Custom-Pavers.jpeg",
     "type": "gallery"
   },
@@ -2603,7 +2603,7 @@
     "id": "landscaping-12",
     "categoryId": "landscaping",
     "name": "Daves Bowl 2",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Daves-bowl-2-300x225.jpg",
     "type": "gallery"
   },
@@ -2611,7 +2611,7 @@
     "id": "landscaping-13",
     "categoryId": "landscaping",
     "name": "Fountain 1",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Fountain-1-300x203.jpeg",
     "type": "gallery"
   },
@@ -2627,7 +2627,7 @@
     "id": "landscaping-15",
     "categoryId": "landscaping",
     "name": "Fountain 3",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Fountain-3-300x206.jpeg",
     "type": "gallery"
   },
@@ -2635,7 +2635,7 @@
     "id": "landscaping-16",
     "categoryId": "landscaping",
     "name": "Fountain 4",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Fountain-4-300x229.jpeg",
     "type": "gallery"
   },
@@ -2643,7 +2643,7 @@
     "id": "landscaping-17",
     "categoryId": "landscaping",
     "name": "Fountain 5",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Fountain-5-300x226.jpeg",
     "type": "gallery"
   },
@@ -2659,7 +2659,7 @@
     "id": "landscaping-19",
     "categoryId": "landscaping",
     "name": "Monument Sign 014",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "Monument-sign-014-300x225.jpg",
     "type": "gallery"
   },
@@ -2675,7 +2675,7 @@
     "id": "landscaping-21",
     "categoryId": "landscaping",
     "name": "Planter Bowl",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
     "image": "Planter-Bowl-199x300.jpg",
     "type": "gallery"
   },
@@ -2683,7 +2683,7 @@
     "id": "landscaping-22",
     "categoryId": "landscaping",
     "name": "Pool 5 At 1000 Pix",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Pool-5-at-1000-pix-200x300.jpg",
     "type": "gallery"
   },
@@ -2699,7 +2699,7 @@
     "id": "landscaping-24",
     "categoryId": "landscaping",
     "name": "Willow Sign 1",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Willow-sign-1-1024x768.jpg",
     "type": "gallery"
   },
@@ -2707,7 +2707,7 @@
     "id": "landscaping-25",
     "categoryId": "landscaping",
     "name": "Bowl 10",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "bowl-10-300x225.jpg",
     "type": "gallery"
   },
@@ -2715,7 +2715,7 @@
     "id": "landscaping-26",
     "categoryId": "landscaping",
     "name": "Pots",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "pots-main-pic.jpg",
     "type": "gallery"
   },
@@ -2723,7 +2723,7 @@
     "id": "misc-1",
     "categoryId": "landscaping",
     "name": "10",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "10--300x225.jpg",
     "type": "gallery"
   },
@@ -2739,7 +2739,7 @@
     "id": "misc-3",
     "categoryId": "landscaping",
     "name": "5 2",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "5-2--300x225.jpg",
     "type": "gallery"
   },
@@ -2747,7 +2747,7 @@
     "id": "misc-4",
     "categoryId": "landscaping",
     "name": "594",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "594.jpg",
     "type": "gallery"
   },
@@ -2755,7 +2755,7 @@
     "id": "misc-5",
     "categoryId": "landscaping",
     "name": "Asr Constructors",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "ASR-Constructors.jpg",
     "type": "gallery"
   },
@@ -2763,7 +2763,7 @@
     "id": "misc-6",
     "categoryId": "landscaping",
     "name": "B2",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "B2-300x207.jpeg",
     "type": "gallery"
   },
@@ -2787,7 +2787,7 @@
     "id": "misc-9",
     "categoryId": "landscaping",
     "name": "Bd01 16 T 80 Lsb 1 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "BD01-16-T-80-LSB-1-1-300x169.jpg",
     "type": "gallery"
   },
@@ -2795,7 +2795,7 @@
     "id": "misc-10",
     "categoryId": "landscaping",
     "name": "Bh 02 16",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "BH-02-16-300x225.jpg",
     "type": "gallery"
   },
@@ -2803,15 +2803,15 @@
     "id": "misc-11",
     "categoryId": "landscaping",
     "name": "Bl General Set Up 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Dimensional schematic and profile drawing for landscaping product.",
     "image": "BL-General-Set-up-1.jpg",
-    "type": "gallery"
+    "type": "blueprint"
   },
   {
     "id": "misc-12",
     "categoryId": "landscaping",
     "name": "Breeze Block 3",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "Breeze-Block-3--scaled.jpg",
     "type": "gallery"
   },
@@ -2819,7 +2819,7 @@
     "id": "misc-13",
     "categoryId": "landscaping",
     "name": "Carpenter12",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Carpenter12-300x225.jpg",
     "type": "gallery"
   },
@@ -2827,7 +2827,7 @@
     "id": "misc-14",
     "categoryId": "landscaping",
     "name": "Coppock Fp3",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Coppock-FP3-225x300.jpg",
     "type": "gallery"
   },
@@ -2835,7 +2835,7 @@
     "id": "misc-15",
     "categoryId": "landscaping",
     "name": "Customer Walk In",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Customer-Walk-In-231x300.jpg",
     "type": "gallery"
   },
@@ -2851,7 +2851,7 @@
     "id": "misc-17",
     "categoryId": "landscaping",
     "name": "Dune Palms Precast 003",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Dune-Palms-precast-003-300x225.jpg",
     "type": "gallery"
   },
@@ -2875,7 +2875,7 @@
     "id": "misc-20",
     "categoryId": "landscaping",
     "name": "Free Unsplash American Flag",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Free-unsplash-american-flag.jpg",
     "type": "gallery"
   },
@@ -2891,7 +2891,7 @@
     "id": "misc-22",
     "categoryId": "landscaping",
     "name": "Hpim0140",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "HPIM0140-300x224.jpg",
     "type": "gallery"
   },
@@ -2899,7 +2899,7 @@
     "id": "misc-23",
     "categoryId": "landscaping",
     "name": "Hampton Inn 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
     "image": "Hampton-Inn-1--300x225.jpg",
     "type": "gallery"
   },
@@ -2907,7 +2907,7 @@
     "id": "misc-24",
     "categoryId": "landscaping",
     "name": "Indian Springs",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
     "image": "Indian-Springs--225x300.jpg",
     "type": "gallery"
   },
@@ -2939,7 +2939,7 @@
     "id": "misc-28",
     "categoryId": "landscaping",
     "name": "Large Arch Entry",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Large-arch-entry-225x300.jpg",
     "type": "gallery"
   },
@@ -2947,7 +2947,7 @@
     "id": "misc-29",
     "categoryId": "landscaping",
     "name": "Marine Task Force",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
     "image": "Marine-Task-Force--300x225.jpg",
     "type": "gallery"
   },
@@ -2955,7 +2955,7 @@
     "id": "misc-30",
     "categoryId": "landscaping",
     "name": "Mark Bennet Testimonial",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
     "image": "Mark-Bennet-testimonial.jpg",
     "type": "gallery"
   }
