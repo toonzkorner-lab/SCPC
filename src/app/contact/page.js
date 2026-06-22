@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './Contact.module.css';
+import ContactForm from '../../components/ContactForm';
 
 export const metadata = {
   title: 'Contact Us | SCPC Precast',
@@ -59,19 +60,9 @@ export default function ContactPage() {
 
           <div className="fade-in-up" style={{ animationDelay: '0.2s', backgroundColor: 'white', padding: '3rem', borderRadius: '12px', boxShadow: 'var(--shadow)', border: '1px solid #eaeaea' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>Send us a Message</h2>
-            <p style={{ marginBottom: '2rem', color: '#555' }}>We look forward to working with you on your next project. Fill out the form below to open your email client.</p>
+            <p style={{ marginBottom: '2rem', color: '#555' }}>We look forward to working with you on your next project. Fill out the form below to send us a direct message.</p>
             
-            <form action="mailto:sales@scpcinc.com" method="GET" encType="text/plain" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Subject</label>
-                <input type="text" name="subject" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', transition: 'border-color 0.3s' }} placeholder="Quote Request / General Inquiry" />
-              </div>
-              <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Message</label>
-                <textarea name="body" rows="6" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', resize: 'vertical', transition: 'border-color 0.3s' }} placeholder="Please describe your project needs..."></textarea>
-              </div>
-              <button type="submit" className="btn btn-accent" style={{ padding: '1rem', fontSize: '1.1rem', width: '100%' }}>Open Email Draft</button>
-            </form>
+            <ContactForm />
           </div>
 
         </div>

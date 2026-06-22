@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 import categories from '../data/categories.json';
 import products from '../data/products.json';
+import SearchBar from './SearchBar';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -33,6 +34,7 @@ export default function Navbar() {
         </button>
 
         <nav className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
+          <SearchBar />
           <Link href="/" onClick={() => handleLinkClick('/')}>Home</Link>
           <div className={styles.dropdown}>
             <Link href="/gallery" onClick={() => handleLinkClick('/gallery')} className={styles.dropbtn}>Gallery ▾</Link>

@@ -101,19 +101,34 @@ export default function ProductManager() {
               />
             </div>
 
-            <div>
-              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Category</label>
-              <select 
-                value={currentProduct.categoryId}
-                onChange={e => setCurrentProduct({...currentProduct, categoryId: e.target.value})}
-                required
-                style={{ width: '100%', padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }}
-              >
-                <option value="">Select a category</option>
-                {categories.map(cat => (
-                  <option key={cat.id} value={cat.slug}>{cat.name}</option>
-                ))}
-              </select>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <div style={{ flex: 1 }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Type</label>
+                <select 
+                  value={currentProduct.type || 'blueprint'}
+                  onChange={e => setCurrentProduct({...currentProduct, type: e.target.value})}
+                  required
+                  style={{ width: '100%', padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }}
+                >
+                  <option value="blueprint">Blueprint / Schematic</option>
+                  <option value="gallery">Gallery Photo</option>
+                </select>
+              </div>
+
+              <div style={{ flex: 1 }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Category</label>
+                <select 
+                  value={currentProduct.categoryId || ''}
+                  onChange={e => setCurrentProduct({...currentProduct, categoryId: e.target.value})}
+                  required
+                  style={{ width: '100%', padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }}
+                >
+                  <option value="">Select a category</option>
+                  {categories.map(cat => (
+                    <option key={cat.id} value={cat.id}>{cat.name}</option>
+                  ))}
+                </select>
+              </div>
             </div>
 
             <div>
@@ -127,16 +142,41 @@ export default function ProductManager() {
 
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Image</label>
-              <select 
-                value={currentProduct.image}
-                onChange={e => setCurrentProduct({...currentProduct, image: e.target.value})}
-                style={{ width: '100%', padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }}
-              >
-                <option value="">No Image</option>
-                {images.map(img => (
-                  <option key={img.name} value={img.name}>{img.name}</option>
-                ))}
-              </select>
+              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                <select 
+                  value={currentProduct.image || ''}
+                  onChange={e => setCurrentProduct({...currentProduct, image: e.target.value})}
+                  style={{ flex: 1, padding: '0.75rem', border: '1px solid #ccc', borderRadius: '4px' }}
+                >
+                  <option value="">No Image Selected</option>
+                  {images.map(img => (
+                    <option key={img.name} value={img.name}>{img.name}</option>
+                  ))}
+                </select>
+                <span style={{ fontWeight: 'bold', color: '#888' }}>OR</span>
+                <input 
+                  type="file" 
+                  accept="image/*"
+                  onChange={async (e) => {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    const formData = new FormData();
+                    formData.append('file', file);
+                    try {
+                      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+                      if (res.ok) {
+                        const data = await res.json();
+                        const filename = data.url.split('/').pop();
+                        setImages([...images, { name: filename }]);
+                        setCurrentProduct({...currentProduct, image: filename});
+                      }
+                    } catch (err) {
+                      console.error('Upload failed', err);
+                    }
+                  }}
+                  style={{ flex: 1, padding: '0.5rem' }}
+                />
+              </div>
               {currentProduct.image && (
                 <div style={{ marginTop: '1rem', position: 'relative', width: '150px', height: '150px' }}>
                   <Image src={`/images/${currentProduct.image}`} alt="Preview" fill style={{ objectFit: 'cover', borderRadius: '4px' }} sizes="150px" />

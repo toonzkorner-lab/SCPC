@@ -1,5 +1,6 @@
 import { getAllPostIds } from '../lib/markdown';
 import categories from '../data/categories.json';
+import products from '../data/products.json';
 
 export default function sitemap() {
   const baseUrl = 'https://precastbyscpcinc.com';
@@ -29,12 +30,34 @@ export default function sitemap() {
   }));
 
   // Product categories routes
-  const categoryRoutes = categories.map((cat) => ({
-    url: `${baseUrl}/products/${cat.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
+  const categoryRoutes = categories.flatMap((cat) => [
+    {
+      url: `${baseUrl}/products/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/gallery/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    }
+  ]);
 
-  return [...staticRoutes, ...blogRoutes, ...categoryRoutes];
+  // Individual product & gallery routes
+  const productRoutes = products.map((product) => {
+    const category = categories.find(c => c.id === product.categoryId);
+    const categorySlug = category ? category.slug : 'misc';
+    const basePath = product.type === 'gallery' ? '/gallery' : '/products';
+    
+    return {
+      url: `${baseUrl}${basePath}/${categorySlug}/${product.id}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    };
+  });
+
+  return [...staticRoutes, ...blogRoutes, ...categoryRoutes, ...productRoutes];
 }
