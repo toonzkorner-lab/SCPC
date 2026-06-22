@@ -57,7 +57,7 @@ export default async function CategoryPage({ params }) {
                 key={product.id}
                 title={product.name}
                 description={product.description}
-                link={`#contact`} // For non-ecommerce, usually leads to a quote or contact
+                link={`/gallery/${category.slug}/${product.id}`}
                 imageUrl={`/images/${product.image || 'placeholder.jpg'}`}
               />
             ))}
