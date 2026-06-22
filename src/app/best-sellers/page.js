@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import products from '../../data/products.json';
+import categories from '../../data/categories.json';
 
 export const metadata = {
   title: 'Best Sellers | SCPC Precast',
@@ -11,53 +13,36 @@ export const metadata = {
   }
 };
 
-const bestSellers = [
-  {
-    title: "Precast Concrete Columns",
-    description: "Our signature stackable, spiral, and Tuscan split columns provide timeless elegance and structural integrity to any project.",
-    image: "/images/Column-12-300x205.jpeg",
-    link: "/products/columns"
-  },
-  {
-    title: "Pool Coping & Scuppers",
-    description: "The finishing touch for any aquatic masterpiece. Our pool coping provides unmatched durability and aesthetic continuity.",
-    image: "/images/Pool-5-at-1000-pix-200x300.jpg",
-    link: "/products/landscaping"
-  },
-  {
-    title: "Wall & Pier Caps",
-    description: "Protect and perfect your masonry walls with our vast selection of high-strength precast concrete caps.",
-    image: "/images/Wall-cap-plinth--225x300.jpg",
-    link: "/products/caps"
-  },
-  {
-    title: "Fireplace Surrounds",
-    description: "Transform your living space with our grand, custom-cast fireplace surrounds and mantels.",
-    image: "/images/Clark-GFRC-fireplace-004-300x225.jpg",
-    link: "/products/fireplaces"
-  },
-  {
-    title: "Planters & Bowls",
-    description: "Add a touch of sophistication to your landscape with our heavy-duty, weather-resistant precast planters and water bowls.",
-    image: "/images/New-Bowl-300x190.jpg",
-    link: "/products/landscaping"
-  },
-  {
-    title: "Security Bollards",
-    description: "Combine aesthetic appeal with uncompromising security using our decorative concrete bollards.",
-    image: "/images/BD-01-16-security-1-300x240.jpg",
-    link: "/products/bollards"
-  }
+// Hand-picked top products from our real database to feature
+const topProductIds = [
+  'columns-8',    // Column 12
+  'fireplaces-2', // Clark GFRC Fireplace
+  'caps-21',      // Wall Cap Plinth
+  'bollards-3',   // Bd 01 16 Security
+  'caps-7',       // Pier Cap New Wall 1
+  'columns-7',    // Column 1
 ];
 
 export default function BestSellers() {
+  
+  // Map our featured IDs to the real product data
+  const bestSellers = topProductIds.map(id => {
+    const product = products.find(p => p.id === id);
+    if (!product) return null;
+    const category = categories.find(c => c.id === product.categoryId);
+    return {
+      ...product,
+      categorySlug: category ? category.slug : 'misc'
+    };
+  }).filter(Boolean);
+
   return (
     <div style={{ backgroundColor: '#fcfcfc', minHeight: '100vh' }}>
       {/* Hero Section */}
       <div style={{ backgroundColor: 'var(--primary)', padding: '4rem 2rem', color: 'white', textAlign: 'center' }}>
         <h1 className="fade-in-up" style={{ fontSize: '3rem', marginBottom: '1rem', color: 'white' }}>Our Best Sellers</h1>
-        <p className="fade-in-up" style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto', animationDelay: '0.2s' }}>
-          Welcome to our Best Sellers page! Here we have brought together the most popular precast concrete products chosen by our top contractors, architects, and homeowners.
+        <p className="fade-in-up" style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto', animationDelay: '0.2s', opacity: 0.9 }}>
+          Explore the most popular precast concrete products chosen by our top contractors, architects, and homeowners.
         </p>
       </div>
 
@@ -65,7 +50,7 @@ export default function BestSellers() {
         <div className="grid-auto-fit" style={{ gap: '3rem' }}>
           {bestSellers.map((item, index) => (
             <div 
-              key={item.title} 
+              key={item.id} 
               className="fade-in-up blog-card" 
               style={{ 
                 animationDelay: `${0.1 * index}s`,
@@ -80,8 +65,8 @@ export default function BestSellers() {
             >
               <div style={{ height: '250px', overflow: 'hidden', position: 'relative' }}>
                 <Image 
-                  src={item.image} 
-                  alt={item.title} 
+                  src={`/images/${item.image}`} 
+                  alt={item.name} 
                   fill
                   className="product-img-hover"
                   style={{ objectFit: 'cover', transition: 'transform 0.5s' }}
@@ -89,11 +74,16 @@ export default function BestSellers() {
                 />
               </div>
               <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{item.title}</h2>
-                <p style={{ color: '#555', flex: 1 }}>{item.description}</p>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
+                  <h2 style={{ fontSize: '1.5rem', margin: 0 }}>{item.name}</h2>
+                  <span style={{ fontSize: '0.8rem', backgroundColor: '#e9f5f9', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: 'bold', textTransform: 'uppercase' }}>
+                    {item.type}
+                  </span>
+                </div>
+                <p style={{ color: '#555', flex: 1, lineHeight: '1.6' }}>{item.description}</p>
                 <div style={{ marginTop: '1.5rem' }}>
-                  <Link href={item.link} className="btn w-full" style={{ display: 'block', textAlign: 'center' }}>
-                    View Products
+                  <Link href={`/${item.type === 'gallery' ? 'gallery' : 'products'}/${item.categorySlug}/${item.id}`} className="btn w-full" style={{ display: 'block', textAlign: 'center' }}>
+                    View Details
                   </Link>
                 </div>
               </div>
@@ -101,13 +91,13 @@ export default function BestSellers() {
           ))}
         </div>
 
-        <div className="text-center" style={{ marginTop: '4rem', padding: '3rem', backgroundColor: '#e9f5f9', borderRadius: '12px' }}>
-          <h2>Need something custom?</h2>
-          <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
+        <div className="text-center" style={{ marginTop: '4rem', padding: '4rem 2rem', backgroundColor: '#e9f5f9', borderRadius: '12px', border: '1px solid #d0e7ef' }}>
+          <h2 style={{ color: 'var(--primary)', marginBottom: '1rem', fontSize: '2rem' }}>Need something custom?</h2>
+          <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: '#555', maxWidth: '700px', margin: '0 auto 2rem auto' }}>
             While these are our most popular items, our state-of-the-art mold shop can create almost any architectural precast concrete element you envision.
           </p>
-          <Link href="/contact" className="btn btn-accent" style={{ fontSize: '1.1rem', padding: '1rem 2rem' }}>
-            Contact Us for a Custom Quote
+          <Link href="/contact" className="btn btn-accent" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
+            Request a Custom Quote
           </Link>
         </div>
       </div>

@@ -29,25 +29,37 @@ export default async function BlueprintProductPage({ params }) {
 
   if (!product || !category) {
     return (
-      <div className="section text-center">
-        <div className="container">
-          <h1>Schematic Not Found</h1>
-          <Link href="/products" className="btn mt-4">Back to Products</Link>
+      <div className="section text-center" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div>
+          <h1 style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>Schematic Not Found</h1>
+          <p style={{ marginTop: '1rem', color: '#555' }}>We couldn't find the requested blueprint.</p>
+          <Link href="/products" className="btn btn-accent mt-4">Back to All Products</Link>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="section">
+    <div style={{ backgroundColor: '#fcfcfc', minHeight: '100vh', padding: '3rem 0' }}>
       <div className="container">
-        <div className="mb-6 fade-in-up">
-          <Link href={`/products/${category.slug}`} style={{ opacity: 0.7 }}>&larr; Back to {category.name} Schematics</Link>
+        
+        {/* Breadcrumbs */}
+        <div className="fade-in-up" style={{ marginBottom: '2rem', display: 'flex', gap: '0.5rem', fontSize: '0.95rem', color: '#666', flexWrap: 'wrap' }}>
+          <Link href="/" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Home</Link>
+          <span>/</span>
+          <Link href="/products" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Products</Link>
+          <span>/</span>
+          <Link href={`/products/${category.slug}`} style={{ color: 'var(--primary)', textDecoration: 'none' }}>{category.name}</Link>
+          <span>/</span>
+          <span style={{ color: '#999', fontWeight: '500' }}>{product.name}</span>
         </div>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'flex-start' }} className="fade-in-up">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '4rem', alignItems: 'flex-start' }} className="fade-in-up">
           {/* Image Side */}
-          <div style={{ backgroundColor: 'white', padding: '3rem', borderRadius: 'var(--radius)', border: '1px solid #ddd', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ backgroundColor: 'white', padding: '4rem', borderRadius: '12px', border: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', boxShadow: 'var(--shadow)', position: 'relative' }}>
+            <span style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: '#e9f5f9', color: 'var(--primary)', padding: '0.4rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              Blueprint
+            </span>
             <img 
               src={`/images/${product.image}`} 
               alt={product.name} 
@@ -56,29 +68,34 @@ export default async function BlueprintProductPage({ params }) {
           </div>
           
           {/* Content Side */}
-          <div>
-            <h1 style={{ marginBottom: '1rem', fontSize: '2.5rem' }}>{product.name}</h1>
-            <div style={{ display: 'inline-block', backgroundColor: 'var(--surface)', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '600', marginBottom: '2rem' }}>
-              Category: {category.name}
-            </div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1 style={{ marginBottom: '1rem', fontSize: '3rem', color: 'var(--primary)', lineHeight: '1.2' }}>{product.name}</h1>
             
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '2.5rem' }}>
-              {product.description} This dimensional drawing provides precise profiles and cross-sections for accurate architectural planning.
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.7', marginBottom: '2.5rem', color: '#555' }}>
+              {product.description}
             </p>
             
-            <div style={{ padding: '1.5rem', border: '1px solid #e0e0e0', borderRadius: 'var(--radius)', marginBottom: '2rem' }}>
-              <h3 style={{ marginTop: 0, marginBottom: '1rem', fontSize: '1.2rem' }}>Blueprint Details</h3>
-              <ul style={{ margin: 0, paddingLeft: '1.5rem', lineHeight: '1.8' }}>
-                <li>Exact dimensional profiles as shown</li>
-                <li>Can be cast in standard Precast or GFRC</li>
+            <div style={{ padding: '2rem', backgroundColor: 'white', border: '1px solid #eaeaea', borderRadius: '12px', marginBottom: '2.5rem', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
+              <h3 style={{ marginTop: 0, marginBottom: '1.5rem', fontSize: '1.3rem', color: 'var(--primary)', borderBottom: '2px solid #f0f0f0', paddingBottom: '0.8rem' }}>
+                Manufacturing Details
+              </h3>
+              <ul style={{ margin: 0, paddingLeft: '1.5rem', lineHeight: '2', color: '#444', fontSize: '1.05rem' }}>
+                <li>Exact dimensional profiles as shown in schematic</li>
+                <li>Can be cast in standard <strong>Precast Concrete</strong> or lightweight <strong>GFRC</strong></li>
+                <li>Multiple finishes and colors available</li>
                 <li>Custom modifications available upon request</li>
-                <li>Shop drawings provided before manufacturing</li>
+                <li>Shop drawings provided for approval before manufacturing</li>
               </ul>
             </div>
             
-            <Link href="/contact" className="btn btn-accent" style={{ fontSize: '1.1rem', padding: '1rem 2rem', display: 'inline-block' }}>
-              Request a Quote
-            </Link>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <Link href={`/contact?subject=Quote Request: ${encodeURIComponent(product.name)}`} className="btn btn-accent" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem', flex: '1', textAlign: 'center', minWidth: '200px' }}>
+                Request a Quote
+              </Link>
+              <Link href={`/products/${category.slug}`} className="btn" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem', backgroundColor: 'white', color: 'var(--primary)', border: '1px solid #ccc', flex: '1', textAlign: 'center', minWidth: '200px' }}>
+                More {category.name}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
