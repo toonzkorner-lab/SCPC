@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import ScrollToTop from '../components/ScrollToTop';
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ScrollToTop />
         <div style={{ width: '100%', height: '140px', backgroundColor: '#ffffff', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <a href="/" style={{ display: 'block', height: '100%' }}>
             <img src="/images/banner.png" alt="SCPC Precast Banner" style={{ height: '100%', width: 'auto', display: 'block' }} />

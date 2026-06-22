@@ -60,7 +60,7 @@ export default function ContactPage() {
               <div className="mt-4" style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', border: '1px solid #ddd' }}>
                 <h3 style={{ marginBottom: '0.5rem' }}>Get In Touch</h3>
                 <p style={{ marginBottom: '1rem' }}>We look forward to working with you on your next project.</p>
-                <form action="mailto:estimating@scpcinc.com" method="GET" encType="text/plain">
+                <form action="mailto:sales@scpcinc.com" method="GET" encType="text/plain">
                   <input type="text" name="subject" placeholder="Subject" required style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem', border: '1px solid #ccc', borderRadius: '4px' }} />
                   <textarea name="body" rows="4" placeholder="Your message..." required style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem', border: '1px solid #ccc', borderRadius: '4px' }}></textarea>
                   <button type="submit" className="btn" style={{ width: '100%' }}>Email Us via Your Client</button>

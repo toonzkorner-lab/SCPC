@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
         <div className={styles.col}>
           <h3>Contact Us</h3>
-          <p>Email: <a href="mailto:estimating@scpcinc.com">estimating@scpcinc.com</a></p>
+          <p>Email: <a href="mailto:sales@scpcinc.com">sales@scpcinc.com</a></p>
           <p>Follow us on <a href="https://www.youtube.com/user/PrecastConcreteCA/videos" target="_blank" rel="noreferrer">YouTube</a> and <a href="https://www.linkedin.com/in/rex-seawright-144bb0a/" target="_blank" rel="noreferrer">LinkedIn</a></p>
         </div>
       </div>
