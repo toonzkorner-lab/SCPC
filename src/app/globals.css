@@ -17,6 +17,19 @@
   --shadow-hover: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
 }
 
+[data-theme='dark'] {
+  --primary: #2d558a;      /* Lighter Slate Blue for dark bg */
+  --secondary: #4a6fa8;    
+  --accent: #d4af37;       
+  --text-dark: #f4f7f6;    /* Inverted text */
+  --text-light: #ffffff;
+  --background: #121212;   /* Dark background */
+  --surface: #1e1e1e;      /* Dark surface for cards/dropdowns */
+  --border: #333333;
+  --shadow: 0 4px 6px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-hover: 0 10px 15px rgba(0,0,0,0.7), 0 4px 6px rgba(0,0,0,0.5);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

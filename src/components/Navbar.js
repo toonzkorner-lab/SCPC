@@ -7,6 +7,7 @@ import styles from './Navbar.module.css';
 import categories from '../data/categories.json';
 import products from '../data/products.json';
 import SearchBar from './SearchBar';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -60,6 +61,7 @@ export default function Navbar() {
           <Link href="/best-sellers" onClick={() => handleLinkClick('/best-sellers')}>Best Sellers</Link>
           <Link href="/blog" onClick={() => handleLinkClick('/blog')}>Blog</Link>
           <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Contact</Link>
+          <ThemeToggle />
         </nav>
       </div>
     </header>

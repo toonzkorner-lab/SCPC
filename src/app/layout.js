@@ -97,9 +97,11 @@ const jsonLd = {
   }
 };
 
+import { ThemeProvider } from "../components/ThemeProvider";
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -107,10 +109,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <ScrollToTop />
-        <HeaderWrapper />
-        <main>{children}</main>
-        <FooterWrapper />
+        <ThemeProvider attribute="data-theme" defaultTheme="light">
+          <ScrollToTop />
+          <HeaderWrapper />
+          <main>{children}</main>
+          <FooterWrapper />
+        </ThemeProvider>
       </body>
     </html>
   );
