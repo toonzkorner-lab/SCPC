@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className={styles.navbar}>
       <div className={`container ${styles.container}`}>
         <a href="/" onClick={() => handleLinkClick('/')} className={styles.logo}>
-          <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
+          <img src="/images/logo.png" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
         </a>
         
         <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>

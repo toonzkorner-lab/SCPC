@@ -39,9 +39,9 @@ export const metadata = {
     title: 'SCPC Precast',
   },
   icons: {
-    icon: '/images/logo.jpg',
-    shortcut: '/images/logo.jpg',
-    apple: '/images/logo.jpg',
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Seawright Custom Precast, Inc.',
-  image: 'https://precastbyscpcinc.com/images/logo.jpg',
+  image: 'https://precastbyscpcinc.com/images/logo.png',
   '@id': 'https://precastbyscpcinc.com',
   url: 'https://precastbyscpcinc.com',
   telephone: '760-398-1515',
