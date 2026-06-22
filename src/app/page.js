@@ -30,7 +30,7 @@ export default function Home() {
           <p style={{ fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
             Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/products" className="btn btn-accent" style={{ fontSize: '1.1rem' }}>View Catalog</Link>
             <Link href="/contact" className="btn" style={{ fontSize: '1.1rem', backgroundColor: 'transparent', border: '2px solid white' }}>Request a Quote</Link>
           </div>

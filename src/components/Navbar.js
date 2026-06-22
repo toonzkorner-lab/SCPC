@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
@@ -8,6 +9,8 @@ import products from '../data/products.json';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
   const galleryCats = new Set(products.filter(p => p.type === 'gallery').map(p => p.categoryId));
   const blueprintCats = new Set(products.filter(p => p.type === 'blueprint').map(p => p.categoryId));
 
@@ -15,6 +18,7 @@ export default function Navbar() {
     if (pathname === targetPath) {
       window.scrollTo(0, 0);
     }
+    setIsOpen(false);
   };
 
   return (
@@ -23,7 +27,12 @@ export default function Navbar() {
         <a href="/" onClick={() => handleLinkClick('/')} className={styles.logo}>
           <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
         </a>
-        <nav className={styles.navLinks}>
+        
+        <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+
+        <nav className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
           <Link href="/" onClick={() => handleLinkClick('/')}>Home</Link>
           <div className={styles.dropdown}>
             <Link href="/gallery" onClick={() => handleLinkClick('/gallery')} className={styles.dropbtn}>Gallery ▾</Link>
