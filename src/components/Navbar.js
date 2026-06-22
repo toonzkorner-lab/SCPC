@@ -37,6 +37,7 @@ export default function Navbar() {
             </div>
           </div>
           <Link href="/about">About Us</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/contact" className="btn btn-accent">Contact</Link>
         </nav>
       </div>
