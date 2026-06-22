@@ -26,6 +26,7 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li><Link href="/" onClick={() => handleLinkClick('/')}>Home</Link></li>
+            <li><Link href="/best-sellers" onClick={() => handleLinkClick('/best-sellers')}>Best Sellers</Link></li>
             <li><Link href="/products" onClick={() => handleLinkClick('/products')}>Products Catalog</Link></li>
             <li><Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link></li>
             <li><Link href="/contact" onClick={() => handleLinkClick('/contact')}>Contact</Link></li>

@@ -87,14 +87,32 @@ def scrape_wp_blogs():
             
             summary_html = doc.summary()
             
+            # Extract images from the FULL html to ensure we don't miss them
+            full_soup = BeautifulSoup(html, 'html.parser')
+            images_md = []
+            seen_images = set()
+            for img in full_soup.find_all('img'):
+                classes = img.get('class', [])
+                if any('wp-image-' in c for c in classes) and not any('icon' in c for c in classes):
+                    src = img.get('src')
+                    if src and src not in seen_images:
+                        seen_images.add(src)
+                        if src.startswith('/'):
+                            src = urllib.parse.urljoin(url, src)
+                        new_src = download_image(src)
+                        images_md.append(f"![{title}]({new_src})")
+                        
             slug = slugify(title)
-            print(f"Saving WP: {title}")
+            print(f"Saving WP: {title} with {len(images_md)} images")
             
             md_content = process_html_to_md(summary_html, url)
             
+            # Combine images and text
+            images_block = "\n\n".join(images_md) + "\n\n" if images_md else ""
+            
             frontmatter = f"---\ntitle: \"{title}\"\ndate: \"{date}\"\n---\n\n"
             with open(f"src/content/blog/{slug}.md", "w", encoding="utf-8") as f:
-                f.write(frontmatter + md_content)
+                f.write(frontmatter + images_block + md_content)
         except Exception as e:
             print(f"Failed to scrape {url}: {e}")
 

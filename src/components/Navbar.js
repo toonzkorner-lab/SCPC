@@ -46,6 +46,7 @@ export default function Navbar() {
             </div>
           </div>
           <Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link>
+          <Link href="/best-sellers" onClick={() => handleLinkClick('/best-sellers')}>Best Sellers</Link>
           <Link href="/blog" onClick={() => handleLinkClick('/blog')}>Blog</Link>
           <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Contact</Link>
         </nav>
