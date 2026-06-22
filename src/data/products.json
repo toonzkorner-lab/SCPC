@@ -2,813 +2,2961 @@
   {
     "id": "bollards-1",
     "categoryId": "bollards",
-    "name": "Bd 01 16",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
-    "image": "BD-01-16-product-picture.jpg"
+    "name": "Bd 01 16 Jphoto Profile",
+    "description": "Dimensional schematic and profile drawing for bollards product.",
+    "image": "BD-01-16-JPhoto-Profile-240x300.jpg",
+    "type": "blueprint"
   },
   {
     "id": "bollards-2",
     "categoryId": "bollards",
-    "name": "Bd 01 16 Security 1",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
-    "image": "BD-01-16-security-1-300x240.jpg"
+    "name": "Bd 01 16",
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
+    "image": "BD-01-16-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-3",
     "categoryId": "bollards",
-    "name": "Bd 02 12X60",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
-    "image": "BD-02-12x60-product-picture-v2.jpg"
+    "name": "Bd 01 16 Security 1",
+    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
+    "image": "BD-01-16-security-1-300x240.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-4",
     "categoryId": "bollards",
-    "name": "Bd 03 17",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
-    "image": "BD-03-17-product-pic-v2.jpg"
+    "name": "Bd 02 12X60",
+    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "image": "BD-02-12x60-product-picture-v2.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-5",
     "categoryId": "bollards",
-    "name": "Bd 04 21 X 36",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
-    "image": "BD-04-21-x-36.jpg"
+    "name": "Bd 03 17",
+    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "image": "BD-03-17-product-pic-v2.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-6",
     "categoryId": "bollards",
-    "name": "Bd 05 18X47",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
-    "image": "BD-05-18x47-product-pic.jpg"
+    "name": "Bd 04 21 X 36",
+    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
+    "image": "BD-04-21-x-36.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-7",
     "categoryId": "bollards",
-    "name": "Bollards 1",
-    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
-    "image": "Bollards-main-pic-1.jpg"
+    "name": "Bd 05 18X47",
+    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "image": "BD-05-18x47-product-pic.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-8",
     "categoryId": "bollards",
-    "name": "Bollards 2",
-    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
-    "image": "Bollards-main-pic-2.jpg"
+    "name": "Bollards 1",
+    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
+    "image": "Bollards-main-pic-1.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-9",
     "categoryId": "bollards",
-    "name": "Light Bollard",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
-    "image": "Light-Bollard-238x300.jpeg"
+    "name": "Bollards 2",
+    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
+    "image": "Bollards-main-pic-2.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-10",
     "categoryId": "bollards",
-    "name": "Ps Column 1",
+    "name": "Light Bollard",
     "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
-    "image": "PS-column-1-.jpg"
+    "image": "Light-Bollard-238x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "bollards-11",
     "categoryId": "bollards",
-    "name": "Ps Columns 2",
+    "name": "Ps Column 1",
     "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
-    "image": "PS-columns-2-.jpg"
+    "image": "PS-column-1-.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-12",
     "categoryId": "bollards",
-    "name": "Planter Bollard",
+    "name": "Ps Columns 2",
     "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
-    "image": "Planter-bollard--225x300.jpg"
+    "image": "PS-columns-2-.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-13",
     "categoryId": "bollards",
-    "name": "Safety Bollard 1 1",
-    "description": "A beautiful and functional precast barrier offering superior impact resistance and long-lasting durability for public spaces.",
-    "image": "Safety-bollard-1-1-300x300.jpg"
+    "name": "Planter Bollard",
+    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "image": "Planter-bollard--225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "bollards-14",
     "categoryId": "bollards",
+    "name": "Safety Bollard 1 1",
+    "description": "Ensure pedestrian safety and traffic control with this architectural-grade precast concrete bollard.",
+    "image": "Safety-bollard-1-1-300x300.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "bollards-15",
+    "categoryId": "bollards",
     "name": "Bollard 1",
-    "description": "A stylish and formidable concrete light bollard designed for urban streetscapes and commercial pedestrian safety.",
-    "image": "bollard-pic-1.jpg"
+    "description": "Heavy-duty precast concrete bollard, expertly crafted to provide robust perimeter security without sacrificing landscape aesthetics.",
+    "image": "bollard-pic-1.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-1",
     "categoryId": "columns",
     "name": "Balustrade Alternative Cap 6",
-    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
-    "image": "Balustrade-Alternative-Cap-pic-6.jpg"
+    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "image": "Balustrade-Alternative-Cap-pic-6.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-2",
     "categoryId": "columns",
     "name": "Balustrade General Set Up",
     "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
-    "image": "Balustrade-General-Set-Up-1024x786.jpg"
+    "image": "Balustrade-General-Set-Up-1024x786.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-3",
     "categoryId": "columns",
     "name": "Balustrade Pier Column 5",
     "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
-    "image": "Balustrade-Pier-Column-pic-5.jpg"
+    "image": "Balustrade-Pier-Column-pic-5.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-4",
     "categoryId": "columns",
     "name": "Balustrade Base 4",
-    "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
-    "image": "Balustrade-base-pic-4.jpg"
+    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "image": "Balustrade-base-pic-4.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-5",
     "categoryId": "columns",
     "name": "Balustrade Wall Cap 3",
-    "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
-    "image": "Balustrade-wall-cap-pic-3.jpg"
+    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
+    "image": "Balustrade-wall-cap-pic-3.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-6",
     "categoryId": "columns",
     "name": "Balustrades 2",
-    "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
-    "image": "Balustrades-pic-2.jpg"
+    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
+    "image": "Balustrades-pic-2.jpg",
+    "type": "gallery"
   },
   {
     "id": "columns-7",
     "categoryId": "columns",
     "name": "Column 1",
-    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
-    "image": "Column-1-300x196.jpeg"
+    "description": "A stately precast concrete column designed to provide exceptional structural integrity and timeless visual appeal.",
+    "image": "Column-1-300x196.jpeg",
+    "type": "gallery"
   },
   {
     "id": "columns-8",
     "categoryId": "columns",
     "name": "Column 12",
-    "description": "Precision-cast concrete columns tailored to support sweeping entryways and dramatic architectural canopies.",
-    "image": "Column-12-300x205.jpeg"
+    "description": "Durable, hand-finished precast column that brings classic proportion and striking detail to residential and commercial facades.",
+    "image": "Column-12-300x205.jpeg",
+    "type": "gallery"
   },
   {
     "id": "columns-9",
     "categoryId": "columns",
     "name": "Column 3",
     "description": "Enhance your architectural design with our premium precast concrete columns, engineered for both load-bearing strength and classical aesthetics.",
-    "image": "Column-3-300x196.jpeg"
+    "image": "Column-3-300x196.jpeg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-1",
     "categoryId": "fireplaces",
     "name": "Bowl Firepit 2",
-    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
-    "image": "Bowl-firepit-2-300x225.jpg"
+    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
+    "image": "Bowl-firepit-2-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-2",
     "categoryId": "fireplaces",
     "name": "Clark Gfrc Fireplace 004",
-    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
-    "image": "Clark-GFRC-fireplace-004-300x225.jpg"
+    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
+    "image": "Clark-GFRC-fireplace-004-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-3",
     "categoryId": "fireplaces",
     "name": "Darby Fire Pit 2",
-    "description": "Transform your living space with this exquisite precast concrete fireplace surround, combining modern durability with classic hearth warmth.",
-    "image": "Darby-fire-pit-2-224x300.jpeg"
+    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
+    "image": "Darby-fire-pit-2-224x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-4",
     "categoryId": "fireplaces",
     "name": "Fp 15 1",
-    "description": "A beautifully cast concrete fireplace mantel, designed to become the focal point of any premium indoor or outdoor living area.",
-    "image": "FP-15-1-pic-225x300.jpg"
+    "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
+    "image": "FP-15-1-pic-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-5",
     "categoryId": "fireplaces",
     "name": "Fp 2",
-    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
-    "image": "FP-2-pic-225x300.jpg"
+    "description": "Transform your living space with this exquisite precast concrete fireplace surround, combining modern durability with classic hearth warmth.",
+    "image": "FP-2-pic-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-6",
     "categoryId": "fireplaces",
     "name": "Fire Pit New Cropped",
     "description": "Elegant and robust, this precast fireplace surround adds a striking architectural focal point to any upscale environment.",
-    "image": "Fire-pit-new-cropped-300x148.jpg"
+    "image": "Fire-pit-new-cropped-300x148.jpg",
+    "type": "gallery"
   },
   {
     "id": "fireplaces-7",
     "categoryId": "fireplaces",
     "name": "Firepit",
-    "description": "Transform your living space with this exquisite precast concrete fireplace surround, combining modern durability with classic hearth warmth.",
-    "image": "Firepit-Pic-300x197.jpg"
+    "description": "Custom-crafted precast concrete hearth, meticulously detailed for a luxurious finish and superior heat resistance.",
+    "image": "Firepit-Pic-300x197.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-1",
     "categoryId": "caps",
     "name": "Pc 22 13 P4 002",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
-    "image": "PC-22-13-P4-002-300x225.jpg"
+    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
+    "image": "PC-22-13-P4-002-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-2",
     "categoryId": "caps",
-    "name": "Pier Cap 20 Sm",
-    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
-    "image": "Pier-Cap-20-sm.jpg"
+    "name": "Pc 34",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "PC-34-cover-pic-for-website.jpg",
+    "type": "blueprint"
   },
   {
     "id": "caps-3",
     "categoryId": "caps",
-    "name": "Pier Cap New Wall 1",
-    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
-    "image": "Pier-Cap-new-wall-1-800x450.jpg"
+    "name": "Pc 40",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "PC-40-cover-pic-for-website.jpg",
+    "type": "blueprint"
   },
   {
     "id": "caps-4",
     "categoryId": "caps",
-    "name": "Pier Cap New Wall 3",
-    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
-    "image": "Pier-Cap-new-wall-3-1024x768.jpg"
+    "name": "Pier Cap 20 Sm",
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "Pier-Cap-20-sm.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-5",
     "categoryId": "caps",
-    "name": "Pier Cap 16 26",
-    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
-    "image": "Pier-cap-16-26-v2.jpg"
+    "name": "Pier Cap 56 Series",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "Pier-Cap-56-Series-picture.jpg",
+    "type": "blueprint"
   },
   {
     "id": "caps-6",
     "categoryId": "caps",
-    "name": "Pier Cap 2",
-    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
-    "image": "Pier-cap-2-192x300.jpeg"
+    "name": "Pier Cap For Website",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "Pier-Cap-Cover-for-website-v3.jpg",
+    "type": "blueprint"
   },
   {
     "id": "caps-7",
     "categoryId": "caps",
-    "name": "Pier Cap",
-    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
-    "image": "Pier-cap-300x211.jpeg"
+    "name": "Pier Cap New Wall 1",
+    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
+    "image": "Pier-Cap-new-wall-1-800x450.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-8",
     "categoryId": "caps",
-    "name": "Wc 26 9.625",
+    "name": "Pier Cap New Wall 3",
     "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
-    "image": "WC-26-9.625-picture.jpg"
+    "image": "Pier-Cap-new-wall-3-1024x768.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-9",
     "categoryId": "caps",
-    "name": "Wall Cap 2",
-    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
-    "image": "Wall-cap-2-300x202.jpeg"
+    "name": "Pier Cap 16 26",
+    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
+    "image": "Pier-cap-16-26-v2.jpg",
+    "type": "gallery"
   },
   {
     "id": "caps-10",
     "categoryId": "caps",
-    "name": "Wall Cap Plinth",
-    "description": "Finish your masonry and retaining walls with our elegant precast concrete caps, providing superior weather protection and a refined edge.",
-    "image": "Wall-cap-plinth--225x300.jpg"
+    "name": "Pier Cap 2",
+    "description": "High-strength precast concrete cap offering exceptional durability and a clean, sophisticated profile for columns and walls.",
+    "image": "Pier-cap-2-192x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "caps-11",
     "categoryId": "caps",
+    "name": "Pier Cap",
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "Pier-cap-300x211.jpeg",
+    "type": "gallery"
+  },
+  {
+    "id": "caps-12",
+    "categoryId": "caps",
+    "name": "Wc 26 9.625",
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "WC-26-9.625-picture.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "caps-13",
+    "categoryId": "caps",
+    "name": "Wc 30 22 Series",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-30-22-Series.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-14",
+    "categoryId": "caps",
+    "name": "Wc 30 24 Series Jpg",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-30-24-Series-jpg.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-15",
+    "categoryId": "caps",
+    "name": "Wc 30 31.25 Series",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-30-31.25-Series.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-16",
+    "categoryId": "caps",
+    "name": "Wc 30 Series 1",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-30-series-cover-1-300x165.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-17",
+    "categoryId": "caps",
+    "name": "Wc 31 16 Series Jpg",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-31-16-Series-jpg.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-18",
+    "categoryId": "caps",
+    "name": "Wc 31 9 Series",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-31-9-Series-pic.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-19",
+    "categoryId": "caps",
+    "name": "Wc 31 Series",
+    "description": "Dimensional schematic and profile drawing for caps product.",
+    "image": "WC-31-series-cover-300x184.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "caps-20",
+    "categoryId": "caps",
+    "name": "Wall Cap 2",
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "Wall-cap-2-300x202.jpeg",
+    "type": "gallery"
+  },
+  {
+    "id": "caps-21",
+    "categoryId": "caps",
+    "name": "Wall Cap Plinth",
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "Wall-cap-plinth--225x300.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "caps-22",
+    "categoryId": "caps",
     "name": "Wall Cap",
-    "description": "A perfectly proportioned precast concrete cap designed to capstone any architectural pillar or perimeter wall.",
-    "image": "Wall-cap.jpeg"
+    "description": "Architectural wall and pier caps that protect structural elements from water damage while delivering a cohesive, polished look.",
+    "image": "Wall-cap.jpeg",
+    "type": "gallery"
   },
   {
     "id": "moldings-1",
     "categoryId": "moldings",
     "name": "Bm 14 1.5X20",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-14-1.5x20-pic.jpg"
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "BM-14-1.5x20-pic.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-2",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 15.5",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
-    "image": "BM-26-1.5-by-15.5.jpg"
+    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "image": "BM-26-1.5-by-15.5.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-3",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 20",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
-    "image": "BM-26-1.5-by-20.jpg"
+    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "image": "BM-26-1.5-by-20.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-4",
     "categoryId": "moldings",
     "name": "Bm 26 1.5 By 7",
     "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-26-1.5-by-7.jpg"
+    "image": "BM-26-1.5-by-7.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-5",
     "categoryId": "moldings",
     "name": "Bm 26 2.5 By 4 And 7",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
-    "image": "BM-26-2.5-by-4-and-7.jpg"
+    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "image": "BM-26-2.5-by-4-and-7.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-6",
     "categoryId": "moldings",
     "name": "Bm 26 20",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
-    "image": "BM-26-20-product-picture.jpg"
+    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "image": "BM-26-20-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-7",
     "categoryId": "moldings",
     "name": "Bm 33 30",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
-    "image": "BM-33-30-product-picture.jpg"
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "BM-33-30-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-8",
     "categoryId": "moldings",
     "name": "Bm 34 2X40",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
-    "image": "BM-34-2x40-product-pic.jpg"
+    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
+    "image": "BM-34-2x40-product-pic.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-9",
     "categoryId": "moldings",
     "name": "Bm 34 4X36",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-34-4x36-product-picture.jpg"
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "BM-34-4x36-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-10",
     "categoryId": "moldings",
     "name": "Bm 36 28",
     "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
-    "image": "BM-36-28-product-picture.jpg"
+    "image": "BM-36-28-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-11",
     "categoryId": "moldings",
     "name": "Bm 36 32",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-36-32-product-picture.jpg"
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "BM-36-32-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-12",
     "categoryId": "moldings",
     "name": "Bm 37",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-37-product-picture.jpg"
+    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "image": "BM-37-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-13",
     "categoryId": "moldings",
     "name": "Bm 43",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "BM-43-product-picture-v2.jpg"
+    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "image": "BM-43-product-picture-v2.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-14",
     "categoryId": "moldings",
     "name": "Bm 45",
-    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
-    "image": "BM-45-product-picture.jpg"
+    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "image": "BM-45-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-15",
     "categoryId": "moldings",
     "name": "Chair Rail",
-    "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "Chair-Rail-product-picture.jpg"
+    "description": "Precision-cast concrete trim and molding, designed to seamlessly integrate with classic and contemporary architectural styles.",
+    "image": "Chair-Rail-product-picture.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-16",
     "categoryId": "moldings",
-    "name": "Molding Profile Main 1 1",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
-    "image": "Main-pic-1-1.jpg"
+    "name": "Lintels 01",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Lintels-01-psd-copy.jpg",
+    "type": "blueprint"
   },
   {
     "id": "moldings-17",
     "categoryId": "moldings",
-    "name": "Bowls 1",
-    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
-    "image": "bowls-pic-1-Main.jpg"
+    "name": "Molding Profile Main 1 1",
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "Main-pic-1-1.jpg",
+    "type": "gallery"
   },
   {
     "id": "moldings-18",
     "categoryId": "moldings",
-    "name": "Bowls 2",
-    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
-    "image": "bowls-pic-2-Main.jpg"
+    "name": "Molding Profile 1 1",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Pic-1-1.jpg",
+    "type": "blueprint"
   },
   {
     "id": "moldings-19",
     "categoryId": "moldings",
-    "name": "Window Sills",
+    "name": "Molding Profile 1 2",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Pic-1-2.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-20",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 7",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Pic-1-7.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-21",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 1",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Pic-2-1.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-22",
+    "categoryId": "moldings",
+    "name": "Row 1 1",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Row-1-pic-1.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-23",
+    "categoryId": "moldings",
+    "name": "Row 1 2",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Row-1-pic-2.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-24",
+    "categoryId": "moldings",
+    "name": "Row 1 3",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Row-1-pic-3.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-25",
+    "categoryId": "moldings",
+    "name": "Row 1 4",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "Row-1-pic-4.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-26",
+    "categoryId": "moldings",
+    "name": "Bowls 1",
     "description": "Durable, low-maintenance precast concrete base molding providing an elegant transition and robust protection against wear.",
-    "image": "window-sills.jpg"
+    "image": "bowls-pic-1-Main.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "moldings-27",
+    "categoryId": "moldings",
+    "name": "Bowls 2",
+    "description": "A high-quality precast cornice molding that defines the architectural skyline of your building with enduring strength.",
+    "image": "bowls-pic-2-Main.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "moldings-28",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 10",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-10.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-29",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 11",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-11.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-30",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 12",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-12.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-31",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 13",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-13.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-32",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 14",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-14.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-33",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 15",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-15.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-34",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 16",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-16.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-35",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 17",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-17.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-36",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 18",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-18.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-37",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 19",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-19.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-38",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 20",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-20.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-39",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 21",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-21.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-40",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 22",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-22.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-41",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 23",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-23.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-42",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 24",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-24.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-43",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 25",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-25.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-44",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 26",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-26.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-45",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 27",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-27.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-46",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 28",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-28.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-47",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 29",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-29.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-48",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 3",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-3.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-49",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 30",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-30.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-50",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 31",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-31.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-51",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 32",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-32.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-52",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 33",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-33.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-53",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 34",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-34.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-54",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 36",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-36.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-55",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 37",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-37.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-56",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 38",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-38.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-57",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 4",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-4.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-58",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 40",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-40.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-59",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 41",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-41.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-60",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 42",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-42.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-61",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 43",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-43.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-62",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 44",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-44.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-63",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 45",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-45.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-64",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 46",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-46.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-65",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 47",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-47.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-66",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 48",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-48.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-67",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 49",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-49.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-68",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 5",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-5.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-69",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 50",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-50.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-70",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 51",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-51.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-71",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 52",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-52.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-72",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 53",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-53.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-73",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 54",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-54.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-74",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 57",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-57.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-75",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 58",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-58.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-76",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 59",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-59.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-77",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 6",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-6.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-78",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 60",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-60.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-79",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 61",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-61.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-80",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 62",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-62.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-81",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 63",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-63.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-82",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 64",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-64.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-83",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 65",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-65.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-84",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 66",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-66.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-85",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 67",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-67.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-86",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 68",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-68.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-87",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 69",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-69.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-88",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 70",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-70.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-89",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 71",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-71.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-90",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 72",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-72.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-91",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 73",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-73.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-92",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 74",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-74.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-93",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 75",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-75.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-94",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 76",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-76.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-95",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 77",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-77.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-96",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 78",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-78.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-97",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 8",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-8.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-98",
+    "categoryId": "moldings",
+    "name": "Molding Profile 1 9",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-1-9.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-99",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 10",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-10.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-100",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 11",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-11.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-101",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 12",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-12.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-102",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 13",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-13.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-103",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 14",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-14.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-104",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 15",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-15.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-105",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 16",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-16.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-106",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 17",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-17.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-107",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 18",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-18.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-108",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 19",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-19.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-109",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 2",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-2.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-110",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 20",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-20.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-111",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 21",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-21.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-112",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 22",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-22.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-113",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 23",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-23.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-114",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 24",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-24.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-115",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 25",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-25.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-116",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 26",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-26.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-117",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 27",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-27.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-118",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 28",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-28.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-119",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 3",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-3.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-120",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 30",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-30.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-121",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 31",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-31.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-122",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 32",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-32.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-123",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 33",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-33.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-124",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 34",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-34.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-125",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 36",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-36.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-126",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 37",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-37.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-127",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 38",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-38.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-128",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 39",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-39.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-129",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 4",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-4.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-130",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 40",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-40.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-131",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 41",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-41.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-132",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 42",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-42.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-133",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 43",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-43.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-134",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 44",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-44.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-135",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 45",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-45.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-136",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 46",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-46.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-137",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 47",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-47.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-138",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 48",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-48.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-139",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 49",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-49.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-140",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 5",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-5.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-141",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 50",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-50.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-142",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 51",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-51.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-143",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 52",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-52.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-144",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 53",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-53.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-145",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 54",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-54.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-146",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 55",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-55.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-147",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 57",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-57.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-148",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 58",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-58.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-149",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 59",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-59.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-150",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 6",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-6.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-151",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 60",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-60.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-152",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 61",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-61.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-153",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 62",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-62.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-154",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 63",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-63.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-155",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 64",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-64.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-156",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 65",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-65.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-157",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 66",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-66.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-158",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 7",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-7.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-159",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 8",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-8.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-160",
+    "categoryId": "moldings",
+    "name": "Molding Profile 2 9",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-2-9.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-161",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 1",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-1.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-162",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 10",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-10.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-163",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 11",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-11.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-164",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 12",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-12.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-165",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 13",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-13.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-166",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 16",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-16.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-167",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 17",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-17.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-168",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 18",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-18.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-169",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 19",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-19.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-170",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 2",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-2.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-171",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 20",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-20.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-172",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 21",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-21.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-173",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 22",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-22.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-174",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 23",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-23.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-175",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 24",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-24.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-176",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 25",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-25.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-177",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 26",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-26.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-178",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 27",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-27.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-179",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 28",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-28.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-180",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 29",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-29.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-181",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 3",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-3.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-182",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 30",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-30.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-183",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 31",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-31.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-184",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 32",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-32.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-185",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 33",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-33.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-186",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 34",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-34.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-187",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 35",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-35.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-188",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 36",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-36.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-189",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 37",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-37.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-190",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 38",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-38.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-191",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 39",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-39.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-192",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 4",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-4.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-193",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 40",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-40.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-194",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 41",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-41.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-195",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 42",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-42.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-196",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 43",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-43.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-197",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 44",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-44.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-198",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 45",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-45.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-199",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 46",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-46.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-200",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 47",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-47.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-201",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 48",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-48.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-202",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 49",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-49.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-203",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 5",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-5.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-204",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 50",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-50.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-205",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 51",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-51.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-206",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 52",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-52.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-207",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 53",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-53.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-208",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 54",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-54.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-209",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 6",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-6.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-210",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 7",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-7.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-211",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 8",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-8.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-212",
+    "categoryId": "moldings",
+    "name": "Molding Profile 3 9",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-3-9.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-213",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 1",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-1.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-214",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 10",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-10.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-215",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 11",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-11.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-216",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 12",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-12.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-217",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 13",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-13.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-218",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 14",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-14.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-219",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 15",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-15.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-220",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 16",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-16.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-221",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 17",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-17.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-222",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 18",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-18.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-223",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 19",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-19.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-224",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 2",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-2.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-225",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 20",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-20.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-226",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 21",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-21.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-227",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 22",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-22.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-228",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 23",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-23.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-229",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 25",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-25.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-230",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 26",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-26.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-231",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 27",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-27.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-232",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 28",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-28.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-233",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 29",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-29.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-234",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 3",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-3.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-235",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 30",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-30.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-236",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 31",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-31.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-237",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 32",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-32.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-238",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 33",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-33.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-239",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 34",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-34.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-240",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 35",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-35.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-241",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 36",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-36.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-242",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 37",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-37.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-243",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 38",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-38.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-244",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 39",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-39.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-245",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 4",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-4.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-246",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 40",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-40.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-247",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 41",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-41.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-248",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 42",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-42.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-249",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 43",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-43.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-250",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 44",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-44.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-251",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 45",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-45.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-252",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 46",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-46.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-253",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 47",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-47.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-254",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 48",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-48.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-255",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 49",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-49.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-256",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 5",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-5.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-257",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 6",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-6.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-258",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 7",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-7.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-259",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 8",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-8.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-260",
+    "categoryId": "moldings",
+    "name": "Molding Profile 4 9",
+    "description": "Dimensional schematic and profile drawing for moldings product.",
+    "image": "pic-4-9.jpg",
+    "type": "blueprint"
+  },
+  {
+    "id": "moldings-261",
+    "categoryId": "moldings",
+    "name": "Window Sills",
+    "description": "Architectural precast concrete molding that adds a distinct layer of sophistication and dimension to exterior building elevations.",
+    "image": "window-sills.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-1",
     "categoryId": "landscaping",
     "name": "04 Bowl Pool1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "04_Bowl_Pool1-225x300.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "04_Bowl_Pool1-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-2",
     "categoryId": "landscaping",
     "name": "3 Bowls",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "3-Bowls-300x179.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "3-Bowls-300x179.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-3",
     "categoryId": "landscaping",
     "name": "60 Bowl Rebar 1",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "60-bowl-rebar-1-300x225.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "60-bowl-rebar-1-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-4",
     "categoryId": "landscaping",
     "name": "96 Inch Pot",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "96-inch-pot-200x300.jpeg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "96-inch-pot-200x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-5",
     "categoryId": "landscaping",
     "name": "Bench Big",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Bench-big-pic.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Bench-big-pic.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-6",
     "categoryId": "landscaping",
     "name": "Bench",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Bench.jpeg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Bench.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-7",
     "categoryId": "landscaping",
     "name": "Blue Flower Pot C1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Blue-flower-pot-c1-225x300.jpg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Blue-flower-pot-c1-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-8",
     "categoryId": "landscaping",
     "name": "Bore Monument",
     "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Bore-Monument--300x225.jpg"
+    "image": "Bore-Monument--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-9",
     "categoryId": "landscaping",
     "name": "Custom Pavers 1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Custom-Pavers-1-190x300.jpeg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Custom-Pavers-1-190x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-10",
     "categoryId": "landscaping",
     "name": "Custom Pavers",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Custom-Pavers.jpeg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Custom-Pavers.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-11",
     "categoryId": "landscaping",
     "name": "Daves Bowl 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Daves-bowl-1-300x225.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Daves-bowl-1-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-12",
     "categoryId": "landscaping",
     "name": "Daves Bowl 2",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Daves-bowl-2-300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Daves-bowl-2-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-13",
     "categoryId": "landscaping",
     "name": "Fountain 1",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Fountain-1-300x203.jpeg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Fountain-1-300x203.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-14",
     "categoryId": "landscaping",
     "name": "Fountain 2",
     "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Fountain-2-300x203.jpeg"
+    "image": "Fountain-2-300x203.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-15",
     "categoryId": "landscaping",
     "name": "Fountain 3",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Fountain-3-300x206.jpeg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Fountain-3-300x206.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-16",
     "categoryId": "landscaping",
     "name": "Fountain 4",
     "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Fountain-4-300x229.jpeg"
+    "image": "Fountain-4-300x229.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-17",
     "categoryId": "landscaping",
     "name": "Fountain 5",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Fountain-5-300x226.jpeg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Fountain-5-300x226.jpeg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-18",
     "categoryId": "landscaping",
     "name": "Monument Sign 013",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Monument-sign-013-768x576.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Monument-sign-013-768x576.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-19",
     "categoryId": "landscaping",
     "name": "Monument Sign 014",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Monument-sign-014-300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Monument-sign-014-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-20",
     "categoryId": "landscaping",
     "name": "New Bowl",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "New-Bowl-768x487.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "New-Bowl-768x487.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-21",
     "categoryId": "landscaping",
     "name": "Planter Bowl",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Planter-Bowl-199x300.jpg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Planter-Bowl-199x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-22",
     "categoryId": "landscaping",
     "name": "Pool 5 At 1000 Pix",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Pool-5-at-1000-pix-200x300.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Pool-5-at-1000-pix-200x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-23",
     "categoryId": "landscaping",
     "name": "Scupper 2 Jpg",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Scupper-2-JPG.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Scupper-2-JPG.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-24",
     "categoryId": "landscaping",
     "name": "Willow Sign 1",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Willow-sign-1-1024x768.jpg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Willow-sign-1-1024x768.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-25",
     "categoryId": "landscaping",
     "name": "Bowl 10",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "bowl-10-300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "bowl-10-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "landscaping-26",
     "categoryId": "landscaping",
     "name": "Pots",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "pots-main-pic.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "pots-main-pic.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-1",
     "categoryId": "landscaping",
     "name": "10",
     "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "10--300x225.jpg"
+    "image": "10--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-2",
     "categoryId": "landscaping",
     "name": "28",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "28--300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "28--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-3",
     "categoryId": "landscaping",
     "name": "5 2",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "5-2--300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "5-2--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-4",
     "categoryId": "landscaping",
     "name": "594",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "594.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "594.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-5",
     "categoryId": "landscaping",
     "name": "Asr Constructors",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "ASR-Constructors.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "ASR-Constructors.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-6",
     "categoryId": "landscaping",
     "name": "B2",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "B2-300x207.jpeg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "B2-300x207.jpeg",
+    "type": "gallery"
   },
   {
     "id": "misc-7",
     "categoryId": "landscaping",
     "name": "B3",
     "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "B3-300x206.jpeg"
+    "image": "B3-300x206.jpeg",
+    "type": "gallery"
   },
   {
     "id": "misc-8",
     "categoryId": "landscaping",
     "name": "B4",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "B4-194x300.jpeg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "B4-194x300.jpeg",
+    "type": "gallery"
   },
   {
     "id": "misc-9",
     "categoryId": "landscaping",
     "name": "Bd01 16 T 80 Lsb 1 1",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "BD01-16-T-80-LSB-1-1-300x169.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "BD01-16-T-80-LSB-1-1-300x169.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-10",
     "categoryId": "landscaping",
     "name": "Bh 02 16",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "BH-02-16-300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "BH-02-16-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-11",
     "categoryId": "landscaping",
     "name": "Bl General Set Up 1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "BL-General-Set-up-1.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "BL-General-Set-up-1.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-12",
     "categoryId": "landscaping",
     "name": "Breeze Block 3",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Breeze-Block-3--scaled.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Breeze-Block-3--scaled.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-13",
     "categoryId": "landscaping",
     "name": "Carpenter12",
     "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Carpenter12-300x225.jpg"
+    "image": "Carpenter12-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-14",
     "categoryId": "landscaping",
     "name": "Coppock Fp3",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Coppock-FP3-225x300.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "Coppock-FP3-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-15",
     "categoryId": "landscaping",
     "name": "Customer Walk In",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Customer-Walk-In-231x300.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "Customer-Walk-In-231x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-16",
     "categoryId": "landscaping",
     "name": "Dune Palms Precast 001",
     "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Dune-Palms-precast-001-225x300.jpg"
+    "image": "Dune-Palms-precast-001-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-17",
     "categoryId": "landscaping",
     "name": "Dune Palms Precast 003",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Dune-Palms-precast-003-300x225.jpg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "Dune-Palms-precast-003-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-18",
     "categoryId": "landscaping",
     "name": "E4",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "E4-225x300.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "E4-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-19",
     "categoryId": "landscaping",
     "name": "Entry Way 1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Entry-way-1-225x300.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Entry-way-1-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-20",
     "categoryId": "landscaping",
     "name": "Free Unsplash American Flag",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Free-unsplash-american-flag.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "Free-unsplash-american-flag.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-21",
     "categoryId": "landscaping",
     "name": "Gfrc Tall",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "GFRC-tall-300x225.jpg"
+    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
+    "image": "GFRC-tall-300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-22",
     "categoryId": "landscaping",
     "name": "Hpim0140",
     "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "HPIM0140-300x224.jpg"
+    "image": "HPIM0140-300x224.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-23",
     "categoryId": "landscaping",
     "name": "Hampton Inn 1",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Hampton-Inn-1--300x225.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Hampton-Inn-1--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-24",
     "categoryId": "landscaping",
     "name": "Indian Springs",
-    "description": "A premium concrete outdoor feature, crafted to provide lasting structural value and a stunning visual impact for any landscape design.",
-    "image": "Indian-Springs--225x300.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Indian-Springs--225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-25",
     "categoryId": "landscaping",
     "name": "Jefferson E. 2",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Jefferson-E.-2--300x225.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Jefferson-E.-2--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-26",
     "categoryId": "landscaping",
     "name": "Job Visit Photos 034",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Job-visit-photos-034-225x300.jpg"
+    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
+    "image": "Job-visit-photos-034-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-27",
     "categoryId": "landscaping",
     "name": "Johnson Entry",
-    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Johnson-Entry-225x300.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Johnson-Entry-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-28",
     "categoryId": "landscaping",
     "name": "Large Arch Entry",
-    "description": "Durable and elegant precast concrete landscaping element, perfect for enhancing the beauty and functionality of outdoor environments.",
-    "image": "Large-arch-entry-225x300.jpg"
+    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
+    "image": "Large-arch-entry-225x300.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-29",
     "categoryId": "landscaping",
     "name": "Marine Task Force",
     "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
-    "image": "Marine-Task-Force--300x225.jpg"
+    "image": "Marine-Task-Force--300x225.jpg",
+    "type": "gallery"
   },
   {
     "id": "misc-30",
     "categoryId": "landscaping",
     "name": "Mark Bennet Testimonial",
-    "description": "Built to last through all seasons, this precast concrete amenity elevates both residential patios and civic landscapes.",
-    "image": "Mark-Bennet-testimonial.jpg"
+    "description": "Commercial-grade precast concrete piece designed to withstand the elements while bringing architectural beauty to parks, plazas, and gardens.",
+    "image": "Mark-Bennet-testimonial.jpg",
+    "type": "gallery"
   }
 ]

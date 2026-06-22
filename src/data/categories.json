@@ -4,41 +4,47 @@
     "name": "Columns",
     "description": "Elegant precast concrete columns including spiral, stackable, and tuscan split designs.",
     "slug": "columns",
-    "image": "Column-12-300x205.jpeg"
+    "image": "Column-12-300x205.jpeg",
+    "blueprintImage": "Column-12-300x205.jpeg"
   },
   {
     "id": "fireplaces",
     "name": "Fireplace Surrounds",
     "description": "Hearths and mantels that make a statement.",
     "slug": "fireplaces",
-    "image": "Clark-GFRC-fireplace-004-300x225.jpg"
+    "image": "Clark-GFRC-fireplace-004-300x225.jpg",
+    "blueprintImage": "Clark-GFRC-fireplace-004-300x225.jpg"
   },
   {
     "id": "caps",
     "name": "Caps",
     "description": "High-quality precast concrete caps in various series.",
     "slug": "caps",
-    "image": "Wall-cap-768x516.jpeg"
+    "image": "Wall-cap-768x516.jpeg",
+    "blueprintImage": "PC-34-cover-pic-for-website.jpg"
   },
   {
     "id": "bollards",
     "name": "Bollards",
     "description": "Sturdy precast concrete bollards for security and landscape design.",
     "slug": "bollards",
-    "image": "Bollards-main-pic-1.jpg"
+    "image": "Bollards-main-pic-1.jpg",
+    "blueprintImage": "BD-01-16-JPhoto-Profile-240x300.jpg"
   },
   {
     "id": "landscaping",
     "name": "Landscaping Products",
     "description": "Durable elegance for urban and natural spaces, including benches, planters, pool coping, scuppers, and decorative elements.",
     "slug": "landscaping",
-    "image": "Bench.jpeg"
+    "image": "Bench.jpeg",
+    "blueprintImage": "Bench.jpeg"
   },
   {
     "id": "moldings",
     "name": "Moldings",
     "description": "Architectural precast concrete moldings and trim.",
     "slug": "moldings",
-    "image": "Base-Molding--150x150.jpg"
+    "image": "Base-Molding--150x150.jpg",
+    "blueprintImage": "Lintels-01-psd-copy.jpg"
   }
 ]

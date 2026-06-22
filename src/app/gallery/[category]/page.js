@@ -33,14 +33,14 @@ export default async function CategoryPage({ params }) {
     );
   }
 
-  const categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'blueprint');
+  const categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'gallery');
 
   return (
     <div className="section">
       <div className="container">
         <div className="mb-4 fade-in-up">
-          <Link href="/products" style={{ opacity: 0.7 }}>&larr; Back to all product schematics</Link>
-          <h1 className="mt-4">{category.name} Blueprints & Schematics</h1>
+          <Link href="/gallery" style={{ opacity: 0.7 }}>&larr; Back to all galleries</Link>
+          <h1 className="mt-4">{category.name} Gallery</h1>
           <p>{category.description}</p>
           
           <div style={{ marginTop: '2rem', padding: '1rem 1.5rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--accent)' }}>
@@ -64,7 +64,7 @@ export default async function CategoryPage({ params }) {
           </div>
         ) : (
           <div className="section-light text-center" style={{ padding: '3rem', borderRadius: '8px' }}>
-            <p>More {category.name} schematics and blueprints are being added to our new catalog.</p>
+            <p>More {category.name} photos are being added to our new gallery.</p>
           </div>
         )}
       </div>

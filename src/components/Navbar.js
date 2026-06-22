@@ -12,10 +12,20 @@ export default function Navbar() {
         <nav className={styles.navLinks}>
           <Link href="/">Home</Link>
           <div className={styles.dropdown}>
+            <Link href="/gallery" className={styles.dropbtn}>Gallery ▾</Link>
+            <div className={styles.dropdownContent}>
+              {categories.map((cat) => (
+                <Link key={`gallery-${cat.id}`} href={`/gallery/${cat.slug}`}>
+                  {cat.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className={styles.dropdown}>
             <Link href="/products" className={styles.dropbtn}>Products ▾</Link>
             <div className={styles.dropdownContent}>
               {categories.map((cat) => (
-                <Link key={cat.id} href={`/products/${cat.slug}`}>
+                <Link key={`products-${cat.id}`} href={`/products/${cat.slug}`}>
                   {cat.name}
                 </Link>
               ))}

@@ -2,17 +2,17 @@ import categories from '../../data/categories.json';
 import ProductCard from '../../components/ProductCard';
 
 export const metadata = {
-  title: 'Schematics & Drawings | SCPC Precast',
-  description: 'Browse our full catalog of schematics and dimensional drawings for custom precast concrete products.',
+  title: 'Gallery | SCPC Precast',
+  description: 'View our portfolio of beautifully finished precast concrete projects.',
 };
 
-export default function ProductsPage() {
+export default function GalleryPage() {
   return (
     <div className="section">
       <div className="container">
         <div className="text-center mb-8 fade-in-up">
-          <h1>Product Schematics & Drawings</h1>
-          <p>Explore our extensive range of dimensional blueprints and profile cross-sections.</p>
+          <h1>Project Gallery</h1>
+          <p>Explore high-quality photographs of our finished precast concrete products in action.</p>
           
           <div style={{ padding: '1.5rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--accent)', textAlign: 'left', maxWidth: '800px', margin: '2rem auto 0 auto' }}>
             <p style={{ fontWeight: '600', marginBottom: '0.5rem' }}>Material Note: Precast & GFRC</p>
@@ -27,8 +27,8 @@ export default function ProductsPage() {
               key={cat.id}
               title={cat.name}
               description={cat.description}
-              link={`/products/${cat.slug}`}
-              imageUrl={`/images/${cat.blueprintImage || cat.image || 'placeholder.jpg'}`}
+              link={`/gallery/${cat.slug}`}
+              imageUrl={`/images/${cat.image || 'placeholder.jpg'}`}
             />
           ))}
         </div>
