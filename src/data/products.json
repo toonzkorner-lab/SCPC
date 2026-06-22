@@ -3241,11 +3241,11 @@
   },
   {
     "id": "misc-21",
-    "categoryId": "landscaping",
-    "name": "Gfrc Tall Profile",
-    "description": "Profile drawing of a custom precast bench or site furnishing, outlining the ergonomic contours and structural support requirements.",
+    "categoryId": "fireplaces",
+    "name": "GFRC Tall Fireplace Mantel",
+    "description": "Custom GFRC (Glass Fiber Reinforced Concrete) tall profile fireplace mantel surround, offering an elegant architectural centerpiece.",
     "image": "GFRC-tall-300x225.jpg",
-    "type": "blueprint",
+    "type": "gallery",
     "originalFile": "GFRC-tall-300x225.jpg"
   },
   {
