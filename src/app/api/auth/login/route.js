@@ -10,7 +10,7 @@ export async function POST(request) {
       // Set HTTP-only cookie with the token
       response.cookies.set({
         name: 'admin_token',
-        value: process.env.ADMIN_TOKEN,
+        value: process.env.ADMIN_TOKEN || 'scpc_secure_session_token_12345',
         httpOnly: true,
         path: '/',
         secure: process.env.NODE_ENV === 'production',
