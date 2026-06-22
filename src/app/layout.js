@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{ width: '100%', backgroundColor: '#fdfdfd', borderBottom: '1px solid #eaeaea' }}>
-          <a href="/" style={{ display: 'block', width: '100%' }}>
-            <img src="/images/banner.png" alt="SCPC Precast Banner" style={{ width: '100%', height: 'auto', display: 'block' }} />
+        <div style={{ width: '100%', height: '140px', backgroundColor: '#ffffff', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <a href="/" style={{ display: 'block', height: '100%' }}>
+            <img src="/images/banner.png" alt="SCPC Precast Banner" style={{ height: '100%', width: 'auto', display: 'block' }} />
           </a>
         </div>
         <Navbar />
