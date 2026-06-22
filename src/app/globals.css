@@ -157,6 +157,7 @@ p {
 }
 
 .blog-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+.product-img-hover:hover { transform: scale(1.05); }
 
 .markdown-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; } 
 .markdown-content h2 { margin-top: 2rem; margin-bottom: 1rem; color: #222; } 

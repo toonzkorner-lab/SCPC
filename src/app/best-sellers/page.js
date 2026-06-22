@@ -76,9 +76,8 @@ export default function BestSellers() {
                 <img 
                   src={item.image} 
                   alt={item.title} 
+                  className="product-img-hover"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} 
-                  onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
-                  onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
                 />
               </div>
               <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
