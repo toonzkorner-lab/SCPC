@@ -37,7 +37,3 @@
   border-color: var(--secondary);
   box-shadow: 0 0 0 3px rgba(59, 89, 152, 0.2);
 }
-
-:global(.w-full) {
-  width: 100%;
-}

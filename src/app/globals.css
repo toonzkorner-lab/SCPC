@@ -141,6 +141,7 @@ p {
 .mb-4 { margin-bottom: 1rem; }
 .mb-8 { margin-bottom: 2rem; }
 .mt-4 { margin-top: 1rem; }
+.w-full { width: 100%; }
 
 /* Micro-animations */
 .fade-in-up {

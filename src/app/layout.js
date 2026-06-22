@@ -12,26 +12,35 @@ export const metadata = {
   description: "High-quality precast concrete products including wall caps, columns, bollards, and more. Durable elegance for urban and natural spaces since 1999.",
   keywords: "precast concrete, pool coping, wall caps, concrete columns, California precast, architectural concrete",
   openGraph: {
-    title: "SCPC Precast | Custom Precast Concrete",
-    description: "High-quality precast concrete products including wall caps, columns, bollards, and more.",
-    url: 'https://precastbyscpcinc.com',
+    title: 'SCPC Precast',
+    description: 'Custom architectural precast concrete products since 1999.',
+    url: 'https://precastbyscpcinc.com/',
     siteName: 'SCPC Precast',
     images: [
       {
-        url: '/images/logo.jpg',
-        width: 800,
-        height: 600,
-        alt: 'SCPC Precast Logo',
-      },
+        url: '/images/banner.png',
+        width: 1200,
+        height: 630,
+      }
     ],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SCPC Precast | Custom Precast Concrete',
-    description: 'High-quality precast concrete products including wall caps, columns, bollards, and more.',
-    images: ['/images/logo.jpg'],
+    title: 'SCPC Precast',
+    description: 'Custom architectural precast concrete products since 1999.',
+    images: ['/images/banner.png'],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'SCPC Precast',
+  },
+  icons: {
+    icon: '/images/logo.jpg',
+    shortcut: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
   },
   robots: {
     index: true,
