@@ -11,6 +11,7 @@ export const metadata = {
   title: "SCPC Precast | Custom Precast Concrete in California",
   description: "High-quality precast concrete products including wall caps, columns, bollards, and more. Durable elegance for urban and natural spaces since 1999.",
   keywords: "precast concrete, pool coping, wall caps, concrete columns, California precast, architectural concrete",
+  manifest: '/manifest.json',
   openGraph: {
     title: 'SCPC Precast',
     description: 'Custom architectural precast concrete products since 1999.',
