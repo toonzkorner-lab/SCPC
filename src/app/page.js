@@ -10,6 +10,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="section section-dark text-center" style={{ padding: '8rem 2rem' }}>
         <div className="container fade-in-up">
+          <Link href="/" style={{ display: 'inline-block', marginBottom: '2rem' }}>
+            <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '120px', width: 'auto' }} />
+          </Link>
           <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', letterSpacing: '-1px' }}>
             Durable Elegance in <span style={{ color: 'var(--accent)' }}>Precast Concrete</span>
           </h1>
