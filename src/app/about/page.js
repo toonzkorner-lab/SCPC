@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'About Us | SCPC Precast',
   description: 'Learn about SCPC Precast and our dedication to high-quality precast concrete.',
@@ -28,18 +30,22 @@ export default function AboutPage() {
               To provide unparalleled quality, custom solutions, and exceptional customer service. Whether you need standard items from our extensive catalog or custom pieces tailored to your exact specifications, our team is dedicated to bringing your vision to life in stone.
             </p>
           </div>
-          <div className="fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div style={{ 
+              position: 'relative',
               height: '500px', 
-              backgroundColor: '#e0e0e0', 
               borderRadius: 'var(--radius)', 
+              overflow: 'hidden',
               boxShadow: 'var(--shadow)',
-              backgroundImage: 'url(/images/scpc-logo-for-2020-copy-at-200-pix.jpg)',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
               border: '1px solid var(--border)'
             }}>
+              <Image 
+                src="/images/logo.jpg" 
+                alt="SCPC Precast Logo" 
+                fill 
+                style={{ objectFit: 'contain', padding: '2rem' }} 
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

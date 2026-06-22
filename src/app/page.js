@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import categories from '../data/categories.json';
 import ProductCard from '../components/ProductCard';
 
@@ -74,15 +75,19 @@ export default function Home() {
             <Link href="/about" className="btn">Learn More About Us</Link>
           </div>
           <div style={{ 
+            position: 'relative',
             height: '400px', 
-            backgroundColor: '#e0e0e0', 
             borderRadius: 'var(--radius)', 
-            backgroundImage: 'url(/images/placeholder.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            overflow: 'hidden',
             boxShadow: 'var(--shadow)'
           }}>
-            {/* Visual Placeholder for factory/products */}
+            <Image 
+              src="/images/Entry-way-1-225x300.jpg" 
+              alt="SCPC Precast concrete entryway project" 
+              fill 
+              style={{ objectFit: 'cover' }} 
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
       </section>
