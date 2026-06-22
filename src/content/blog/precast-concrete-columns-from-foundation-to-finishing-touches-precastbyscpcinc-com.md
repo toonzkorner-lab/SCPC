@@ -1,6 +1,7 @@
 ---
 title: "“Precast Concrete Columns: From Foundation to Finishing Touches” - Precastbyscpcinc.com"
 date: "2024-11-23"
+coverImage: "/images/blog/Free-unsplash-american-flag-300x201.jpg"
 ---
 
 ![“Precast Concrete Columns: From Foundation to Finishing Touches” - Precastbyscpcinc.com](/images/blog/Free-unsplash-american-flag-300x201.jpg)

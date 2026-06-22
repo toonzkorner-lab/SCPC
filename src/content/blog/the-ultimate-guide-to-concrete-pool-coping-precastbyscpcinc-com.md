@@ -1,6 +1,7 @@
 ---
 title: "The Ultimate Guide to Concrete Pool Coping - Precastbyscpcinc.com"
 date: "2026-04-15"
+coverImage: "/images/blog/Pool-5-at-1000-pix-200x300.jpg"
 ---
 
 ![The Ultimate Guide to Concrete Pool Coping - Precastbyscpcinc.com](/images/blog/Pool-5-at-1000-pix-200x300.jpg)

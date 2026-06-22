@@ -1,6 +1,7 @@
 ---
 title: "Pier caps - Precastbyscpcinc.com"
 date: "2026-03-11"
+coverImage: "/images/blog/Pier-Cap-new-wall-3-1024x768.jpg"
 ---
 
 ![Pier caps - Precastbyscpcinc.com](/images/blog/Pier-Cap-new-wall-3-1024x768.jpg)

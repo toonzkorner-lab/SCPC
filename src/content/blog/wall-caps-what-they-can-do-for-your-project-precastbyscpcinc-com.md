@@ -1,6 +1,7 @@
 ---
 title: "Wall Caps…. What they can do for your project. - Precastbyscpcinc.com"
 date: "2026-03-11"
+coverImage: "/images/blog/PC-22-13-P4-002-1024x768.jpg"
 ---
 
 ![Wall Caps…. What they can do for your project. - Precastbyscpcinc.com](/images/blog/PC-22-13-P4-002-1024x768.jpg)

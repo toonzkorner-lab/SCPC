@@ -1,6 +1,7 @@
 ---
 title: "The Ultimate Guide to Modern Fireplace Surrounds: Elevating Your Home Aesthetic - Precastbyscpcinc.com"
 date: "2026-03-24"
+coverImage: "/images/blog/FP-15-1-pic-768x1024.jpg"
 ---
 
 ![The Ultimate Guide to Modern Fireplace Surrounds: Elevating Your Home Aesthetic - Precastbyscpcinc.com](/images/blog/FP-15-1-pic-768x1024.jpg)

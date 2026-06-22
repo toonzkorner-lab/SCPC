@@ -26,23 +26,35 @@ export default function Blog() {
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gap: '2rem',
         }}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, coverImage }) => (
             <Link href={`/blog/${id}`} key={id} style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="blog-card" style={{
                 border: '1px solid #eaeaea',
                 borderRadius: '12px',
-                padding: '1.5rem',
                 backgroundColor: '#fff',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
                 transition: 'transform 0.2s, box-shadow 0.2s',
                 height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
+                overflow: 'hidden',
               }}>
-                <div style={{ fontSize: '0.9rem', color: '#888', marginBottom: '0.5rem' }}>{date}</div>
-                <h2 style={{ fontSize: '1.4rem', color: '#222', lineHeight: '1.3', marginBottom: '1rem', flex: 1 }}>{title}</h2>
-                <div style={{ color: 'var(--accent)', fontWeight: 'bold', marginTop: 'auto' }}>
-                  Read Article &rarr;
+                {coverImage && (
+                  <div style={{ height: '200px', overflow: 'hidden' }}>
+                    <img
+                      src={coverImage}
+                      alt={title}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }}
+                      className="product-img-hover"
+                    />
+                  </div>
+                )}
+                <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ fontSize: '0.9rem', color: '#888', marginBottom: '0.5rem' }}>{date}</div>
+                  <h2 style={{ fontSize: '1.4rem', color: '#222', lineHeight: '1.3', marginBottom: '1rem', flex: 1 }}>{title}</h2>
+                  <div style={{ color: 'var(--accent)', fontWeight: 'bold', marginTop: 'auto' }}>
+                    Read Article &rarr;
+                  </div>
                 </div>
               </div>
             </Link>

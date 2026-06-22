@@ -1,6 +1,7 @@
 ---
 title: "The Ultimate Guide to Planters: Elevating Your Landscape Design - Precastbyscpcinc.com"
 date: "2026-03-11"
+coverImage: "/images/blog/Planter-Bowl-678x1024.jpg"
 ---
 
 ![The Ultimate Guide to Planters: Elevating Your Landscape Design - Precastbyscpcinc.com](/images/blog/Planter-Bowl-678x1024.jpg)
