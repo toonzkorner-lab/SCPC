@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className={styles.navbar}>
       <div className={`container ${styles.container}`}>
         <Link href="/" className={styles.logo}>
-          <strong>SCPC</strong> Precast
+          <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
         </Link>
         <nav className={styles.navLinks}>
           <Link href="/">Home</Link>
