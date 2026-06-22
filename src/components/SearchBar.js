@@ -51,9 +51,22 @@ export default function SearchBar() {
   }, [query]);
 
   return (
-    <div ref={wrapperRef} style={{ position: 'relative', minWidth: '250px' }}>
+    <form 
+      ref={wrapperRef} 
+      style={{ position: 'relative', minWidth: '250px' }}
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (results.length > 0) {
+          const item = results[0];
+          const url = `/${item.type === 'gallery' ? 'gallery' : 'products'}/${item.categorySlug}/${item.id}`;
+          router.push(url);
+          setIsOpen(false);
+          setQuery('');
+        }
+      }}
+    >
       <input
-        type="text"
+        type="search"
         placeholder="Search 3,300+ items..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
@@ -138,6 +151,6 @@ export default function SearchBar() {
           No results found
         </div>
       )}
-    </div>
+    </form>
   );
 }
