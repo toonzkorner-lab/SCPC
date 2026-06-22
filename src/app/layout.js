@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
+import { HeaderWrapper, FooterWrapper } from "../components/NavigationWrapper";
 import ScrollToTop from '../components/ScrollToTop';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -100,20 +98,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <ScrollToTop />
-        <div style={{ width: '100%', height: '140px', backgroundColor: '#ffffff', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-          <a href="/" style={{ display: 'block', height: '100%', width: '100%', position: 'relative' }}>
-            <Image 
-              src="/images/banner.png" 
-              alt="SCPC Precast Banner" 
-              fill
-              style={{ objectFit: 'contain' }}
-              priority
-            />
-          </a>
-        </div>
-        <Navbar />
+        <HeaderWrapper />
         <main>{children}</main>
-        <Footer />
+        <FooterWrapper />
       </body>
     </html>
   );

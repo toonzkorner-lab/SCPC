@@ -3,7 +3,7 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/api/',
+      disallow: ['/admin/', '/api/'],
     },
     sitemap: 'https://precastbyscpcinc.com/sitemap.xml',
   }
