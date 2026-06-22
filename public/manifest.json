@@ -1,0 +1,21 @@
+{
+  "name": "SCPC Precast - Custom Precast Concrete",
+  "short_name": "SCPC Precast",
+  "description": "High-quality precast concrete products. Durable elegance for urban and natural spaces since 1999.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a5f",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

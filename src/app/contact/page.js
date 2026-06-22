@@ -1,8 +1,14 @@
+import Image from 'next/image';
 import styles from './Contact.module.css';
 
 export const metadata = {
   title: 'Contact Us | SCPC Precast',
   description: 'Get in touch with SCPC Precast for a quote or custom precast concrete inquiries.',
+  openGraph: {
+    title: 'Contact Us | SCPC Precast',
+    description: 'Get in touch with SCPC Precast for a quote or custom precast concrete inquiries.',
+    url: 'https://precastbyscpcinc.com/contact',
+  }
 };
 
 export default function ContactPage() {
@@ -17,9 +23,9 @@ export default function ContactPage() {
 
       <div className="container" style={{ padding: '3rem 0', textAlign: 'center' }}>
         {/* Logo */}
-        <div style={{ marginBottom: '2rem' }}>
-          <img src="/images/logo.jpg" alt="SCPC Precast Logo" style={{ maxWidth: '300px', height: 'auto', margin: '0 auto' }} />
-        </div>
+          <div style={{ marginBottom: '2rem', position: 'relative', width: '300px', height: '100px', margin: '0 auto 2rem auto' }}>
+            <Image src="/images/logo.jpg" alt="SCPC Precast Logo" fill style={{ objectFit: 'contain' }} priority />
+          </div>
 
         {/* Info Banner */}
         <div style={{ backgroundColor: '#5bc0de', color: '#111', padding: '1rem', fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '3rem' }}>
@@ -35,15 +41,21 @@ export default function ContactPage() {
         {/* Product Showcase */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
           <div style={{ textAlign: 'center' }}>
-            <img src="/images/Column-12-300x205.jpeg" alt="Precast Concrete Columns" style={{ width: '250px', height: '200px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
+            <div style={{ position: 'relative', width: '250px', height: '200px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+              <Image src="/images/Column-12-300x205.jpeg" alt="Precast Concrete Columns" fill style={{ objectFit: 'cover' }} sizes="250px" />
+            </div>
             <p style={{ marginTop: '0.5rem', fontWeight: '600', color: '#555' }}>Precast Concrete Columns</p>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <img src="/images/Wall-cap-plinth--225x300.jpg" alt="Precast Concrete Walls" style={{ width: '250px', height: '200px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
+            <div style={{ position: 'relative', width: '250px', height: '200px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+              <Image src="/images/Wall-cap-plinth--225x300.jpg" alt="Precast Concrete Walls" fill style={{ objectFit: 'cover' }} sizes="250px" />
+            </div>
             <p style={{ marginTop: '0.5rem', fontWeight: '600', color: '#555' }}>Precast Concrete Walls</p>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <img src="/images/Entry-way-1-225x300.jpg" alt="Entrance" style={{ width: '250px', height: '200px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
+            <div style={{ position: 'relative', width: '250px', height: '200px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+              <Image src="/images/Entry-way-1-225x300.jpg" alt="Entrance" fill style={{ objectFit: 'cover' }} sizes="250px" />
+            </div>
             <p style={{ marginTop: '0.5rem', fontWeight: '600', color: '#555' }}>Entrance Details</p>
           </div>
         </div>

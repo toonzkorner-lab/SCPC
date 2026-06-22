@@ -164,3 +164,47 @@ p {
 .markdown-content h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; color: #333; } 
 .markdown-content p { margin-bottom: 1.5rem; } 
 .markdown-content a { color: var(--accent); text-decoration: underline; }
+
+/* Performance: content-visibility for below-the-fold sections */
+.section,
+.section-light,
+.section-dark {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* Performance: will-change hints for animated elements */
+.blog-card,
+.btn,
+.product-img-hover {
+  will-change: transform;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+  }
+
+  .blog-card:hover,
+  .product-img-hover:hover {
+    transform: none;
+  }
+}
+
+/* Performance: optimize font rendering */
+body {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

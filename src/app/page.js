@@ -2,6 +2,16 @@ import Link from 'next/link';
 import categories from '../data/categories.json';
 import ProductCard from '../components/ProductCard';
 
+export const metadata = {
+  title: 'Home | SCPC Precast',
+  description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.',
+  openGraph: {
+    title: 'Home | SCPC Precast',
+    description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.',
+    url: 'https://precastbyscpcinc.com/',
+  }
+};
+
 export default function Home() {
   const featuredCategories = categories.slice(0, 3);
 

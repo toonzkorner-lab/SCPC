@@ -8,9 +8,15 @@ export default function ProductCard({ title, description, link, imageUrl }) {
   
   return (
     <Link href={link} className={styles.card}>
-      <div className={styles.imageContainer}>
-        {/* We use standard img for now since external URLs or dynamically scraped ones might need config for Next Image */}
-        <img src={imageSrc} alt={title} className={styles.image} loading="lazy" />
+      <div className={styles.imageContainer} style={{ position: 'relative', width: '100%', height: '200px' }}>
+        <Image 
+          src={imageSrc} 
+          alt={title} 
+          fill
+          className={styles.image}
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>

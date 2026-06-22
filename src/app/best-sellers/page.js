@@ -1,8 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Best Sellers | SCPC Precast',
   description: 'Explore the most popular architectural precast concrete products from SCPC.',
+  openGraph: {
+    title: 'Best Sellers | SCPC Precast',
+    description: 'Explore the most popular architectural precast concrete products from SCPC.',
+    url: 'https://precastbyscpcinc.com/best-sellers',
+  }
 };
 
 const bestSellers = [
@@ -72,12 +78,14 @@ export default function BestSellers() {
                 transition: 'var(--transition)'
               }}
             >
-              <div style={{ height: '250px', overflow: 'hidden' }}>
-                <img 
+              <div style={{ height: '250px', overflow: 'hidden', position: 'relative' }}>
+                <Image 
                   src={item.image} 
                   alt={item.title} 
+                  fill
                   className="product-img-hover"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} 
+                  style={{ objectFit: 'cover', transition: 'transform 0.5s' }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>

@@ -1,9 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getSortedPostsData } from '../../lib/markdown';
 
 export const metadata = {
   title: 'Blog | SCPC Precast',
   description: 'Read the latest news and insights about custom precast concrete from Seawright Custom Precast, Inc.',
+  openGraph: {
+    title: 'Blog | SCPC Precast',
+    description: 'Read the latest news and insights about custom precast concrete from Seawright Custom Precast, Inc.',
+    url: 'https://precastbyscpcinc.com/blog',
+  }
 };
 
 export default function Blog() {
@@ -40,12 +46,14 @@ export default function Blog() {
                 overflow: 'hidden',
               }}>
                 {coverImage && (
-                  <div style={{ height: '200px', overflow: 'hidden' }}>
-                    <img
+                  <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
+                    <Image
                       src={coverImage}
                       alt={title}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }}
+                      fill
+                      style={{ objectFit: 'cover', transition: 'transform 0.5s' }}
                       className="product-img-hover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 )}

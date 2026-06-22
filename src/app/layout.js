@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -8,18 +9,106 @@ import ScrollToTop from '../components/ScrollToTop';
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "SCPC Precast | Custom Precast Concrete",
-  description: "High-quality precast concrete products including wall caps, columns, bollards, and more. Durable elegance for urban and natural spaces.",
+  metadataBase: new URL('https://precastbyscpcinc.com'),
+  title: "SCPC Precast | Custom Precast Concrete in California",
+  description: "High-quality precast concrete products including wall caps, columns, bollards, and more. Durable elegance for urban and natural spaces since 1999.",
+  keywords: "precast concrete, pool coping, wall caps, concrete columns, California precast, architectural concrete",
+  openGraph: {
+    title: "SCPC Precast | Custom Precast Concrete",
+    description: "High-quality precast concrete products including wall caps, columns, bollards, and more.",
+    url: 'https://precastbyscpcinc.com',
+    siteName: 'SCPC Precast',
+    images: [
+      {
+        url: '/images/logo.jpg',
+        width: 800,
+        height: 600,
+        alt: 'SCPC Precast Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SCPC Precast | Custom Precast Concrete',
+    description: 'High-quality precast concrete products including wall caps, columns, bollards, and more.',
+    images: ['/images/logo.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1e3a5f',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Seawright Custom Precast, Inc.',
+  image: 'https://precastbyscpcinc.com/images/logo.jpg',
+  '@id': 'https://precastbyscpcinc.com',
+  url: 'https://precastbyscpcinc.com',
+  telephone: '760-398-1515',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '53355 Harrison Street',
+    addressLocality: 'Coachella',
+    addressRegion: 'CA',
+    postalCode: '92236',
+    addressCountry: 'US'
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 33.6706,
+    longitude: -116.1755
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday'
+    ],
+    opens: '08:00',
+    closes: '16:00'
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <ScrollToTop />
-        <div style={{ width: '100%', height: '140px', backgroundColor: '#ffffff', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <a href="/" style={{ display: 'block', height: '100%' }}>
-            <img src="/images/banner.png" alt="SCPC Precast Banner" style={{ height: '100%', width: 'auto', display: 'block' }} />
+        <div style={{ width: '100%', height: '140px', backgroundColor: '#ffffff', borderBottom: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+          <a href="/" style={{ display: 'block', height: '100%', width: '100%', position: 'relative' }}>
+            <Image 
+              src="/images/banner.png" 
+              alt="SCPC Precast Banner" 
+              fill
+              style={{ objectFit: 'contain' }}
+              priority
+            />
           </a>
         </div>
         <Navbar />

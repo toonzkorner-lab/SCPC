@@ -13,8 +13,19 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const postData = await getPostData(resolvedParams.slug);
+  const description = postData.content.substring(0, 160).replace(/\n/g, ' ') + '...';
+  
   return {
     title: `${postData.title} | SCPC Precast Blog`,
+    description: description,
+    openGraph: {
+      title: `${postData.title} | SCPC Precast Blog`,
+      description: description,
+      url: `https://precastbyscpcinc.com/blog/${resolvedParams.slug}`,
+      type: 'article',
+      publishedTime: postData.date,
+      images: postData.coverImage ? [postData.coverImage] : [],
+    }
   };
 }
 
@@ -22,8 +33,26 @@ export default async function BlogPost({ params }) {
   const resolvedParams = await params;
   const postData = await getPostData(resolvedParams.slug);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: postData.title,
+    image: postData.coverImage ? `https://precastbyscpcinc.com${postData.coverImage}` : undefined,
+    datePublished: postData.date,
+    dateModified: postData.date,
+    author: {
+      '@type': 'Organization',
+      name: 'SCPC Precast',
+      url: 'https://precastbyscpcinc.com',
+    }
+  };
+
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '4rem 2rem' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Link href="/blog" style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 'bold', marginBottom: '2rem', display: 'inline-block' }}>
         &larr; Back to Blog
       </Link>

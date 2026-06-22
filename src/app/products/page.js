@@ -5,6 +5,11 @@ import ProductCard from '../../components/ProductCard';
 export const metadata = {
   title: 'Schematics & Drawings | SCPC Precast',
   description: 'Browse our full catalog of schematics and dimensional drawings for custom precast concrete products.',
+  openGraph: {
+    title: 'Schematics & Drawings | SCPC Precast',
+    description: 'Browse our full catalog of schematics and dimensional drawings for custom precast concrete products.',
+    url: 'https://precastbyscpcinc.com/products',
+  }
 };
 
 export default function ProductsPage() {
