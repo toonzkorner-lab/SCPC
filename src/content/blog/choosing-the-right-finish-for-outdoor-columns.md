@@ -1,7 +1,7 @@
 ---
 title: "Choosing the Right Finish for Outdoor Columns"
 date: "2026-06-20"
-coverImage: "/images/blog-finishes.jpg"
+coverImage: "/images/Column-1-300x196.jpeg"
 ---
 
 When designing a grand entryway or a backyard pergola, the architectural columns you choose dictate the entire aesthetic of the space. But it’s not just about the *shape* of the column—the *finish* (or texture) plays an equally vital role in how the column interacts with light, weather, and surrounding materials.
@@ -21,7 +21,7 @@ The smooth finish is exactly what it sounds like: a clean, minimalist surface di
 A light sandblast removes the very top layer of the concrete "cream" to expose the fine grains of sand beneath, without exposing the larger aggregate stones.
 
 - **Aesthetic:** A subtle, matte texture that mimics the look of natural cut limestone or sandstone. It diffuses harsh sunlight, creating a softer visual profile.
-- **Best For:** Mediterranean, Tuscan, and Traditional architecture. It’s incredibly versatile and our most popular finish for residential projects in California and Texas.
+- **Best For:** Mediterranean, Tuscan, and Traditional architecture. It’s incredibly versatile and our most popular finish for residential projects in California and Nevada.
 - **Maintenance Note:** Excellent at hiding minor scuffs and dust, making it very low-maintenance.
 
 ## 3. Exposed Aggregate

@@ -66,7 +66,7 @@ export default function ClientProductList({ initialProducts, categorySlug }) {
 
       {/* Instant Filter Bar */}
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '2rem', padding: '1rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', border: '1px solid #eaeaea' }}>
-        <div style={{ flex: '1', minWidth: '200px' }}>
+        <div style={{ flex: '1', minWidth: 'min(100%, 200px)' }}>
           <input 
             type="text" 
             placeholder="Instant filter by name..." 

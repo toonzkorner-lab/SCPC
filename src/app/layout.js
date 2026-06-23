@@ -11,12 +11,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata = {
   metadataBase: new URL('https://precastbyscpcinc.com'),
   title: 'SCPC Precast | Custom Precast Concrete',
-  description: 'Seawright Custom Precast (SCPC) is a premier manufacturer of high-quality architectural precast concrete products, serving California, Nevada, Arizona, and San Antonio, Texas.',
-  keywords: 'custom precast concrete, precast columns, concrete pool coping, architectural precast, California custom precast, San Antonio custom precast, Nevada precast concrete, Arizona precast',
+  description: 'Seawright Custom Precast (SCPC) is a premier manufacturer of high-quality architectural precast concrete products, serving California, Nevada, and Arizona.',
+  keywords: 'custom precast concrete, precast columns, concrete pool coping, architectural precast, California custom precast, Nevada precast concrete, Arizona precast',
   manifest: '/manifest.json',
   openGraph: {
     title: 'SCPC Precast | Architectural Precast Concrete',
-    description: 'Premier manufacturer of custom precast concrete, serving California, San Antonio, and surrounding states.',
+    description: 'Premier manufacturer of custom precast concrete, serving California and surrounding states.',
     url: 'https://precastbyscpcinc.com',
     siteName: 'SCPC Precast',
     images: [
@@ -32,7 +32,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SCPC Precast | Architectural Precast Concrete',
-    description: 'Premier manufacturer of custom precast concrete, serving California, San Antonio, and surrounding states.',
+    description: 'Premier manufacturer of custom precast concrete, serving California and surrounding states.',
     images: ['https://precastbyscpcinc.com/images/Entry-way-1-225x300.jpg'],
   },
   appleWebApp: {
@@ -83,8 +83,7 @@ const jsonLd = {
   areaServed: [
     { '@type': 'State', name: 'California' },
     { '@type': 'State', name: 'Nevada' },
-    { '@type': 'State', name: 'Arizona' },
-    { '@type': 'City', name: 'San Antonio', containedInPlace: { '@type': 'State', name: 'Texas' } }
+    { '@type': 'State', name: 'Arizona' }
   ],
   url: 'https://precastbyscpcinc.com',
   openingHoursSpecification: {

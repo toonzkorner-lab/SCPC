@@ -46,6 +46,7 @@ body {
   flex-direction: column;
 }
 
+
 main {
   flex: 1;
 }
@@ -65,11 +66,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--primary);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
+
+h1 { font-size: clamp(2rem, 5vw + 1rem, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 4vw + 1rem, 2.5rem); }
+h3 { font-size: clamp(1.25rem, 3vw + 1rem, 2rem); }
 
 p {
   margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
 }
+
 
 .container {
   width: 100%;
@@ -81,7 +90,7 @@ p {
 /* Grids */
 .grid-auto-fit {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2rem;
 }
 
@@ -130,8 +139,9 @@ p {
 
 /* Utility */
 .section {
-  padding: 5rem 0;
+  padding: clamp(3rem, 8vw, 5rem) 0;
 }
+
 
 .section-light {
   background-color: var(--surface);
@@ -179,13 +189,7 @@ p {
 .markdown-content p { margin-bottom: 1.5rem; } 
 .markdown-content a { color: var(--accent); text-decoration: underline; }
 
-/* Performance: content-visibility for below-the-fold sections */
-.section,
-.section-light,
-.section-dark {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 500px;
-}
+
 
 /* Performance: will-change hints for animated elements */
 .blog-card,
@@ -225,24 +229,8 @@ body {
 
 /* Mobile Overrides for Overflow Prevention */
 @media (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-  
   .container {
     padding: 0 1rem;
-  }
-  
-  h1 {
-    font-size: 2.5rem !important;
-  }
-  
-  h2 {
-    font-size: 2rem !important;
-  }
-  
-  .section {
-    padding: 3rem 0;
   }
   
   table {
@@ -250,4 +238,9 @@ body {
     overflow-x: auto;
     white-space: nowrap;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

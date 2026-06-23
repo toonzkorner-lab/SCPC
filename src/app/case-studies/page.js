@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Case Studies | SCPC Precast',
-  description: 'Explore our portfolio of complex architectural precast concrete installations across California and Texas.',
+  description: 'Explore our portfolio of complex architectural precast concrete installations across California, surrounding states, and nationwide.',
 };
 
 export default function CaseStudiesPage() {
@@ -20,10 +20,10 @@ export default function CaseStudiesPage() {
     {
       id: 'commercial-plaza-coping',
       title: 'Commercial Plaza Pool & Fountain',
-      location: 'San Antonio, Texas',
-      challenge: 'A massive 5,000 sq ft reflecting pool required hundreds of linear feet of radiused pool coping that could withstand Texas heat expansion without cracking.',
-      solution: 'We engineered custom radius coping pieces with specialized expansion joints and a high-PSI concrete mix designed for extreme temperature fluctuations. All pieces were shipped securely from our California facility to Texas and installed without a single breakage.',
-      image: '/images/pool-1-225x300.jpg',
+      location: 'Las Vegas, Nevada',
+      challenge: 'A massive 5,000 sq ft reflecting pool required hundreds of linear feet of radiused pool coping that could withstand extreme desert heat expansion without cracking.',
+      solution: 'We engineered custom radius coping pieces with specialized expansion joints and a high-PSI concrete mix designed for extreme temperature fluctuations. All pieces were shipped securely from our California facility to Nevada and installed without a single breakage.',
+      image: '/images/04_Bowl_Pool1-225x300.jpg',
       testimonial: '"Getting custom radius work shipped halfway across the country is risky, but SCPC delivered perfectly. The fitment was exact." - Commercial Contractor'
     }
   ];

@@ -53,7 +53,7 @@ export default function SearchBar() {
   return (
     <form 
       ref={wrapperRef} 
-      style={{ position: 'relative', minWidth: '250px' }}
+      style={{ position: 'relative', minWidth: 'min(100%, 250px)' }}
       onSubmit={(e) => {
         e.preventDefault();
         if (results.length > 0) {

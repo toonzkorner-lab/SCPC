@@ -12,6 +12,7 @@ const nextConfig = {
   output: 'standalone',
   compress: true,
   turbopack: {},
+  allowedDevOrigins: ['192.168.1.24'],
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

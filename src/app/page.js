@@ -6,10 +6,10 @@ import FadeIn from '../components/FadeIn';
 
 export const metadata = {
   title: 'Home | SCPC Precast',
-  description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.',
+  description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers in Coachella, California, surrounding states, and nationwide for large projects.',
   openGraph: {
     title: 'Home | SCPC Precast',
-    description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.',
+    description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers in Coachella, California, surrounding states, and nationwide for large projects.',
     url: 'https://precastbyscpcinc.com/',
   }
 };
@@ -21,12 +21,12 @@ export default async function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section section-dark text-center" style={{ padding: '8rem 2rem' }}>
+      <section className="section section-dark text-center hero-section">
         <FadeIn className="container">
-          <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', letterSpacing: '-1px' }}>
+          <h1 style={{ marginBottom: '1.5rem', letterSpacing: '-1px' }}>
             Durable Elegance in <span style={{ color: 'var(--accent)' }}>Precast Concrete</span>
           </h1>
-          <p style={{ fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
+          <p style={{ maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
             Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -65,9 +65,9 @@ export default async function Home() {
         <div className="container grid-cols-2" style={{ alignItems: 'center' }}>
           <FadeIn direction="right">
             <span style={{ color: 'var(--accent)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>For Professionals</span>
-            <h2 style={{ fontSize: '2.5rem', marginTop: '0.5rem' }}>Engineered for Architects & Contractors</h2>
-            <p style={{ fontSize: '1.1rem' }}>We don't just sell products; we engineer solutions. Access our comprehensive library of CAD files, high-resolution textures, and technical specifications designed specifically for your workflow.</p>
-            <ul style={{ listStylePosition: 'inside', marginBottom: '2rem', fontSize: '1.1rem' }}>
+            <h2 style={{ marginTop: '0.5rem' }}>Engineered for Architects & Contractors</h2>
+            <p>We don't just sell products; we engineer solutions. Access our comprehensive library of CAD files, high-resolution textures, and technical specifications designed specifically for your workflow.</p>
+            <ul style={{ listStylePosition: 'inside', marginBottom: '2rem' }}>
               <li style={{ marginBottom: '0.5rem' }}>✓ Downloadable .DWG CAD Files</li>
               <li style={{ marginBottom: '0.5rem' }}>✓ High-Resolution Material Textures</li>
               <li style={{ marginBottom: '0.5rem' }}>✓ Direct Access to our Estimating Team</li>
@@ -79,7 +79,8 @@ export default async function Home() {
           </FadeIn>
           <FadeIn direction="left" style={{ 
             position: 'relative',
-            height: '400px', 
+            minHeight: '300px', 
+            height: '100%',
             borderRadius: 'var(--radius)', 
             overflow: 'hidden',
             boxShadow: 'var(--shadow)'
@@ -100,8 +101,8 @@ export default async function Home() {
         <div className="container text-center">
           <FadeIn>
             <h2 style={{ color: 'white', marginBottom: '1rem' }}>Proven Results in the Field</h2>
-            <p style={{ maxWidth: '700px', margin: '0 auto 3rem auto', fontSize: '1.1rem', opacity: 0.9 }}>
-              From luxury estates in Newport Beach to massive commercial plazas in San Antonio, see how SCPC solves complex structural and aesthetic challenges.
+            <p style={{ maxWidth: '700px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
+              From luxury estates in Newport Beach to massive commercial plazas in Las Vegas, see how SCPC solves complex structural and aesthetic challenges across California and nationwide.
             </p>
           </FadeIn>
           <FadeIn delay={0.2} style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
@@ -112,9 +113,9 @@ export default async function Home() {
               <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
             </div>
             <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px', maxWidth: '350px', textAlign: 'left' }}>
-              <Image src="/images/pool-1-225x300.jpg" alt="Commercial Pool" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
+              <Image src="/images/04_Bowl_Pool1-225x300.jpg" alt="Commercial Pool" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Commercial Pool Coping</h3>
-              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Custom radius coping engineered for extreme Texas heat expansion without cracking.</p>
+              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Custom radius coping engineered for extreme desert heat expansion without cracking.</p>
               <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
             </div>
           </FadeIn>
