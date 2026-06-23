@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1e3a5f;
+  color: white;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.hamburgerBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #1e3a5f;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hamburgerBtn {
+    display: block;
+  }
+  
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .mainContent {
+    padding: 4rem 1rem 1rem 1rem; /* Extra top padding for hamburger */
+  }
+
+  .overlay.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+}

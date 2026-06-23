@@ -2,10 +2,18 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import styles from './layout.module.css';
 
 export default function AdminDashboardLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Close sidebar on route change
+  useEffect(() => {
+    setIsSidebarOpen(false);
+  }, [pathname]);
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' });
@@ -25,9 +33,23 @@ export default function AdminDashboardLayout({ children }) {
   ];
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f4f7f6' }}>
+    <div className={styles.container}>
+      {/* Mobile Hamburger Button */}
+      <button 
+        className={styles.hamburgerBtn}
+        onClick={() => setIsSidebarOpen(true)}
+      >
+        ☰
+      </button>
+
+      {/* Overlay for mobile sidebar */}
+      <div 
+        className={`${styles.overlay} ${isSidebarOpen ? styles.open : ''}`}
+        onClick={() => setIsSidebarOpen(false)}
+      ></div>
+
       {/* Sidebar */}
-      <aside style={{ width: '250px', backgroundColor: '#1e3a5f', color: 'white', padding: '2rem 1rem' }}>
+      <aside className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ''}`}>
         <div style={{ marginBottom: '3rem', padding: '0 1rem' }}>
           <h2 style={{ fontSize: '1.25rem', color: '#fff' }}>SCPC Portal</h2>
           <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Owner Dashboard</p>
@@ -53,7 +75,7 @@ export default function AdminDashboardLayout({ children }) {
           ))}
         </nav>
 
-        <div style={{ position: 'absolute', bottom: '2rem', width: '218px', padding: '0 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <div style={{ marginTop: 'auto', paddingTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <Link
             href="/"
             style={{
@@ -91,7 +113,7 @@ export default function AdminDashboardLayout({ children }) {
       </aside>
 
       {/* Main Content */}
-      <main style={{ flex: 1, padding: '3rem', overflowY: 'auto' }}>
+      <main className={styles.mainContent}>
         {children}
       </main>
     </div>

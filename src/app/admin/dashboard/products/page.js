@@ -191,7 +191,8 @@ export default function ProductManager() {
           </form>
         </div>
       ) : (
-        <table style={{ width: '100%', borderCollapse: 'collapse', backgroundColor: 'white', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', borderRadius: '8px', overflow: 'hidden' }}>
+        <div style={{ backgroundColor: 'white', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', borderRadius: '8px', overflowX: 'auto', width: '100%' }}>
+          <table style={{ width: '100%', minWidth: '700px', borderCollapse: 'collapse' }}>
           <thead style={{ backgroundColor: '#1e3a5f', color: 'white' }}>
             <tr>
               <th style={{ padding: '1rem', textAlign: 'left' }}>Image</th>
@@ -225,6 +226,7 @@ export default function ProductManager() {
             )}
           </tbody>
         </table>
+        </div>
       )}
     </div>
   );

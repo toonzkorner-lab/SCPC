@@ -33,8 +33,8 @@ export default function LeadsTracker() {
           <p>No leads have been received yet.</p>
         </div>
       ) : (
-        <div style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <div style={{ backgroundColor: 'white', borderRadius: '8px', overflowX: 'auto', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+          <table style={{ width: '100%', minWidth: '600px', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ backgroundColor: '#f8f9fa', borderBottom: '2px solid #eaeaea' }}>
                 <th style={{ padding: '1rem', textAlign: 'left', fontWeight: 'bold' }}>Date</th>

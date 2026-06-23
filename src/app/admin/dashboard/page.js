@@ -10,21 +10,24 @@ export default function DashboardOverview() {
   useEffect(() => {
     async function fetchStats() {
       try {
-        const [dataRes, mediaRes, leadsRes] = await Promise.all([
+        const [dataRes, mediaRes, leadsRes, analyticsRes] = await Promise.all([
           fetch('/api/data'),
           fetch('/api/media'),
-          fetch('/api/leads')
+          fetch('/api/leads'),
+          fetch('/api/analytics')
         ]);
         
         const data = await dataRes.json();
         const media = await mediaRes.json();
         const leadsData = await leadsRes.json();
+        const analyticsData = await analyticsRes.json();
         
         setStats({
           products: data.products?.length || 0,
           gallery: data.categories?.length || 0,
           images: media.images?.length || 0,
-          leads: leadsData.leads?.length || 0
+          leads: leadsData.leads?.length || 0,
+          analytics: analyticsData.page_views || []
         });
       } catch (err) {
         console.error('Failed to load stats');
@@ -35,6 +38,35 @@ export default function DashboardOverview() {
     
     fetchStats();
   }, []);
+
+  // Process analytics data for the dashboard overview
+  const topPagesMap = {};
+  const referrersMap = {};
+  const analyticsData = stats.analytics || [];
+
+  analyticsData.forEach(view => {
+    // Group by Page
+    const path = view.path;
+    topPagesMap[path] = (topPagesMap[path] || 0) + 1;
+
+    // Group by Referrer
+    let ref = view.referrer || 'direct';
+    if (ref.includes('google')) ref = 'Organic Search';
+    else if (ref.includes('precastbyscpcinc.com')) ref = 'Internal';
+    else if (ref !== 'direct') ref = 'Referral';
+    
+    referrersMap[ref] = (referrersMap[ref] || 0) + 1;
+  });
+
+  const topPages = Object.keys(topPagesMap).map(path => ({
+    path,
+    views: topPagesMap[path]
+  })).sort((a, b) => b.views - a.views).slice(0, 5); // Top 5 for overview
+
+  const trafficSources = Object.keys(referrersMap).map(source => ({
+    name: source,
+    value: referrersMap[source]
+  })).sort((a, b) => b.value - a.value);
 
   return (
     <div>
@@ -100,72 +132,55 @@ export default function DashboardOverview() {
 
           {/* Traffic & Analytics Widget */}
           <div style={{ marginTop: '2rem', backgroundColor: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
-            <h2 style={{ fontSize: '1.5rem', color: '#1e3a5f', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              📊 Site Analytics (This Month)
+            <h2 style={{ fontSize: '1.5rem', color: '#1e3a5f', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'space-between' }}>
+              <span>📊 Site Analytics (Overview)</span>
+              <Link href="/admin/dashboard/analytics" style={{ fontSize: '1rem', color: 'var(--accent)', textDecoration: 'none' }}>View Full Report &rarr;</Link>
             </h2>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
               
               <div style={{ flex: '1 1 300px' }}>
-                <h3 style={{ fontSize: '1.1rem', color: '#555', borderBottom: '1px solid #eaeaea', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Top Products Viewed</h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
-                    <span>1. Smooth Roman Column (14ft)</span>
-                    <strong style={{ color: 'var(--primary)' }}>342 views</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
-                    <span>2. Modern Square Fire Pit</span>
-                    <strong style={{ color: 'var(--primary)' }}>289 views</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
-                    <span>3. Bullnose Pool Coping (12")</span>
-                    <strong style={{ color: 'var(--primary)' }}>215 views</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
-                    <span>4. Acanthus Leaf Capital</span>
-                    <strong style={{ color: 'var(--primary)' }}>187 views</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0' }}>
-                    <span>5. Custom Wall Cap (Peak)</span>
-                    <strong style={{ color: 'var(--primary)' }}>156 views</strong>
-                  </li>
-                </ul>
+                <h3 style={{ fontSize: '1.1rem', color: '#555', borderBottom: '1px solid #eaeaea', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Top Pages Viewed</h3>
+                {topPages.length > 0 ? (
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {topPages.map((page, index) => (
+                      <li key={index} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: index < topPages.length - 1 ? '1px solid #f1f1f1' : 'none' }}>
+                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '200px' }}>{index + 1}. {page.path}</span>
+                        <strong style={{ color: 'var(--primary)' }}>{page.views} views</strong>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p style={{ color: '#999', fontStyle: 'italic' }}>No page views recorded yet.</p>
+                )}
               </div>
 
               <div style={{ flex: '1 1 300px' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#555', borderBottom: '1px solid #eaeaea', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Traffic Sources</h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
-                      <span>Organic Search (Google)</span>
-                      <span>68%</span>
-                    </div>
-                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div style={{ width: '68%', height: '100%', backgroundColor: 'var(--accent)' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
-                      <span>Direct (Architect Portal)</span>
-                      <span>22%</span>
-                    </div>
-                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div style={{ width: '22%', height: '100%', backgroundColor: 'var(--primary)' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
-                      <span>Referral / Social</span>
-                      <span>10%</span>
-                    </div>
-                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div style={{ width: '10%', height: '100%', backgroundColor: '#6c757d' }}></div>
+                {trafficSources.length > 0 ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                    {trafficSources.map((source, i) => {
+                      const total = trafficSources.reduce((acc, curr) => acc + curr.value, 0);
+                      const percentage = Math.round((source.value / total) * 100);
+                      return (
+                        <div key={i}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
+                            <span style={{ textTransform: 'capitalize' }}>{source.name}</span>
+                            <span>{percentage}%</span>
+                          </div>
+                          <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
+                            <div style={{ width: `${percentage}%`, height: '100%', backgroundColor: i === 0 ? 'var(--accent)' : i === 1 ? 'var(--primary)' : '#6c757d' }}></div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '6px', textAlign: 'center' }}>
+                      <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}><strong>Total Page Views:</strong> {analyticsData.length}</p>
                     </div>
                   </div>
-                  <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '6px', textAlign: 'center' }}>
-                    <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}><strong>Total Unique Visitors:</strong> 1,428</p>
-                  </div>
-                </div>
+                ) : (
+                  <p style={{ color: '#999', fontStyle: 'italic' }}>No traffic sources recorded yet.</p>
+                )}
               </div>
 
             </div>
