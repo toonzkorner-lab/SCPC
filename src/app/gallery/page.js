@@ -1,5 +1,4 @@
-import categories from '../../data/categories.json';
-import products from '../../data/products.json';
+import { getCategories, getProducts } from '../../lib/db';
 import ProductCard from '../../components/ProductCard';
 
 export const metadata = {
@@ -7,7 +6,9 @@ export const metadata = {
   description: 'View our portfolio of beautifully finished precast concrete projects.',
 };
 
-export default function GalleryPage() {
+export default async function GalleryPage() {
+  const categories = await getCategories();
+  const products = await getProducts();
   const galleryCats = new Set(products.filter(p => p.type === 'gallery').map(p => p.categoryId));
 
   return (

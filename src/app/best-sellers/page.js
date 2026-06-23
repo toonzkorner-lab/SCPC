@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import products from '../../data/products.json';
-import categories from '../../data/categories.json';
+import { getProducts, getCategories } from '../../lib/db';
 
 export const metadata = {
   title: 'Best Sellers | SCPC Precast',
@@ -23,7 +22,9 @@ const topProductIds = [
   'columns-7',    // Column 1
 ];
 
-export default function BestSellers() {
+export default async function BestSellers() {
+  const products = await getProducts();
+  const categories = await getCategories();
   
   // Map our featured IDs to the real product data
   const bestSellers = topProductIds.map(id => {

@@ -1,22 +1,30 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
 import path from 'path';
+import sqlite3 from 'sqlite3';
+import { open } from 'sqlite';
+
+const dbPath = path.join(process.cwd(), 'data', 'database.sqlite');
+
+async function getDb() {
+  return open({
+    filename: dbPath,
+    driver: sqlite3.Database
+  });
+}
 
 export async function GET() {
   try {
-    const categoriesPath = path.join(process.cwd(), 'src', 'data', 'categories.json');
-    const productsPath = path.join(process.cwd(), 'src', 'data', 'products.json');
-
-    const [categoriesData, productsData] = await Promise.all([
-      fs.readFile(categoriesPath, 'utf8').catch(() => '[]'),
-      fs.readFile(productsPath, 'utf8').catch(() => '[]')
-    ]);
+    const db = await getDb();
+    const categories = await db.all('SELECT * FROM categories');
+    const products = await db.all('SELECT * FROM products');
+    await db.close();
 
     return NextResponse.json({
-      categories: JSON.parse(categoriesData),
-      products: JSON.parse(productsData)
+      categories,
+      products
     });
   } catch (error) {
+    console.error('Database GET Error:', error);
     return NextResponse.json({ error: 'Failed to read data' }, { status: 500 });
   }
 }
@@ -24,26 +32,50 @@ export async function GET() {
 export async function POST(request) {
   try {
     const { type, action, data } = await request.json();
-    const filePath = path.join(process.cwd(), 'src', 'data', type === 'products' ? 'products.json' : 'categories.json');
-    
-    // Read current data
-    const fileData = await fs.readFile(filePath, 'utf8').catch(() => '[]');
-    let items = JSON.parse(fileData);
+    const db = await getDb();
+    let newId;
 
-    if (action === 'create') {
-      items.push({ ...data, id: Date.now().toString() });
-    } else if (action === 'update') {
-      items = items.map(item => item.id === data.id ? { ...item, ...data } : item);
-    } else if (action === 'delete') {
-      items = items.filter(item => item.id !== data.id);
+    if (type === 'products') {
+      if (action === 'create') {
+        newId = Date.now().toString();
+        await db.run(
+          'INSERT INTO products (id, categoryId, name, description, image, type, originalFile) VALUES (?, ?, ?, ?, ?, ?, ?)',
+          [newId, data.categoryId, data.name, data.description || null, data.image || null, data.type || null, data.originalFile || null]
+        );
+      } else if (action === 'update') {
+        await db.run(
+          'UPDATE products SET categoryId = ?, name = ?, description = ?, image = ?, type = ?, originalFile = ? WHERE id = ?',
+          [data.categoryId, data.name, data.description || null, data.image || null, data.type || null, data.originalFile || null, data.id]
+        );
+      } else if (action === 'delete') {
+        await db.run('DELETE FROM products WHERE id = ?', [data.id]);
+      }
+    } else if (type === 'categories') {
+      if (action === 'create') {
+        newId = Date.now().toString();
+        await db.run(
+          'INSERT INTO categories (id, name, slug, image, blueprintImage, description) VALUES (?, ?, ?, ?, ?, ?)',
+          [newId, data.name, data.slug, data.image || null, data.blueprintImage || null, data.description || null]
+        );
+      } else if (action === 'update') {
+        await db.run(
+          'UPDATE categories SET name = ?, slug = ?, image = ?, blueprintImage = ?, description = ? WHERE id = ?',
+          [data.name, data.slug, data.image || null, data.blueprintImage || null, data.description || null, data.id]
+        );
+      } else if (action === 'delete') {
+        await db.run('DELETE FROM categories WHERE id = ?', [data.id]);
+        // Optionally delete associated products or set categoryId to null
+        await db.run('DELETE FROM products WHERE categoryId = ?', [data.id]);
+      }
     }
 
-    // Save back to file
-    await fs.writeFile(filePath, JSON.stringify(items, null, 2), 'utf8');
+    // Return the updated items
+    const items = await db.all(`SELECT * FROM ${type}`);
+    await db.close();
 
     return NextResponse.json({ success: true, items });
   } catch (error) {
-    console.error(error);
+    console.error('Database POST Error:', error);
     return NextResponse.json({ error: 'Failed to update data' }, { status: 500 });
   }
 }

@@ -4,12 +4,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
-import categories from '../data/categories.json';
-import products from '../data/products.json';
 import SearchBar from './SearchBar';
 import ThemeToggle from './ThemeToggle';
 
-export default function Navbar() {
+export default function Navbar({ categories = [], products = [] }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 

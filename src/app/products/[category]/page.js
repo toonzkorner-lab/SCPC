@@ -1,10 +1,11 @@
-import categories from '../../../data/categories.json';
-import products from '../../../data/products.json';
+import { getCategories, getProducts } from '../../../lib/db';
 import ProductCard from '../../../components/ProductCard';
 import Pagination from '../../../components/Pagination';
+import FilterBar from '../../../components/FilterBar';
 import Link from 'next/link';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const categories = await getCategories();
   return categories.map((category) => ({
     category: category.slug,
   }));
@@ -12,6 +13,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { category: categorySlug } = await params;
+  const categories = await getCategories();
   const category = categories.find((c) => c.slug === categorySlug);
   return {
     title: `${category ? category.name : 'Products'} | SCPC Precast`,
@@ -21,7 +23,9 @@ export async function generateMetadata({ params }) {
 
 export default async function CategoryPage({ params, searchParams }) {
   const { category: categorySlug } = await params;
-  const { page } = await searchParams;
+  const { page, sort, q } = await searchParams;
+  const categories = await getCategories();
+  const products = await getProducts();
   const category = categories.find((c) => c.slug === categorySlug);
   
   if (!category) {
@@ -35,8 +39,22 @@ export default async function CategoryPage({ params, searchParams }) {
     );
   }
 
-  const categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'blueprint');
+  let categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'blueprint');
   
+  // Filtering
+  if (q) {
+    const query = q.toLowerCase();
+    categoryProducts = categoryProducts.filter(p => p.name.toLowerCase().includes(query));
+  }
+
+  // Sorting
+  if (sort === 'z-a') {
+    categoryProducts.sort((a, b) => b.name.localeCompare(a.name));
+  } else {
+    // Default A-Z
+    categoryProducts.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
   // Pagination logic
   const itemsPerPage = 24;
   const currentPage = parseInt(page) || 1;
@@ -64,6 +82,8 @@ export default async function CategoryPage({ params, searchParams }) {
           </div>
         </div>
         
+        <FilterBar />
+
         {currentProducts.length > 0 ? (
           <>
             <div className="grid-auto-fit fade-in-up" style={{ animationDelay: '0.2s' }}>

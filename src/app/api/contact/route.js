@@ -38,6 +38,20 @@ export async function POST(request) {
       console.log(`Subject: ${subject}`);
       console.log(`Body:\n${body}`);
       console.log('-----------------------\n');
+      console.log('-----------------------\n');
+    }
+
+    // Save lead to database
+    try {
+      const { getDb } = await import('../../../lib/db');
+      const db = await getDb();
+      await db.run(
+        'INSERT INTO leads (name, email, subject, body) VALUES (?, ?, ?, ?)',
+        [name, email, subject, body]
+      );
+    } catch (dbError) {
+      console.error('Failed to save lead to database:', dbError);
+      // We still return success since the email sent (or mock sent)
     }
 
     return NextResponse.json({ success: true, message: 'Message sent successfully!' });

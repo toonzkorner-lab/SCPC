@@ -5,11 +5,11 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Image from 'next/image';
 
-export function HeaderWrapper() {
+export function HeaderWrapper({ categories = [], products = [] }) {
   const pathname = usePathname();
   if (pathname.startsWith('/admin')) return null;
 
-  return <Navbar />;
+  return <Navbar categories={categories} products={products} />;
 }
 
 export function FooterWrapper() {

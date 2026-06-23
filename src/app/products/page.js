@@ -1,5 +1,4 @@
-import categories from '../../data/categories.json';
-import products from '../../data/products.json';
+import { getCategories, getProducts } from '../../lib/db';
 import ProductCard from '../../components/ProductCard';
 
 export const metadata = {
@@ -12,7 +11,9 @@ export const metadata = {
   }
 };
 
-export default function ProductsPage() {
+export default async function ProductsPage() {
+  const categories = await getCategories();
+  const products = await getProducts();
   const blueprintCats = new Set(products.filter(p => p.type === 'blueprint').map(p => p.categoryId));
 
   return (

@@ -1,8 +1,9 @@
 import { getAllPostIds } from '../lib/markdown';
-import categories from '../data/categories.json';
-import products from '../data/products.json';
+import { getCategories, getProducts } from '../lib/db';
 
-export default function sitemap() {
+export default async function sitemap() {
+  const categories = await getCategories();
+  const products = await getProducts();
   const baseUrl = 'https://precastbyscpcinc.com';
   
   // Static routes

@@ -1,8 +1,10 @@
-import categories from '../../../../data/categories.json';
-import products from '../../../../data/products.json';
+import { getProducts, getCategories } from '../../../../lib/db';
 import Link from 'next/link';
+import ImageLightbox from '../../../../components/ImageLightbox';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await getProducts();
+  const categories = await getCategories();
   const blueprintProducts = products.filter(p => p.type === 'blueprint');
   return blueprintProducts.map((product) => {
     const category = categories.find(c => c.id === product.categoryId);
@@ -15,6 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { productId } = await params;
+  const products = await getProducts();
   const product = products.find((p) => p.id === productId);
   return {
     title: `${product ? product.name : 'Blueprint Schematic'} | SCPC Precast`,
@@ -24,6 +27,8 @@ export async function generateMetadata({ params }) {
 
 export default async function BlueprintProductPage({ params }) {
   const { category: categorySlug, productId } = await params;
+  const categories = await getCategories();
+  const products = await getProducts();
   const category = categories.find((c) => c.slug === categorySlug);
   const product = products.find((p) => p.id === productId);
 
@@ -57,14 +62,10 @@ export default async function BlueprintProductPage({ params }) {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '4rem', alignItems: 'flex-start' }} className="fade-in-up">
           {/* Image Side */}
           <div style={{ backgroundColor: 'white', padding: '4rem', borderRadius: '12px', border: '1px solid #eaeaea', display: 'flex', justifyContent: 'center', boxShadow: 'var(--shadow)', position: 'relative' }}>
-            <span style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: '#e9f5f9', color: 'var(--primary)', padding: '0.4rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            <span style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: '#e9f5f9', color: 'var(--primary)', padding: '0.4rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', zIndex: 10 }}>
               Blueprint
             </span>
-            <img 
-              src={`/images/${product.image}`} 
-              alt={product.name} 
-              style={{ maxWidth: '100%', maxHeight: '600px', objectFit: 'contain' }}
-            />
+            <ImageLightbox src={`/images/${product.image}`} alt={product.name} />
           </div>
           
           {/* Content Side */}

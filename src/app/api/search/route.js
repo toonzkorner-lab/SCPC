@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
-import products from '../../../data/products.json';
-import categories from '../../../data/categories.json';
+import { getProducts, getCategories } from '../../../lib/db';
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const q = searchParams.get('q');
+  
+  const products = await getProducts();
+  const categories = await getCategories();
 
   if (!q || q.length < 2) {
     return NextResponse.json({ results: [] });

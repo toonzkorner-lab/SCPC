@@ -98,8 +98,12 @@ const jsonLd = {
 };
 
 import { ThemeProvider } from "../components/ThemeProvider";
+import { getCategories, getProducts } from '../lib/db';
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const categories = await getCategories();
+  const products = await getProducts();
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -111,7 +115,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeProvider attribute="data-theme" defaultTheme="light">
           <ScrollToTop />
-          <HeaderWrapper />
+          <HeaderWrapper categories={categories} products={products} />
           <main>{children}</main>
           <FooterWrapper />
         </ThemeProvider>

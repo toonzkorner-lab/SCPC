@@ -1,8 +1,10 @@
-import categories from '../../../../data/categories.json';
-import products from '../../../../data/products.json';
+import { getProducts, getCategories } from '../../../../lib/db';
 import Link from 'next/link';
+import ImageLightbox from '../../../../components/ImageLightbox';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await getProducts();
+  const categories = await getCategories();
   const galleryProducts = products.filter(p => p.type === 'gallery');
   return galleryProducts.map((product) => {
     const category = categories.find(c => c.id === product.categoryId);
@@ -15,6 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { productId } = await params;
+  const products = await getProducts();
   const product = products.find((p) => p.id === productId);
   return {
     title: `${product ? product.name : 'Gallery Photo'} | SCPC Precast`,
@@ -24,6 +27,8 @@ export async function generateMetadata({ params }) {
 
 export default async function GalleryProductPage({ params }) {
   const { category: categorySlug, productId } = await params;
+  const categories = await getCategories();
+  const products = await getProducts();
   const category = categories.find((c) => c.slug === categorySlug);
   const product = products.find((p) => p.id === productId);
 
@@ -58,14 +63,10 @@ export default async function GalleryProductPage({ params }) {
           
           {/* Huge Image Presentation */}
           <div style={{ width: '100%', backgroundColor: '#000', borderRadius: '12px', border: '1px solid #333', display: 'flex', justifyContent: 'center', overflow: 'hidden', position: 'relative' }}>
-            <span style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: 'rgba(255,255,255,0.1)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', backdropFilter: 'blur(4px)' }}>
+            <span style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: 'rgba(255,255,255,0.1)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', backdropFilter: 'blur(4px)', zIndex: 10 }}>
               Installation Gallery
             </span>
-            <img 
-              src={`/images/${product.image}`} 
-              alt={product.name} 
-              style={{ maxWidth: '100%', maxHeight: '75vh', objectFit: 'contain' }}
-            />
+            <ImageLightbox src={`/images/${product.image}`} alt={product.name} />
           </div>
           
           {/* Content Below */}
