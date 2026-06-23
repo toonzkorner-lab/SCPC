@@ -30,6 +30,12 @@ export async function getDb() {
           return [];
         }
       }
+      if (query.includes('categories')) {
+        return await getCategories();
+      }
+      if (query.includes('products')) {
+        return await getProducts();
+      }
       return [];
     },
     run: async (query, params) => {
@@ -46,5 +52,6 @@ export async function getDb() {
       }
     },
     get: async () => false,
+    close: async () => {},
   };
 }

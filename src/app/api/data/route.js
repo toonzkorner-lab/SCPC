@@ -1,16 +1,6 @@
 import { NextResponse } from 'next/server';
 import path from 'path';
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
-
-const dbPath = path.join(process.cwd(), 'data', 'database.sqlite');
-
-async function getDb() {
-  return open({
-    filename: dbPath,
-    driver: sqlite3.Database
-  });
-}
+import { getDb } from '../../../lib/db';
 
 export async function GET() {
   try {
