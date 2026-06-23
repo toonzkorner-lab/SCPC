@@ -97,6 +97,79 @@ export default function DashboardOverview() {
               </div>
             </div>
           </div>
+
+          {/* Traffic & Analytics Widget */}
+          <div style={{ marginTop: '2rem', backgroundColor: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+            <h2 style={{ fontSize: '1.5rem', color: '#1e3a5f', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📊 Site Analytics (This Month)
+            </h2>
+            
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
+              
+              <div style={{ flex: '1 1 300px' }}>
+                <h3 style={{ fontSize: '1.1rem', color: '#555', borderBottom: '1px solid #eaeaea', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Top Products Viewed</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
+                    <span>1. Smooth Roman Column (14ft)</span>
+                    <strong style={{ color: 'var(--primary)' }}>342 views</strong>
+                  </li>
+                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
+                    <span>2. Modern Square Fire Pit</span>
+                    <strong style={{ color: 'var(--primary)' }}>289 views</strong>
+                  </li>
+                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
+                    <span>3. Bullnose Pool Coping (12")</span>
+                    <strong style={{ color: 'var(--primary)' }}>215 views</strong>
+                  </li>
+                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0', borderBottom: '1px solid #f1f1f1' }}>
+                    <span>4. Acanthus Leaf Capital</span>
+                    <strong style={{ color: 'var(--primary)' }}>187 views</strong>
+                  </li>
+                  <li style={{ display: 'flex', justifyContent: 'space-between', padding: '0.8rem 0' }}>
+                    <span>5. Custom Wall Cap (Peak)</span>
+                    <strong style={{ color: 'var(--primary)' }}>156 views</strong>
+                  </li>
+                </ul>
+              </div>
+
+              <div style={{ flex: '1 1 300px' }}>
+                <h3 style={{ fontSize: '1.1rem', color: '#555', borderBottom: '1px solid #eaeaea', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Traffic Sources</h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
+                      <span>Organic Search (Google)</span>
+                      <span>68%</span>
+                    </div>
+                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
+                      <div style={{ width: '68%', height: '100%', backgroundColor: 'var(--accent)' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
+                      <span>Direct (Architect Portal)</span>
+                      <span>22%</span>
+                    </div>
+                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
+                      <div style={{ width: '22%', height: '100%', backgroundColor: 'var(--primary)' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.2rem' }}>
+                      <span>Referral / Social</span>
+                      <span>10%</span>
+                    </div>
+                    <div style={{ width: '100%', height: '8px', backgroundColor: '#f1f1f1', borderRadius: '4px', overflow: 'hidden' }}>
+                      <div style={{ width: '10%', height: '100%', backgroundColor: '#6c757d' }}></div>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '6px', textAlign: 'center' }}>
+                    <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}><strong>Total Unique Visitors:</strong> 1,428</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </>
       )}
     </div>
