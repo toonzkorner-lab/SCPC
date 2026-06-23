@@ -105,14 +105,14 @@ export default async function Home() {
               From luxury estates in Newport Beach to massive commercial plazas in Las Vegas, see how SCPC solves complex structural and aesthetic challenges across California and nationwide.
             </p>
           </FadeIn>
-          <FadeIn delay={0.2} style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px', maxWidth: '350px', textAlign: 'left' }}>
+          <FadeIn delay={0.2} className="grid-cols-2" style={{ textAlign: 'left', maxWidth: '900px', margin: '0 auto' }}>
+            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px' }}>
               <Image src="/images/Entry-way-1-225x300.jpg" alt="Estate Columns" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Luxury Estate Columns</h3>
               <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Engineered lightweight GFRC molds to accommodate internal drainage pipes while matching historical textures.</p>
               <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
             </div>
-            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px', maxWidth: '350px', textAlign: 'left' }}>
+            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px' }}>
               <Image src="/images/04_Bowl_Pool1-225x300.jpg" alt="Commercial Pool" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
               <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Commercial Pool Coping</h3>
               <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Custom radius coping engineered for extreme desert heat expansion without cracking.</p>

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export default function FadeIn({ children, delay = 0, direction = 'up', className = '' }) {
+export default function FadeIn({ children, delay = 0, direction = 'up', className = '', style = {} }) {
   const directions = {
     up: { y: 40, x: 0 },
     down: { y: -40, x: 0 },
@@ -18,6 +18,7 @@ export default function FadeIn({ children, delay = 0, direction = 'up', classNam
       viewport={{ once: true, margin: "-10%" }}
       transition={{ duration: 0.7, delay, ease: "easeOut" }}
       className={className}
+      style={style}
     >
       {children}
     </motion.div>

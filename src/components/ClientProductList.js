@@ -8,7 +8,7 @@ export default function ClientProductList({ initialProducts, categorySlug }) {
   const [sort, setSort] = useState('a-z');
   const [material, setMaterial] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 24;
+  const itemsPerPage = 12;
 
   const filteredProducts = useMemo(() => {
     let filtered = [...initialProducts];

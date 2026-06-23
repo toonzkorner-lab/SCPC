@@ -75,7 +75,7 @@ export default async function CategoryPage({ params, searchParams }) {
   }
 
   // Pagination logic
-  const itemsPerPage = 24;
+  const itemsPerPage = 12;
   const currentPage = parseInt(page) || 1;
   const totalPages = Math.ceil(categoryProducts.length / itemsPerPage);
   
