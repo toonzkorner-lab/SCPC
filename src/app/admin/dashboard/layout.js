@@ -52,7 +52,25 @@ export default function AdminDashboardLayout({ children }) {
           ))}
         </nav>
 
-        <div style={{ position: 'absolute', bottom: '2rem', width: '218px', padding: '0 1rem' }}>
+        <div style={{ position: 'absolute', bottom: '2rem', width: '218px', padding: '0 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <Link
+            href="/"
+            style={{
+              display: 'block',
+              width: '100%',
+              padding: '0.75rem',
+              backgroundColor: 'rgba(255,255,255,0.05)',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '4px',
+              textAlign: 'left',
+              transition: 'background-color 0.2s',
+            }}
+            onMouseOver={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.15)'}
+            onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255,255,255,0.05)'}
+          >
+            ← Return to Site
+          </Link>
           <button 
             onClick={handleLogout}
             style={{
