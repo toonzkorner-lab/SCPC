@@ -1,6 +1,7 @@
 import { getProducts, getCategories } from '../../../../lib/db';
 import Link from 'next/link';
 import ImageLightbox from '../../../../components/ImageLightbox';
+import ClientAddToCartButton from '../../../../components/ClientAddToCartButton';
 
 export async function generateStaticParams() {
   const products = await getProducts();
@@ -109,10 +110,8 @@ export default async function BlueprintProductPage({ params }) {
             </div>
             
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href={`/contact?subject=Quote Request: ${encodeURIComponent(product.name)}`} className="btn btn-accent" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem', flex: '1', textAlign: 'center', minWidth: '200px' }}>
-                Request a Quote
-              </Link>
-              <Link href={`/products/${category.slug}`} className="btn" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem', backgroundColor: 'white', color: 'var(--primary)', border: '1px solid #ccc', flex: '1', textAlign: 'center', minWidth: '200px' }}>
+              <ClientAddToCartButton product={product} />
+              <Link href={`/products/${category.slug}`} className="btn" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem', backgroundColor: '#f0f0f0', color: '#555', border: '1px solid #ddd', flex: '1', textAlign: 'center', minWidth: '200px' }}>
                 More {category.name}
               </Link>
             </div>

@@ -6,10 +6,12 @@ import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 import SearchBar from './SearchBar';
 import ThemeToggle from './ThemeToggle';
+import { useQuote } from '../context/QuoteContext';
 
 export default function Navbar({ categories = [], products = [] }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { quoteItems, isLoaded } = useQuote();
 
   const galleryCats = new Set(products.filter(p => p.type === 'gallery').map(p => p.categoryId));
   const blueprintCats = new Set(products.filter(p => p.type === 'blueprint').map(p => p.categoryId));
@@ -60,7 +62,29 @@ export default function Navbar({ categories = [], products = [] }) {
           <Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link>
           <Link href="/reviews" onClick={() => handleLinkClick('/reviews')}>Reviews</Link>
           <Link href="/professionals" onClick={() => handleLinkClick('/professionals')}>Professionals</Link>
-          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Quote</Link>
+          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent" style={{ position: 'relative' }}>
+            Quote
+            {isLoaded && quoteItems.length > 0 && (
+              <span style={{
+                position: 'absolute',
+                top: '-8px',
+                right: '-8px',
+                backgroundColor: '#e74c3c',
+                color: 'white',
+                borderRadius: '50%',
+                width: '24px',
+                height: '24px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.75rem',
+                fontWeight: 'bold',
+                border: '2px solid white'
+              }}>
+                {quoteItems.reduce((acc, item) => acc + item.quantity, 0)}
+              </span>
+            )}
+          </Link>
           <ThemeToggle />
         </nav>
       </div>

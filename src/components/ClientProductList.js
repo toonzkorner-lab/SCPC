@@ -108,6 +108,7 @@ export default function ClientProductList({ initialProducts, categorySlug }) {
                 description={product.description}
                 link={`/products/${categorySlug}/${product.id}`}
                 imageUrl={`/images/${product.image || 'placeholder.jpg'}`}
+                product={product}
               />
             ))}
           </div>

@@ -102,6 +102,7 @@ const jsonLd = {
 };
 
 import { ThemeProvider } from "../components/ThemeProvider";
+import { QuoteProvider } from '../context/QuoteContext';
 import { getCategories, getProducts } from '../lib/db';
 
 export default async function RootLayout({ children }) {
@@ -118,12 +119,14 @@ export default async function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="data-theme" defaultTheme="light">
-          <AnalyticsTracker />
-          <ScrollToTop />
-          <HeaderWrapper categories={categories} products={products} />
-          <main>{children}</main>
-          <FooterWrapper />
-          <Analytics />
+          <QuoteProvider>
+            <AnalyticsTracker />
+            <ScrollToTop />
+            <HeaderWrapper categories={categories} products={products} />
+            <main>{children}</main>
+            <FooterWrapper />
+            <Analytics />
+          </QuoteProvider>
         </ThemeProvider>
       </body>
     </html>
