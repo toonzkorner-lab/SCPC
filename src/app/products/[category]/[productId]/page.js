@@ -22,6 +22,25 @@ export async function generateMetadata({ params }) {
   return {
     title: `${product ? product.name : 'Blueprint Schematic'} | SCPC Precast`,
     description: product ? product.description : 'Dimensional blueprints for precast concrete products.',
+    openGraph: {
+      title: `${product ? product.name : 'Blueprint Schematic'} | SCPC Precast`,
+      description: product ? product.description : 'Dimensional blueprints for precast concrete products.',
+      url: `https://precastbyscpcinc.com/products/${product?.categoryId}/${productId}`,
+      images: [
+        {
+          url: `https://precastbyscpcinc.com/images/${product?.image || 'logo.png'}`,
+          width: 800,
+          height: 600,
+          alt: product?.name || 'Blueprint Schematic',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product ? product.name : 'Blueprint Schematic'} | SCPC Precast`,
+      description: product ? product.description : 'Dimensional blueprints for precast concrete products.',
+      images: [`https://precastbyscpcinc.com/images/${product?.image || 'logo.png'}`],
+    }
   };
 }
 

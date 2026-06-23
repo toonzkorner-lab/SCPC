@@ -16,8 +16,27 @@ export async function generateMetadata({ params }) {
   const categories = await getCategories();
   const category = categories.find((c) => c.slug === categorySlug);
   return {
-    title: `${category ? category.name : 'Products'} | SCPC Precast`,
-    description: category ? category.description : 'Precast concrete products.',
+    title: `${category ? category.name : 'Gallery'} | SCPC Precast`,
+    description: category ? category.description : 'Explore our gallery of custom precast concrete projects.',
+    openGraph: {
+      title: `${category ? category.name : 'Gallery'} | SCPC Precast`,
+      description: category ? category.description : 'Explore our gallery of custom precast concrete projects.',
+      url: `https://precastbyscpcinc.com/gallery/${categorySlug}`,
+      images: [
+        {
+          url: `https://precastbyscpcinc.com/images/${category?.image || 'logo.png'}`,
+          width: 800,
+          height: 600,
+          alt: category?.name || 'Gallery',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${category ? category.name : 'Gallery'} | SCPC Precast`,
+      description: category ? category.description : 'Explore our gallery of custom precast concrete projects.',
+      images: [`https://precastbyscpcinc.com/images/${category?.image || 'logo.png'}`],
+    }
   };
 }
 

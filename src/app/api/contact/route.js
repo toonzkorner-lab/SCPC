@@ -3,7 +3,16 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
-    const { name, email, subject, body } = await request.json();
+    const { name, email, subject, projectType, timeframe, body, fileUrl } = await request.json();
+
+    const enrichedBody = `
+Project Type: ${projectType || 'N/A'}
+Estimated Timeframe: ${timeframe || 'N/A'}
+Attached File: ${fileUrl ? fileUrl : 'None'}
+
+Details:
+${body || 'N/A'}
+    `.trim();
 
     // In a real production environment, you would use environment variables:
     // const smtpHost = process.env.SMTP_HOST;

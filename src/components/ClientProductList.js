@@ -6,16 +6,25 @@ import ProductCard from './ProductCard';
 export default function ClientProductList({ initialProducts, categorySlug }) {
   const [q, setQ] = useState('');
   const [sort, setSort] = useState('a-z');
+  const [material, setMaterial] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 24;
 
   const filteredProducts = useMemo(() => {
     let filtered = [...initialProducts];
     
-    // Filter
+    // Filter by Search Query
     if (q) {
       const query = q.toLowerCase();
       filtered = filtered.filter(p => p.name.toLowerCase().includes(query));
+    }
+
+    // Filter by Material
+    if (material !== 'all') {
+      filtered = filtered.filter(p => {
+        const pMat = p.material ? p.material.toLowerCase() : 'precast';
+        return pMat === material;
+      });
     }
     
     // Sort
@@ -44,6 +53,11 @@ export default function ClientProductList({ initialProducts, categorySlug }) {
     setCurrentPage(1);
   };
 
+  const handleMaterialChange = (val) => {
+    setMaterial(val);
+    setCurrentPage(1);
+  };
+
   return (
     <>
       <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '0.5rem', marginBottom: '2rem' }}>
@@ -60,6 +74,17 @@ export default function ClientProductList({ initialProducts, categorySlug }) {
             onChange={(e) => handleSearchChange(e.target.value)}
             style={{ width: '100%', padding: '0.5rem 1rem', borderRadius: '4px', border: '1px solid #ccc' }}
           />
+        </div>
+        <div>
+          <select 
+            value={material} 
+            onChange={(e) => handleMaterialChange(e.target.value)}
+            style={{ padding: '0.5rem 1rem', borderRadius: '4px', border: '1px solid #ccc', backgroundColor: 'white' }}
+          >
+            <option value="all">All Materials</option>
+            <option value="precast">Standard Precast</option>
+            <option value="gfrc">GFRC (Lightweight)</option>
+          </select>
         </div>
         <div>
           <select 

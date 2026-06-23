@@ -16,6 +16,25 @@ export async function generateMetadata({ params }) {
   return {
     title: `${category ? category.name : 'Products'} | SCPC Precast`,
     description: category ? category.description : 'Precast concrete products.',
+    openGraph: {
+      title: `${category ? category.name : 'Products'} | SCPC Precast`,
+      description: category ? category.description : 'Precast concrete products.',
+      url: `https://precastbyscpcinc.com/products/${categorySlug}`,
+      images: [
+        {
+          url: `https://precastbyscpcinc.com/images/${category?.blueprintImage || category?.image || 'logo.png'}`,
+          width: 800,
+          height: 600,
+          alt: category?.name || 'Products',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${category ? category.name : 'Products'} | SCPC Precast`,
+      description: category ? category.description : 'Precast concrete products.',
+      images: [`https://precastbyscpcinc.com/images/${category?.blueprintImage || category?.image || 'logo.png'}`],
+    }
   };
 }
 
