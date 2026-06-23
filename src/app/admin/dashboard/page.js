@@ -91,9 +91,9 @@ export default function DashboardOverview() {
             </div>
 
             <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
-              <h3 style={{ color: '#666', fontSize: '1rem', marginBottom: '0.5rem' }}>Gallery Categories</h3>
+              <h3 style={{ color: '#666', fontSize: '1rem', marginBottom: '0.5rem' }}>Categories</h3>
               <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1e3a5f', marginBottom: '1rem' }}>{stats.gallery}</p>
-              <Link href="/admin/dashboard/gallery" style={{ color: '#d39e00', textDecoration: 'none', fontWeight: 'bold' }}>Manage Gallery &rarr;</Link>
+              <Link href="/admin/dashboard/gallery" style={{ color: '#d39e00', textDecoration: 'none', fontWeight: 'bold' }}>Manage Categories &rarr;</Link>
             </div>
 
             <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>

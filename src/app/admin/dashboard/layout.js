@@ -26,8 +26,8 @@ export default function AdminDashboardLayout({ children }) {
     { name: 'Site Analytics', path: '/admin/dashboard/analytics' },
     { name: 'Leads Tracker', path: '/admin/dashboard/leads' },
     { name: 'Media Library', path: '/admin/dashboard/media' },
-    { name: 'Products & Categories', path: '/admin/dashboard/products' },
-    { name: 'Gallery Categories', path: '/admin/dashboard/gallery' },
+    { name: 'Products', path: '/admin/dashboard/products' },
+    { name: 'Categories', path: '/admin/dashboard/gallery' },
     { name: 'Manage Reviews', path: '/admin/dashboard/reviews' },
     { name: 'Site Settings', path: '/admin/dashboard/settings' },
   ];

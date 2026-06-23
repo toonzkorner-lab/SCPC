@@ -85,7 +85,7 @@ export default function GalleryManager() {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <h1 style={{ color: '#1e3a5f' }}>Gallery & Category Manager</h1>
+        <h1 style={{ color: '#1e3a5f' }}>Category Manager</h1>
         <button className="btn btn-accent" onClick={() => openEditor()}>Add New Category</button>
       </div>
 

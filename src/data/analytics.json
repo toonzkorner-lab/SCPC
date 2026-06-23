@@ -143,5 +143,30 @@
     "path": "/professionals",
     "referrer": "http://192.168.1.24:3000/contact",
     "created_at": "2026-06-23T20:40:11.197Z"
+  },
+  {
+    "path": "/",
+    "referrer": "direct",
+    "created_at": "2026-06-23T20:44:58.803Z"
+  },
+  {
+    "path": "/",
+    "referrer": "direct",
+    "created_at": "2026-06-23T20:49:05.316Z"
+  },
+  {
+    "path": "/contact",
+    "referrer": "direct",
+    "created_at": "2026-06-23T20:49:09.243Z"
+  },
+  {
+    "path": "/contact",
+    "referrer": "http://192.168.1.24:3000/contact",
+    "created_at": "2026-06-23T20:49:36.727Z"
+  },
+  {
+    "path": "/contact",
+    "referrer": "direct",
+    "created_at": "2026-06-23T20:49:39.185Z"
   }
 ]
