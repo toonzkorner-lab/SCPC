@@ -4,6 +4,7 @@ import "./globals.css";
 import { HeaderWrapper, FooterWrapper } from "../components/NavigationWrapper";
 import ScrollToTop from '../components/ScrollToTop';
 import AnalyticsTracker from '../components/AnalyticsTracker';
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -122,6 +123,7 @@ export default async function RootLayout({ children }) {
           <HeaderWrapper categories={categories} products={products} />
           <main>{children}</main>
           <FooterWrapper />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
