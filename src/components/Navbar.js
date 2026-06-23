@@ -36,16 +36,6 @@ export default function Navbar({ categories = [], products = [] }) {
           <SearchBar />
           <Link href="/" onClick={() => handleLinkClick('/')}>Home</Link>
           <div className={styles.dropdown}>
-            <Link href="/gallery" onClick={() => handleLinkClick('/gallery')} className={styles.dropbtn}>Gallery ▾</Link>
-            <div className={styles.dropdownContent}>
-              {categories.filter(c => galleryCats.has(c.id)).map((cat) => (
-                <Link key={`gallery-${cat.id}`} href={`/gallery/${cat.slug}`} onClick={() => handleLinkClick(`/gallery/${cat.slug}`)}>
-                  {cat.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className={styles.dropdown}>
             <Link href="/products" onClick={() => handleLinkClick('/products')} className={styles.dropbtn}>Products ▾</Link>
             <div className={styles.dropdownContent}>
               {categories.filter(c => blueprintCats.has(c.id)).map((cat) => (
@@ -55,11 +45,21 @@ export default function Navbar({ categories = [], products = [] }) {
               ))}
             </div>
           </div>
-          <Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link>
           <Link href="/best-sellers" onClick={() => handleLinkClick('/best-sellers')}>Best Sellers</Link>
+          <div className={styles.dropdown}>
+            <Link href="/gallery" onClick={() => handleLinkClick('/gallery')} className={styles.dropbtn}>Gallery ▾</Link>
+            <div className={styles.dropdownContent}>
+              {categories.filter(c => galleryCats.has(c.id)).map((cat) => (
+                <Link key={`gallery-${cat.id}`} href={`/gallery/${cat.slug}`} onClick={() => handleLinkClick(`/gallery/${cat.slug}`)}>
+                  {cat.name}
+                </Link>
+              ))}
+            </div>
+          </div>
           <Link href="/blog" onClick={() => handleLinkClick('/blog')}>Blog</Link>
-          <Link href="/professionals" onClick={() => handleLinkClick('/professionals')}>Professionals</Link>
+          <Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link>
           <Link href="/reviews" onClick={() => handleLinkClick('/reviews')}>Reviews</Link>
+          <Link href="/professionals" onClick={() => handleLinkClick('/professionals')}>Professionals</Link>
           <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Quote</Link>
           <ThemeToggle />
         </nav>
