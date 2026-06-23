@@ -464,7 +464,7 @@
     "name": "Wall Cap Plinth Profile",
     "description": "Dimensional schematic for a precast pier cap. This drawing details the precise overhang, drip edge, and peak slope to protect your masonry pillars.",
     "image": "Wall-cap-plinth--225x300.jpg",
-    "type": "blueprint",
+    "type": "gallery",
     "originalFile": "Wall-cap-plinth--225x300.jpg"
   },
   {
@@ -3094,15 +3094,6 @@
     "image": "594.jpg",
     "type": "gallery",
     "originalFile": "594.jpg"
-  },
-  {
-    "id": "misc-5",
-    "categoryId": "landscaping",
-    "name": "Asr Constructors Profile",
-    "description": "Dimensional schematic for a precast concrete planter or landscaping element. Details the exact depth, wall thickness, and drainage hole placement.",
-    "image": "ASR-Constructors.jpg",
-    "type": "blueprint",
-    "originalFile": "ASR-Constructors.jpg"
   },
   {
     "id": "misc-6",
