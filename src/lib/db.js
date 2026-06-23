@@ -21,9 +21,30 @@ export async function getDb() {
   return {
     all: async (query) => {
       if (query.includes('leads')) return [];
+      if (query.includes('page_views')) {
+        try {
+          const filePath = path.join(process.cwd(), 'src', 'data', 'analytics.json');
+          const data = await fs.readFile(filePath, 'utf8');
+          return JSON.parse(data);
+        } catch(e) {
+          return [];
+        }
+      }
       return [];
     },
-    run: async () => {},
+    run: async (query, params) => {
+      if (query.includes('page_views')) {
+        try {
+          const filePath = path.join(process.cwd(), 'src', 'data', 'analytics.json');
+          let data = [];
+          try {
+            data = JSON.parse(await fs.readFile(filePath, 'utf8'));
+          } catch(e) {}
+          data.push({ path: params[0], referrer: params[1], created_at: new Date().toISOString() });
+          await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+        } catch(e) {}
+      }
+    },
     get: async () => false,
   };
 }

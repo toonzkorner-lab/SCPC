@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { HeaderWrapper, FooterWrapper } from "../components/NavigationWrapper";
 import ScrollToTop from '../components/ScrollToTop';
+import AnalyticsTracker from '../components/AnalyticsTracker';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -116,6 +117,7 @@ export default async function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="data-theme" defaultTheme="light">
+          <AnalyticsTracker />
           <ScrollToTop />
           <HeaderWrapper categories={categories} products={products} />
           <main>{children}</main>

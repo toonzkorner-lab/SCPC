@@ -15,6 +15,7 @@ export default function AdminDashboardLayout({ children }) {
 
   const navItems = [
     { name: 'Overview', path: '/admin/dashboard' },
+    { name: 'Site Analytics', path: '/admin/dashboard/analytics' },
     { name: 'Leads Tracker', path: '/admin/dashboard/leads' },
     { name: 'Media Library', path: '/admin/dashboard/media' },
     { name: 'Products & Categories', path: '/admin/dashboard/products' },

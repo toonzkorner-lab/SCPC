@@ -19,7 +19,13 @@ export async function getDb() {
         subject TEXT,
         body TEXT,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-      )
+      );
+      CREATE TABLE IF NOT EXISTS page_views (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        path TEXT,
+        referrer TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
     `);
   }
   return db;

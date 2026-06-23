@@ -1,7 +1,5 @@
 import { getCategories, getProducts } from '../../../lib/db';
-import ProductCard from '../../../components/ProductCard';
-import Pagination from '../../../components/Pagination';
-import FilterBar from '../../../components/FilterBar';
+import ClientProductList from '../../../components/ClientProductList';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
@@ -39,30 +37,7 @@ export default async function CategoryPage({ params, searchParams }) {
     );
   }
 
-  let categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'blueprint');
-  
-  // Filtering
-  if (q) {
-    const query = q.toLowerCase();
-    categoryProducts = categoryProducts.filter(p => p.name.toLowerCase().includes(query));
-  }
-
-  // Sorting
-  if (sort === 'z-a') {
-    categoryProducts.sort((a, b) => b.name.localeCompare(a.name));
-  } else {
-    // Default A-Z
-    categoryProducts.sort((a, b) => a.name.localeCompare(b.name));
-  }
-
-  // Pagination logic
-  const itemsPerPage = 24;
-  const currentPage = parseInt(page) || 1;
-  const totalPages = Math.ceil(categoryProducts.length / itemsPerPage);
-  
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentProducts = categoryProducts.slice(startIndex, endIndex);
+  const categoryProducts = products.filter((p) => p.categoryId === category.id && p.type === 'blueprint');
 
   return (
     <div className="section">
@@ -71,9 +46,6 @@ export default async function CategoryPage({ params, searchParams }) {
           <Link href="/products" style={{ opacity: 0.7 }}>&larr; Back to all product schematics</Link>
           <h1 className="mt-4">{category.name} Blueprints & Schematics</h1>
           <p>{category.description}</p>
-          <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-            Showing {categoryProducts.length > 0 ? startIndex + 1 : 0}-{Math.min(endIndex, categoryProducts.length)} of {categoryProducts.length} items
-          </p>
           
           <div style={{ marginTop: '2rem', padding: '1rem 1.5rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', borderLeft: '4px solid var(--accent)' }}>
             <p style={{ fontWeight: '600', marginBottom: '0.25rem', fontSize: '0.95rem' }}>Material Options</p>
@@ -82,23 +54,8 @@ export default async function CategoryPage({ params, searchParams }) {
           </div>
         </div>
         
-        <FilterBar />
-
-        {currentProducts.length > 0 ? (
-          <>
-            <div className="grid-auto-fit fade-in-up" style={{ animationDelay: '0.2s' }}>
-              {currentProducts.map((product) => (
-                <ProductCard 
-                  key={product.id}
-                  title={product.name}
-                  description={product.description}
-                  link={`/products/${category.slug}/${product.id}`}
-                  imageUrl={`/images/${product.image || 'placeholder.jpg'}`}
-                />
-              ))}
-            </div>
-            <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/products/${category.slug}`} />
-          </>
+        {categoryProducts.length > 0 ? (
+          <ClientProductList initialProducts={categoryProducts} categorySlug={category.slug} />
         ) : (
           <div className="section-light text-center" style={{ padding: '3rem', borderRadius: '8px' }}>
             <p>More {category.name} schematics and blueprints are being added to our new catalog.</p>
