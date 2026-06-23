@@ -60,18 +60,22 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Info Section */}
+      {/* Architect Portal Promo Section */}
       <section className="section section-light">
         <div className="container grid-cols-2" style={{ alignItems: 'center' }}>
           <FadeIn direction="right">
-            <h2 style={{ fontSize: '2.5rem' }}>Why Choose SCPC Precast?</h2>
-            <p style={{ fontSize: '1.1rem' }}>We specialize in manufacturing high-quality precast concrete products that blend structural integrity with timeless architectural beauty. From wall caps and columns to fire pits and pool coping, our products are crafted to meet the highest industry standards.</p>
+            <span style={{ color: 'var(--accent)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>For Professionals</span>
+            <h2 style={{ fontSize: '2.5rem', marginTop: '0.5rem' }}>Engineered for Architects & Contractors</h2>
+            <p style={{ fontSize: '1.1rem' }}>We don't just sell products; we engineer solutions. Access our comprehensive library of CAD files, high-resolution textures, and technical specifications designed specifically for your workflow.</p>
             <ul style={{ listStylePosition: 'inside', marginBottom: '2rem', fontSize: '1.1rem' }}>
-              <li style={{ marginBottom: '0.5rem' }}>✓ Superior Durability</li>
-              <li style={{ marginBottom: '0.5rem' }}>✓ Custom Colors & Textures</li>
-              <li style={{ marginBottom: '0.5rem' }}>✓ Expert Craftsmanship</li>
+              <li style={{ marginBottom: '0.5rem' }}>✓ Downloadable .DWG CAD Files</li>
+              <li style={{ marginBottom: '0.5rem' }}>✓ High-Resolution Material Textures</li>
+              <li style={{ marginBottom: '0.5rem' }}>✓ Direct Access to our Estimating Team</li>
             </ul>
-            <Link href="/about" className="btn">Learn More About Us</Link>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <Link href="/professionals" className="btn">Access the Portal</Link>
+              <Link href="/contact" className="btn btn-accent">Submit a Project Brief</Link>
+            </div>
           </FadeIn>
           <FadeIn direction="left" style={{ 
             position: 'relative',
@@ -87,6 +91,35 @@ export default async function Home() {
               style={{ objectFit: 'cover' }} 
               sizes="(max-width: 768px) 100vw, 50vw"
             />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="section" style={{ backgroundColor: '#1e3a5f', color: 'white' }}>
+        <div className="container text-center">
+          <FadeIn>
+            <h2 style={{ color: 'white', marginBottom: '1rem' }}>Proven Results in the Field</h2>
+            <p style={{ maxWidth: '700px', margin: '0 auto 3rem auto', fontSize: '1.1rem', opacity: 0.9 }}>
+              From luxury estates in Newport Beach to massive commercial plazas in San Antonio, see how SCPC solves complex structural and aesthetic challenges.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2} style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px', maxWidth: '350px', textAlign: 'left' }}>
+              <Image src="/images/Entry-way-1-225x300.jpg" alt="Estate Columns" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
+              <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Luxury Estate Columns</h3>
+              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Engineered lightweight GFRC molds to accommodate internal drainage pipes while matching historical textures.</p>
+              <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
+            </div>
+            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px', maxWidth: '350px', textAlign: 'left' }}>
+              <Image src="/images/pool-1-225x300.jpg" alt="Commercial Pool" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
+              <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Commercial Pool Coping</h3>
+              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Custom radius coping engineered for extreme Texas heat expansion without cracking.</p>
+              <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.4} style={{ marginTop: '3rem' }}>
+            <Link href="/case-studies" className="btn" style={{ backgroundColor: 'transparent', border: '2px solid white', color: 'white' }}>View All Case Studies</Link>
           </FadeIn>
         </div>
       </section>

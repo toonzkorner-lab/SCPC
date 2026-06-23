@@ -19,6 +19,7 @@ export default function AdminDashboardLayout({ children }) {
     { name: 'Media Library', path: '/admin/dashboard/media' },
     { name: 'Products & Categories', path: '/admin/dashboard/products' },
     { name: 'Gallery Categories', path: '/admin/dashboard/gallery' },
+    { name: 'Site Settings', path: '/admin/dashboard/settings' },
   ];
 
   return (

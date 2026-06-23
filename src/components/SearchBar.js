@@ -67,7 +67,7 @@ export default function SearchBar() {
     >
       <input
         type="search"
-        placeholder="Search 3,300+ items..."
+        placeholder="Search catalog..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onFocus={() => {

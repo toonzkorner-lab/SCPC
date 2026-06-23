@@ -58,7 +58,8 @@ export default function Navbar({ categories = [], products = [] }) {
           <Link href="/about" onClick={() => handleLinkClick('/about')}>About Us</Link>
           <Link href="/best-sellers" onClick={() => handleLinkClick('/best-sellers')}>Best Sellers</Link>
           <Link href="/blog" onClick={() => handleLinkClick('/blog')}>Blog</Link>
-          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Contact</Link>
+          <Link href="/professionals" onClick={() => handleLinkClick('/professionals')}>Professionals</Link>
+          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="btn btn-accent">Quote</Link>
           <ThemeToggle />
         </nav>
       </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, Suspense } from 'react';
+import { useState, Suspense, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 function ContactFormInner() {
@@ -10,18 +10,53 @@ function ContactFormInner() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState(defaultSubject);
+  const [projectType, setProjectType] = useState('');
+  const [timeframe, setTimeframe] = useState('');
   const [body, setBody] = useState('');
-  const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [file, setFile] = useState(null);
+  
+  const [status, setStatus] = useState('idle'); // idle, uploading, loading, success, error
+  const fileInputRef = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('loading');
+    setStatus('uploading');
     
     try {
+      let fileUrl = null;
+      
+      // Handle file upload if a file is selected
+      if (file) {
+        const formData = new FormData();
+        formData.append('file', file);
+        
+        const uploadRes = await fetch('/api/upload-brief', {
+          method: 'POST',
+          body: formData,
+        });
+        
+        if (uploadRes.ok) {
+          const uploadData = await uploadRes.json();
+          fileUrl = uploadData.fileUrl;
+        } else {
+          console.warn("File upload failed or not supported in this environment");
+        }
+      }
+
+      setStatus('loading');
+      
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, subject, body }),
+        body: JSON.stringify({ 
+          name, 
+          email, 
+          subject, 
+          projectType,
+          timeframe,
+          body,
+          fileUrl
+        }),
       });
       
       if (res.ok) {
@@ -29,7 +64,11 @@ function ContactFormInner() {
         setName('');
         setEmail('');
         setSubject('');
+        setProjectType('');
+        setTimeframe('');
         setBody('');
+        setFile(null);
+        if (fileInputRef.current) fileInputRef.current.value = '';
       } else {
         setStatus('error');
       }
@@ -42,40 +81,77 @@ function ContactFormInner() {
   if (status === 'success') {
     return (
       <div style={{ padding: '2rem', textAlign: 'center', backgroundColor: '#e9f5f9', border: '1px solid #d0e7ef', borderRadius: '8px' }}>
-        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Message Sent!</h3>
-        <p style={{ color: '#555', marginBottom: '1.5rem' }}>Thank you for reaching out. We will get back to you shortly.</p>
-        <button onClick={() => setStatus('idle')} className="btn btn-accent">Send Another Message</button>
+        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Project Brief Submitted!</h3>
+        <p style={{ color: '#555', marginBottom: '1.5rem' }}>Thank you for reaching out. Our estimating team will review your project and get back to you shortly.</p>
+        <button onClick={() => setStatus('idle')} className="btn btn-accent">Submit Another Project</button>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-      <div style={{ display: 'flex', gap: '1rem' }}>
-        <div style={{ flex: 1 }}>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Your Name</label>
-          <input type="text" value={name} onChange={e => setName(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none' }} placeholder="John Doe" />
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ flex: '1 1 200px' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Your Name / Company</label>
+          <input type="text" value={name} onChange={e => setName(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none' }} placeholder="John Doe Construction" />
         </div>
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: '1 1 200px' }}>
           <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Email Address</label>
           <input type="email" value={email} onChange={e => setEmail(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none' }} placeholder="john@example.com" />
         </div>
       </div>
-      <div>
-        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Subject</label>
-        <input type="text" value={subject} onChange={e => setSubject(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none' }} placeholder="Quote Request / General Inquiry" />
+      
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ flex: '1 1 200px' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Project Type</label>
+          <select value={projectType} onChange={e => setProjectType(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', backgroundColor: 'white' }}>
+            <option value="" disabled>Select Type...</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Municipal / Public Works">Municipal / Public Works</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div style={{ flex: '1 1 200px' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Estimated Timeframe</label>
+          <select value={timeframe} onChange={e => setTimeframe(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', backgroundColor: 'white' }}>
+            <option value="" disabled>Select Timeframe...</option>
+            <option value="ASAP">ASAP (Ready to start)</option>
+            <option value="1-3 months">1-3 months</option>
+            <option value="3-6 months">3-6 months</option>
+            <option value="6+ months / Bidding">6+ months / Still bidding</option>
+          </select>
+        </div>
       </div>
+
       <div>
-        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Message</label>
-        <textarea value={body} onChange={e => setBody(e.target.value)} rows="6" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', resize: 'vertical' }} placeholder="Please describe your project needs..."></textarea>
+        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Inquiry / Subject</label>
+        <input type="text" value={subject} onChange={e => setSubject(e.target.value)} required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none' }} placeholder="Product Quote Request / Custom Project" />
+      </div>
+
+      <div>
+        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Project Details & Dimensions</label>
+        <textarea value={body} onChange={e => setBody(e.target.value)} rows="5" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #ccc', borderRadius: '8px', fontSize: '1rem', outline: 'none', resize: 'vertical' }} placeholder="Please describe your project needs, specific dimensions, finish requirements, etc."></textarea>
+      </div>
+      
+      <div style={{ padding: '1rem', backgroundColor: '#f9f9f9', border: '1px dashed #ccc', borderRadius: '8px' }}>
+        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#333' }}>Upload Architectural Plans / Specs (Optional)</label>
+        <input 
+          type="file" 
+          ref={fileInputRef}
+          onChange={e => setFile(e.target.files[0])} 
+          accept=".pdf,.jpg,.jpeg,.png,.dwg,.zip"
+          style={{ width: '100%', fontSize: '0.9rem' }} 
+        />
+        <p style={{ fontSize: '0.8rem', color: '#888', marginTop: '0.5rem', marginBottom: 0 }}>Supported formats: PDF, JPG, PNG, DWG, ZIP. Max size: 10MB.</p>
       </div>
       
       {status === 'error' && (
-        <p style={{ color: 'red', margin: 0 }}>There was an error sending your message. Please try again or email us directly.</p>
+        <p style={{ color: 'red', margin: 0 }}>There was an error sending your project brief. Please try again or email us directly at sales@scpcinc.com.</p>
       )}
 
-      <button type="submit" disabled={status === 'loading'} className="btn btn-accent" style={{ padding: '1rem', fontSize: '1.1rem', width: '100%', opacity: status === 'loading' ? 0.7 : 1 }}>
-        {status === 'loading' ? 'Sending...' : 'Send Message'}
+      <button type="submit" disabled={status === 'loading' || status === 'uploading'} className="btn btn-accent" style={{ padding: '1rem', fontSize: '1.1rem', width: '100%', opacity: (status === 'loading' || status === 'uploading') ? 0.7 : 1 }}>
+        {status === 'uploading' ? 'Uploading Files...' : status === 'loading' ? 'Sending...' : 'Submit Project Brief'}
       </button>
     </form>
   );

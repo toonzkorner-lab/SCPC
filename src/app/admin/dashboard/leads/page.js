@@ -45,21 +45,41 @@ export default function LeadsTracker() {
             </thead>
             <tbody>
               {leads.map((lead) => (
-                <tr key={lead.id} style={{ borderBottom: '1px solid #eaeaea' }}>
-                  <td style={{ padding: '1rem' }}>{new Date(lead.created_at).toLocaleDateString()}</td>
-                  <td style={{ padding: '1rem', fontWeight: '500' }}>{lead.name}</td>
-                  <td style={{ padding: '1rem' }}>
-                    <a href={`mailto:${lead.email}`} style={{ color: 'var(--accent)', textDecoration: 'none' }}>
-                      {lead.email}
-                    </a>
-                  </td>
-                  <td style={{ padding: '1rem' }}>{lead.subject}</td>
-                </tr>
+                <LeadRow key={lead.id} lead={lead} />
               ))}
             </tbody>
           </table>
         </div>
       )}
     </div>
+  );
+}
+
+function LeadRow({ lead }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <>
+      <tr onClick={() => setExpanded(!expanded)} style={{ borderBottom: expanded ? 'none' : '1px solid #eaeaea', cursor: 'pointer', backgroundColor: expanded ? '#fcfcfc' : 'white' }}>
+        <td style={{ padding: '1rem' }}>{new Date(lead.created_at).toLocaleDateString()}</td>
+        <td style={{ padding: '1rem', fontWeight: '500' }}>{lead.name}</td>
+        <td style={{ padding: '1rem' }}>
+          <a href={`mailto:${lead.email}`} onClick={e => e.stopPropagation()} style={{ color: 'var(--accent)', textDecoration: 'none' }}>
+            {lead.email}
+          </a>
+        </td>
+        <td style={{ padding: '1rem' }}>{lead.subject} {expanded ? '▴' : '▾'}</td>
+      </tr>
+      {expanded && (
+        <tr style={{ borderBottom: '1px solid #eaeaea', backgroundColor: '#f9f9f9' }}>
+          <td colSpan="4" style={{ padding: '1.5rem', whiteSpace: 'pre-wrap', color: '#444', lineHeight: '1.6' }}>
+            <div style={{ padding: '1rem', backgroundColor: 'white', border: '1px solid #ddd', borderRadius: '8px' }}>
+              <strong>Project Details:</strong><br />
+              {lead.body}
+            </div>
+          </td>
+        </tr>
+      )}
+    </>
   );
 }

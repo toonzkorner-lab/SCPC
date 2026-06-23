@@ -8,20 +8,20 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
   metadataBase: new URL('https://precastbyscpcinc.com'),
-  title: "SCPC Precast | Custom Precast Concrete in California",
-  description: "High-quality precast concrete products including wall caps, columns, bollards, and more. Durable elegance for urban and natural spaces since 1999.",
-  keywords: "precast concrete, pool coping, wall caps, concrete columns, California precast, architectural concrete",
+  title: 'SCPC Precast | Custom Precast Concrete',
+  description: 'Seawright Custom Precast (SCPC) is a premier manufacturer of high-quality architectural precast concrete products, serving California, Nevada, Arizona, and San Antonio, Texas.',
+  keywords: 'custom precast concrete, precast columns, concrete pool coping, architectural precast, California custom precast, San Antonio custom precast, Nevada precast concrete, Arizona precast',
   manifest: '/manifest.json',
   openGraph: {
-    title: 'SCPC Precast',
-    description: 'Custom architectural precast concrete products since 1999.',
-    url: 'https://precastbyscpcinc.com/',
+    title: 'SCPC Precast | Architectural Precast Concrete',
+    description: 'Premier manufacturer of custom precast concrete, serving California, San Antonio, and surrounding states.',
+    url: 'https://precastbyscpcinc.com',
     siteName: 'SCPC Precast',
     images: [
       {
-        url: '/images/banner.png',
-        width: 1200,
-        height: 630,
+        url: 'https://precastbyscpcinc.com/images/Entry-way-1-225x300.jpg',
+        width: 800,
+        height: 600,
       }
     ],
     locale: 'en_US',
@@ -29,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SCPC Precast',
-    description: 'Custom architectural precast concrete products since 1999.',
-    images: ['/images/banner.png'],
+    title: 'SCPC Precast | Architectural Precast Concrete',
+    description: 'Premier manufacturer of custom precast concrete, serving California, San Antonio, and surrounding states.',
+    images: ['https://precastbyscpcinc.com/images/Entry-way-1-225x300.jpg'],
   },
   appleWebApp: {
     capable: true,
@@ -66,23 +66,25 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Seawright Custom Precast, Inc.',
+  description: 'Manufacturer of custom architectural precast concrete.',
   image: 'https://precastbyscpcinc.com/images/logo.png',
-  '@id': 'https://precastbyscpcinc.com',
-  url: 'https://precastbyscpcinc.com',
   telephone: '760-398-1515',
+  email: 'sales@scpcinc.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '53355 Harrison Street',
+    streetAddress: '85610 Grapefruit Blvd',
     addressLocality: 'Coachella',
     addressRegion: 'CA',
     postalCode: '92236',
     addressCountry: 'US'
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 33.6706,
-    longitude: -116.1755
-  },
+  areaServed: [
+    { '@type': 'State', name: 'California' },
+    { '@type': 'State', name: 'Nevada' },
+    { '@type': 'State', name: 'Arizona' },
+    { '@type': 'City', name: 'San Antonio', containedInPlace: { '@type': 'State', name: 'Texas' } }
+  ],
+  url: 'https://precastbyscpcinc.com',
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: [

@@ -27,7 +27,7 @@ export async function POST(request) {
         from: `"${name}" <${email}>`, // sender address
         to: 'sales@scpcinc.com',      // list of receivers
         subject: `Website Inquiry: ${subject}`, // Subject line
-        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${body}`, // plain text body
+        text: `Name: ${name}\nEmail: ${email}\n\n${enrichedBody}`, // plain text body
       });
       
       console.log('Real email sent via SMTP!');
@@ -36,8 +36,7 @@ export async function POST(request) {
       console.log(`To: sales@scpcinc.com`);
       console.log(`From: ${name} <${email}>`);
       console.log(`Subject: ${subject}`);
-      console.log(`Body:\n${body}`);
-      console.log('-----------------------\n');
+      console.log(`Body:\n${enrichedBody}`);
       console.log('-----------------------\n');
     }
 
@@ -47,7 +46,7 @@ export async function POST(request) {
       const db = await getDb();
       await db.run(
         'INSERT INTO leads (name, email, subject, body) VALUES (?, ?, ?, ?)',
-        [name, email, subject, body]
+        [name, email, subject, enrichedBody]
       );
     } catch (dbError) {
       console.error('Failed to save lead to database:', dbError);
