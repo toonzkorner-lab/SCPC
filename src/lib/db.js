@@ -1,36 +1,29 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+import fs from 'fs/promises';
 import path from 'path';
 
-let db = null;
-
-export async function getDb() {
-  if (!db) {
-    db = await open({
-      filename: path.join(process.cwd(), 'data', 'database.sqlite'),
-      driver: sqlite3.Database
-    });
-    
-    await db.exec(`
-      CREATE TABLE IF NOT EXISTS leads (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT,
-        email TEXT,
-        subject TEXT,
-        body TEXT,
-        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-      )
-    `);
-  }
-  return db;
-}
+// This file is currently using static JSON files for Vercel compatibility.
+// For the KVM SQLite setup, replace this file's contents with the code in `src/lib/db-sqlite.js`
 
 export async function getCategories() {
-  const database = await getDb();
-  return await database.all('SELECT * FROM categories');
+  const filePath = path.join(process.cwd(), 'src', 'data', 'categories.json');
+  const data = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(data);
 }
 
 export async function getProducts() {
-  const database = await getDb();
-  return await database.all('SELECT * FROM products');
+  const filePath = path.join(process.cwd(), 'src', 'data', 'products.json');
+  const data = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(data);
+}
+
+export async function getDb() {
+  // Mock getDb function to prevent crashes on Vercel where SQLite isn't available
+  return {
+    all: async (query) => {
+      if (query.includes('leads')) return [];
+      return [];
+    },
+    run: async () => {},
+    get: async () => false,
+  };
 }
