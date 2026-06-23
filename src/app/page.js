@@ -72,7 +72,7 @@ export default async function Home() {
               <li style={{ marginBottom: '0.5rem' }}>✓ High-Resolution Material Textures</li>
               <li style={{ marginBottom: '0.5rem' }}>✓ Direct Access to our Estimating Team</li>
             </ul>
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link href="/professionals" className="btn">Access the Portal</Link>
               <Link href="/contact" className="btn btn-accent">Submit a Project Brief</Link>
             </div>
