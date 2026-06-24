@@ -1,5 +1,13 @@
 [
   {
+    "id": "steps",
+    "name": "Precast Steps",
+    "description": "Durable and elegant precast concrete steps for commercial and residential applications.",
+    "slug": "steps",
+    "image": "IMG_0014-scaled.jpg",
+    "blueprintImage": "Step-5.jpg"
+  },
+  {
     "id": "columns",
     "name": "Columns",
     "description": "Elegant precast concrete columns including spiral, stackable, and tuscan split designs.",

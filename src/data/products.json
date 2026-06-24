@@ -3319,5 +3319,23 @@
     "image": "Mark-Bennet-testimonial.jpg",
     "type": "blueprint",
     "originalFile": "Mark-Bennet-testimonial.jpg"
+  },
+  {
+    "id": "steps-1",
+    "categoryId": "steps",
+    "name": "Precast Steps Profile",
+    "description": "Dimensional schematic for custom precast concrete steps.",
+    "image": "Step-5.jpg",
+    "type": "blueprint",
+    "originalFile": "Step-5.jpg"
+  },
+  {
+    "id": "steps-2",
+    "categoryId": "steps",
+    "name": "Precast Steps Installation",
+    "description": "A beautiful installation of our precast steps, showcasing durability and clean lines.",
+    "image": "IMG_0014-scaled.jpg",
+    "type": "gallery",
+    "originalFile": "IMG_0014-scaled.jpg"
   }
 ]

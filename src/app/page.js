@@ -21,26 +21,55 @@ export default async function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section section-dark text-center hero-section">
+      <section className="section section-dark text-center hero-section" style={{ padding: '6rem 0' }}>
         <FadeIn className="container">
           <h1 style={{ marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-            Durable Elegance in <span style={{ color: 'var(--accent)' }}>Precast Concrete</span>
+            Seawright Custom Precast, Inc.
           </h1>
-          <p style={{ maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
-            Providing high-quality, custom precast concrete products for architects, contractors, and landscapers since 1999.
+          <h2 style={{ color: 'var(--accent)', fontWeight: '400', fontSize: '1.8rem', marginBottom: '2rem' }}>
+            Best prices anywhere!
+          </h2>
+          <p style={{ maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9, fontSize: '1.2rem' }}>
+            With over 40 years of experience in this industry, we have seen a few things, so we can help you make good decisions concerning your project.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/products" className="btn btn-accent" style={{ fontSize: '1.1rem' }}>View Catalog</Link>
-            <Link href="/contact" className="btn" style={{ fontSize: '1.1rem', backgroundColor: 'transparent', border: '2px solid white' }}>Request a Quote</Link>
+            <Link href="/contact" className="btn" style={{ fontSize: '1.1rem', backgroundColor: 'transparent', border: '2px solid white' }}>Contact Us</Link>
           </div>
         </FadeIn>
       </section>
 
-      {/* Featured Categories Grid */}
+      {/* Info Sections Split */}
       <section className="section">
+        <div className="container grid-cols-2">
+          <FadeIn direction="right" style={{ padding: '2rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow)' }}>
+            <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>What is precast concrete?</h2>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+              It's a construction product that is produced by using a mold or form (which is reusable). Once the items are made they can be transported to the construction site or your home project; for the DIY'ers. Sometimes the molds are moved to the construction site and poured on-site to yield the desired precast concrete product.
+            </p>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', marginTop: '1rem' }}>
+              Precast concrete products save you time and money. Everything from precast concrete steps, columns, water features, bowls, and flag poles (just to name a few items). Good concrete suppliers will have a large offering and here at SCPC inc we also do consultations for all your precast concrete projects.
+            </p>
+          </FadeIn>
+          
+          <FadeIn direction="left" style={{ padding: '2rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow)' }}>
+            <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Enhance your project with a limited budget</h2>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+              With the assistance of a knowledgeable precaster with design and installation experience, you can be directed to utilize the precast at locations that will catch the eye. It is not necessary to have precast on each and every windowsill on the building if you are looking to save money. A front door surround will go a long way to dress up the building.
+            </p>
+            <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Consulting</h3>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+              With 34 years of installation and manufacturing experience, I can be of assistance in the early stages of your design. Although I am not a licensed engineer, my attachment methods have been tested through many years of installation, on many projects. We can assist in designing attachments for your projects, at which time it can be engineered if required.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Featured Categories Grid */}
+      <section className="section section-light">
         <div className="container">
           <FadeIn className="text-center mb-8">
-            <h2>Featured Products</h2>
+            <h2>Our Featured Products</h2>
             <p>Explore some of our most popular precast concrete categories.</p>
           </FadeIn>
           <FadeIn delay={0.2} className="grid-auto-fit">
@@ -55,75 +84,23 @@ export default async function Home() {
             ))}
           </FadeIn>
           <div className="text-center" style={{ marginTop: '3rem' }}>
-            <Link href="/products" className="btn">See All Products</Link>
+            <Link href="/products" className="btn btn-accent">See All Products</Link>
           </div>
         </div>
       </section>
 
-      {/* Architect Portal Promo Section */}
-      <section className="section section-light">
-        <div className="container grid-cols-2" style={{ alignItems: 'center' }}>
-          <FadeIn direction="right">
-            <span style={{ color: 'var(--accent)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>For Professionals</span>
-            <h2 style={{ marginTop: '0.5rem' }}>Engineered for Architects & Contractors</h2>
-            <p>We don't just sell products; we engineer solutions. Access our comprehensive library of CAD files, high-resolution textures, and technical specifications designed specifically for your workflow.</p>
-            <ul style={{ listStylePosition: 'inside', marginBottom: '2rem' }}>
-              <li style={{ marginBottom: '0.5rem' }}>✓ Downloadable .DWG CAD Files</li>
-              <li style={{ marginBottom: '0.5rem' }}>✓ High-Resolution Material Textures</li>
-              <li style={{ marginBottom: '0.5rem' }}>✓ Direct Access to our Estimating Team</li>
-            </ul>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/professionals" className="btn">Access the Portal</Link>
-              <Link href="/contact" className="btn btn-accent">Submit a Project Brief</Link>
-            </div>
-          </FadeIn>
-          <FadeIn direction="left" style={{ 
-            position: 'relative',
-            minHeight: '300px', 
-            height: '100%',
-            borderRadius: 'var(--radius)', 
-            overflow: 'hidden',
-            boxShadow: 'var(--shadow)'
-          }}>
-            <Image 
-              src="/images/Entry-way-1-225x300.jpg" 
-              alt="SCPC Precast concrete entryway project" 
-              fill 
-              style={{ objectFit: 'cover' }} 
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </FadeIn>
-        </div>
+      {/* Closing Section */}
+      <section className="section text-center" style={{ backgroundColor: '#1e3a5f', color: 'white' }}>
+        <FadeIn className="container">
+          <h2 style={{ color: 'white', marginBottom: '1rem' }}>The SCPC Inc team thanks you for visiting our website</h2>
+          <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Feel free to call us anytime.</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '1.3rem', fontWeight: 'bold' }}>
+            <span>Phone: 760-398-1515</span>
+            <span>Fax: 760-398-1008</span>
+          </div>
+        </FadeIn>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="section" style={{ backgroundColor: '#1e3a5f', color: 'white' }}>
-        <div className="container text-center">
-          <FadeIn>
-            <h2 style={{ color: 'white', marginBottom: '1rem' }}>Proven Results in the Field</h2>
-            <p style={{ maxWidth: '700px', margin: '0 auto 3rem auto', opacity: 0.9 }}>
-              From luxury estates in Newport Beach to massive commercial plazas in Las Vegas, see how SCPC solves complex structural and aesthetic challenges across California and nationwide.
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.2} className="grid-cols-2" style={{ textAlign: 'left', maxWidth: '900px', margin: '0 auto' }}>
-            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px' }}>
-              <Image src="/images/Entry-way-1-225x300.jpg" alt="Estate Columns" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
-              <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Luxury Estate Columns</h3>
-              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Engineered lightweight GFRC molds to accommodate internal drainage pipes while matching historical textures.</p>
-              <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
-            </div>
-            <div style={{ backgroundColor: 'white', color: '#333', padding: '2rem', borderRadius: '8px' }}>
-              <Image src="/images/04_Bowl_Pool1-225x300.jpg" alt="Commercial Pool" width={400} height={250} style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', marginBottom: '1rem' }} />
-              <h3 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Commercial Pool Coping</h3>
-              <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem', color: '#666' }}>Custom radius coping engineered for extreme desert heat expansion without cracking.</p>
-              <Link href="/case-studies" style={{ color: 'var(--accent)', fontWeight: 'bold', textDecoration: 'none' }}>Read Case Study →</Link>
-            </div>
-          </FadeIn>
-          <FadeIn delay={0.4} style={{ marginTop: '3rem' }}>
-            <Link href="/case-studies" className="btn" style={{ backgroundColor: 'transparent', border: '2px solid white', color: 'white' }}>View All Case Studies</Link>
-          </FadeIn>
-        </div>
-      </section>
     </div>
   );
 }
