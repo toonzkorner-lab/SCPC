@@ -26,8 +26,8 @@ export default function Navbar({ categories = [], products = [] }) {
   return (
     <header className={styles.navbar}>
       <div className={`container ${styles.container}`}>
-        <a href="/" onClick={() => handleLinkClick('/')} className={styles.logo}>
-          <img src="/images/logo.png" alt="SCPC Precast Logo" style={{ height: '60px', width: 'auto' }} />
+        <a href="/" onClick={() => handleLinkClick('/')} className={styles.logo} style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/images/logo.png" alt="SCPC Precast Logo" style={{ height: '80px', width: 'auto', maxWidth: '100%', objectFit: 'contain' }} />
         </a>
         
         <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
