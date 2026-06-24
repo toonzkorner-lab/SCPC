@@ -53,6 +53,15 @@ export default function Footer() {
             </a>
           </p>
         </div>
+        <div className={styles.col}>
+          <h3>Donate to the Veterans</h3>
+          <p style={{ marginBottom: '1rem' }}>Support those who have served.</p>
+          <a href="https://scpcinc.square.site/" target="_blank" rel="noreferrer" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none' }}>
+            <img src="/images/Free-unsplash-american-flag-300x201.jpg" alt="Donate to the Veterans" style={{ width: '100%', maxWidth: '200px', borderRadius: '4px', marginBottom: '0.5rem' }} />
+            <br />
+            <span style={{ backgroundColor: '#1e73be', color: 'white', padding: '0.5rem 1rem', borderRadius: '4px', fontWeight: 'bold', display: 'inline-block', marginTop: '0.5rem' }}>Donate Now</span>
+          </a>
+        </div>
       </div>
       <div className={styles.bottom}>
         <div className="container">

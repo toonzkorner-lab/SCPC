@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 import FadeIn from '../components/FadeIn';
 
 export const metadata = {
-  title: 'Home | SCPC Precast',
+  title: 'Precastbyscpcinc.com - Best prices anywhere!',
   description: 'Providing high-quality, custom precast concrete products for architects, contractors, and landscapers in Coachella, California, surrounding states, and nationwide for large projects.',
   openGraph: {
     title: 'Home | SCPC Precast',
@@ -16,91 +16,139 @@ export const metadata = {
 
 export default async function Home() {
   const categories = await getCategories();
-  const featuredCategories = categories.slice(0, 3);
+  const featuredCategories = categories.slice(0, 14); // Original site had many links
+
+  const sliderImages = [
+    'Fire-pit-new-150x150.jpg',
+    'Entry-elevation.--150x150.jpg',
+    'IMG_4770-150x150.jpg',
+    'Firepit-Pic-150x150.jpg',
+    'Fountain-5-150x150.jpeg',
+    'E4-150x150.jpg',
+    'Coppock-FP3-150x150.jpg',
+    'Blue-flower-pot-c1-150x150.jpg',
+    'IMG_0014-150x150.jpg',
+    '595-150x150.jpg',
+    '594-150x150.jpg',
+    'PS-columns-2--150x150.jpg',
+    'IMG_5236-150x150.jpg',
+    'IMG_5231-150x150.jpg',
+    'Base-Molding--150x150.jpg',
+    'window-sills-150x150.jpg',
+    'Planter-Bowl-150x150.jpg',
+    'Column-12-150x150.jpeg'
+  ];
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="section section-dark text-center hero-section" style={{ padding: '6rem 0' }}>
-        <FadeIn className="container">
-          <h1 style={{ marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-            Seawright Custom Precast, Inc.
-          </h1>
-          <h2 style={{ color: 'var(--accent)', fontWeight: '400', fontSize: '1.8rem', marginBottom: '2rem' }}>
-            Best prices anywhere!
-          </h2>
-          <p style={{ maxWidth: '800px', margin: '0 auto 3rem auto', opacity: 0.9, fontSize: '1.2rem' }}>
-            With over 40 years of experience in this industry, we have seen a few things, so we can help you make good decisions concerning your project.
-          </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/products" className="btn btn-accent" style={{ fontSize: '1.1rem' }}>View Catalog</Link>
-            <Link href="/contact" className="btn" style={{ fontSize: '1.1rem', backgroundColor: 'transparent', border: '2px solid white' }}>Contact Us</Link>
-          </div>
-        </FadeIn>
-      </section>
-
-      {/* Info Sections Split */}
-      <section className="section">
-        <div className="container grid-cols-2">
-          <FadeIn direction="right" style={{ padding: '2rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow)' }}>
-            <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>What is precast concrete?</h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              It's a construction product that is produced by using a mold or form (which is reusable). Once the items are made they can be transported to the construction site or your home project; for the DIY'ers. Sometimes the molds are moved to the construction site and poured on-site to yield the desired precast concrete product.
-            </p>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', marginTop: '1rem' }}>
-              Precast concrete products save you time and money. Everything from precast concrete steps, columns, water features, bowls, and flag poles (just to name a few items). Good concrete suppliers will have a large offering and here at SCPC inc we also do consultations for all your precast concrete projects.
-            </p>
-          </FadeIn>
-          
-          <FadeIn direction="left" style={{ padding: '2rem', backgroundColor: 'var(--surface)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow)' }}>
-            <h2 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Enhance your project with a limited budget</h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              With the assistance of a knowledgeable precaster with design and installation experience, you can be directed to utilize the precast at locations that will catch the eye. It is not necessary to have precast on each and every windowsill on the building if you are looking to save money. A front door surround will go a long way to dress up the building.
-            </p>
-            <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>Consulting</h3>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              With 34 years of installation and manufacturing experience, I can be of assistance in the early stages of your design. Although I am not a licensed engineer, my attachment methods have been tested through many years of installation, on many projects. We can assist in designing attachments for your projects, at which time it can be engineered if required.
-            </p>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Featured Categories Grid */}
-      <section className="section section-light">
+      {/* Top Header Address Block */}
+      <section style={{ backgroundColor: '#f9f9f9', padding: '2rem 0', textAlign: 'center', borderBottom: '1px solid #ddd' }}>
         <div className="container">
-          <FadeIn className="text-center mb-8">
-            <h2>Our Featured Products</h2>
-            <p>Explore some of our most popular precast concrete categories.</p>
-          </FadeIn>
-          <FadeIn delay={0.2} className="grid-auto-fit">
-            {featuredCategories.map((cat) => (
-              <ProductCard 
-                key={cat.id}
-                title={cat.name}
-                description={cat.description}
-                link={`/products/${cat.slug}`}
-                imageUrl={`/images/${cat.image || 'placeholder.jpg'}`}
-              />
-            ))}
-          </FadeIn>
-          <div className="text-center" style={{ marginTop: '3rem' }}>
-            <Link href="/products" className="btn btn-accent">See All Products</Link>
+           <h2 style={{ fontSize: '1.2rem', fontWeight: 'bold', margin: 0, color: '#333' }}>
+             Seawright Custom Precast, Inc. &nbsp;
+             <span style={{ fontWeight: 'normal' }}>85610 Grapefruit Blvd. Coachella, CA 92236</span> &nbsp;
+             <a href="mailto:Sales@scpcinc.com" style={{ color: '#1e73be' }}>Sales@scpcinc.com</a> &nbsp;
+             760-398-1515
+           </h2>
+        </div>
+      </section>
+
+      {/* Image Carousel Mockup */}
+      <section style={{ padding: '2rem 0', overflow: 'hidden' }}>
+        <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', msOverflowStyle: 'none', scrollbarWidth: 'none' }}>
+           {sliderImages.map((img, i) => (
+              <img key={i} src={`/images/${img}`} alt="Precast Product" style={{ height: '150px', width: '150px', objectFit: 'cover', flexShrink: 0 }} />
+           ))}
+        </div>
+      </section>
+
+      {/* Video and Made in America Section */}
+      <section className="section">
+        <div className="container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center' }}>
+          <div style={{ flex: '1', minWidth: '300px', display: 'flex', justifyContent: 'center' }}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/j77Klfhb1hI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+          <div style={{ flex: '1', minWidth: '300px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <img src="/images/Free-unsplash-american-flag-300x201.jpg" alt="Made in America" style={{ maxWidth: '200px' }} />
+            <h1 style={{ marginTop: '1rem', color: '#333', fontSize: '2.5rem' }}>Made in America</h1>
           </div>
         </div>
       </section>
 
-      {/* Closing Section */}
-      <section className="section text-center" style={{ backgroundColor: '#1e3a5f', color: 'white' }}>
-        <FadeIn className="container">
-          <h2 style={{ color: 'white', marginBottom: '1rem' }}>The SCPC Inc team thanks you for visiting our website</h2>
-          <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Feel free to call us anytime.</p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '1.3rem', fontWeight: 'bold' }}>
-            <span>Phone: 760-398-1515</span>
-            <span>Fax: 760-398-1008</span>
+      {/* Headline */}
+      <section style={{ padding: '3rem 0', textAlign: 'center', backgroundColor: '#fdfdfd' }}>
+        <div className="container">
+          <h2 style={{ fontSize: '2rem', color: '#333' }}>
+            The Best Quality from Custom Seawright Concrete at <span style={{ color: '#1e73be', textDecoration: 'underline' }}>Amazing</span> Prices!
+          </h2>
+        </div>
+      </section>
+
+      {/* Our most popular Precast Concrete Products */}
+      <section className="section" style={{ padding: '3rem 0' }}>
+        <div className="container text-center">
+          <h2 style={{ color: '#333', marginBottom: '2rem' }}>Our most popular Precast Concrete Products</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+             {featuredCategories.map((cat) => (
+                <Link key={cat.id} href={`/products/${cat.slug}`} style={{ padding: '0.5rem 1rem', border: '1px solid #1e73be', borderRadius: '4px', color: '#1e73be', textDecoration: 'none', fontWeight: 'bold' }}>
+                  {cat.name}
+                </Link>
+             ))}
           </div>
-        </FadeIn>
+        </div>
+      </section>
+
+      {/* Flip Boxes / Why Use Precast Placeholder */}
+      <section style={{ backgroundColor: '#1e73be', color: 'white', padding: '4rem 0' }}>
+        <div className="container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center', textAlign: 'center' }}>
+          <div style={{ flex: '1', minWidth: '200px' }}>
+            <img src="/images/Daves-bowl-2-150x150.jpg" alt="Versatile" style={{ borderRadius: '50%', marginBottom: '1rem' }} />
+            <h3 style={{ color: 'white' }}>Why use Precast Concrete?</h3>
+            <p style={{ fontWeight: 'bold' }}>It's Versatile</p>
+          </div>
+          <div style={{ flex: '1', minWidth: '200px' }}>
+            <img src="/images/Johnson-Entry-225x300.jpg" alt="Resilient" style={{ borderRadius: '50%', marginBottom: '1rem', height: '150px', width: '150px', objectFit: 'cover' }} />
+            <h3 style={{ color: 'white' }}>Why use Precast Concrete?</h3>
+            <p style={{ fontWeight: 'bold' }}>Resilient</p>
+          </div>
+          <div style={{ flex: '1', minWidth: '200px' }}>
+            <img src="/images/Pier-cap-150x150.jpeg" alt="Sustainable" style={{ borderRadius: '50%', marginBottom: '1rem' }} />
+            <h3 style={{ color: 'white' }}>Why use Precast Concrete?</h3>
+            <p style={{ fontWeight: 'bold' }}>Sustainable</p>
+          </div>
+          <div style={{ flex: '1', minWidth: '200px' }}>
+            <img src="/images/main-pic-1-150x150.jpg" alt="Affordable" style={{ borderRadius: '50%', marginBottom: '1rem' }} />
+            <h3 style={{ color: 'white' }}>Why use Precast Concrete?</h3>
+            <p style={{ fontWeight: 'bold' }}>Affordable</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Text Sections */}
+      <section className="section" style={{ padding: '4rem 0' }}>
+        <div className="container grid-cols-2">
+          <FadeIn direction="right">
+            <h2 style={{ color: '#333' }}>What is precast concrete?</h2>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>It simply is the use of concrete that is put into molds to create a product that can make an ordinary house into something spectacular. It can even be used in your landscaping as with concrete bowls for flowers, gas fire pits, or even water features for your pool.</p>
+
+            <h2 style={{ color: '#333', marginTop: '2rem' }}>Precast concrete</h2>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>…is generally known as a construction product made by casting concrete into reusable molds. This use of molds “forms” the concrete, which is cured in a controlled process, and then it can be transported to the work site for application to the project.</p>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>The concrete finished product must meet standards that are maintained in the architectural community. In addition, this product can be colored, stained, or made to look like other products altogether. This latter fact makes it a preferred product to use by the DIY groups all the way to high-end architectural firms. You can even mix rock or “fine aggregate” into the mixture to produce, yet again, a unique and custom product.</p>
+          </FadeIn>
+          <FadeIn direction="left">
+            <h2 style={{ color: '#333' }}>How can I use precast to enhance our project if we have a smaller budget for architectural design?</h2>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>Value engineering can be more efficient and cost effective if done in the early design stage before going to print. We can assist with that.</p>
+
+            <h2 style={{ color: '#333', marginTop: '2rem' }}>In house services:</h2>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>Seawright Custom Precast, Inc. is a full service precaster. Our mold shop is large enough to handle any architectural project we have seen in the last twenty years. SCPC estimates all of our projects with a breakout of each piece required to complete your project. Value engineering can be done at this stage if you need assistance.</p>
+            
+            <h2 style={{ color: '#333', marginTop: '2rem' }}>Basic Installations not requiring attachments:</h2>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.8' }}>Installation of low lying precast does not necessarily require mechanical attachments unless required by the owner. Low lying areas usually would be wall caps, pier caps, pool coping, and windowsills (with a ledge underneath). Window trims, on the first floor, and the upright legs of door surrounds can be installed without mechanical attachments.</p>
+          </FadeIn>
+        </div>
       </section>
 
     </div>
   );
 }
+
