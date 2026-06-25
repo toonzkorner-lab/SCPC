@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getCategories } from '../lib/db';
 import ProductCard from '../components/ProductCard';
 import FadeIn from '../components/FadeIn';
+import ImageCarousel from '../components/ImageCarousel';
 
 export const metadata = {
   title: 'Precastbyscpcinc.com - Best prices anywhere!',
@@ -55,11 +56,7 @@ export default async function Home() {
 
       {/* Image Carousel Mockup */}
       <section style={{ padding: '2rem 0', overflow: 'hidden' }}>
-        <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', msOverflowStyle: 'none', scrollbarWidth: 'none' }}>
-           {sliderImages.map((img, i) => (
-              <img key={i} src={`/images/${img}`} alt="Precast Product" style={{ height: '150px', width: '150px', objectFit: 'cover', flexShrink: 0 }} />
-           ))}
-        </div>
+        <ImageCarousel images={sliderImages} />
       </section>
 
       {/* Video and Made in America Section */}
